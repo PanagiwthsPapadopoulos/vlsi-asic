@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[LGR,T1]{fontenc} % Fixed encoding for Greek
+\usepackage[greek,english]{babel}
+\usepackage{alphabeta} % Allows typing Greek directly
+
+% --- Overflow Fixes ---
+\usepackage{microtype} % Subtle spacing adjustments to fit more text per line
+\setlength{\emergencystretch}{3em} % Allows LaTeX to stretch spaces to prevent overflow
+\usepackage{xurl} % Allows breaking long paths/URLs anywhere
+
+% --- Formatting ---
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[breaklinks=true]{hyperref} % Clickable links that can break across lines
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{amsmath}
+
+% --- Redefine \texttt to allow breaking (Optional but recommended for file paths) ---
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+
+% --- Title Page Info ---
+
+\begin{document}
+\input{cover}
+% --- Table of Contents ---
+\tableofcontents
+\newpage
+
+% --- Include Chapters ---
+% The \input command inserts the contents of the files here
+\section{Άσκηση 1}
+\input{chapters/task1}
+\newpage
+
+\section{Άσκηση 2}
+\input{chapters/task2}
+\newpage
+
+\section{Άσκηση 3}
+\input{chapters/task3}
+\newpage
+
+\section{Άσκηση 4}
+\input{chapters/task4}
+\newpage
+
+\section{Άσκηση 5}
+\input{chapters/task5}
+\newpage
+
+\section{Άσκηση 6}
+\input{chapters/task6}
+\newpage
+
+\section{Άσκηση 7}
+\input{chapters/task7}
+\newpage
+
+\section{Άσκηση 8}
+\input{chapters/task8}
+\newpage
+
+
+
+\end{document}

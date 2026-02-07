@@ -5,9 +5,9 @@
 # This python script is used to generate all pads suitable for picorv32, apart from VSS and VDD pads
 # 
 
-input_pad_names = ['clk', 'resetn', 'mem_ready', 'pcpi_wr', 'pcpi_wait', 'pcpi_ready']
-output_pad_names = ['trap', 'mem_valid', 'mem_instr', 'mem_la_read', 'mem_la_write', 'pcpi_valid', 'trace_valid']
-
+input_pad_names = ['wb_clk_i', 'wb_rst_i', 'mem_ready', 'pcpi_wr', 'pcpi_wait', 'pcpi_ready', 'wbm_ack_i']
+output_pad_names = ['trap', 'mem_valid', 'mem_instr', 'mem_la_read', 'mem_la_write', 'pcpi_valid', 'trace_valid', 'wbm_we_o', 'wbm_stb_o', 'wbm_cyc_o']
+        
 
 for i in range(len(input_pad_names)):
     print("PADDI pad_" + str(input_pad_names[i]) + "(.PAD(" + str(input_pad_names[i]) + "), .Y(" + str(input_pad_names[i]) + "_w" + "), .VDD(VDD), .VSS(VSS));")
@@ -15,8 +15,8 @@ for i in range(len(input_pad_names)):
 for i in range(len(output_pad_names)):
     print("PADDO pad_" + str(output_pad_names[i]) + "(.PAD(" + str(output_pad_names[i]) + "), .A(" + str(output_pad_names[i]) + "_w" + "), .VDD(VDD), .VSS(VSS));")
 
-input_pad_names_32 = ['mem_rdata', 'pcpi_rd', 'irq']
-output_pad_names_32 = ['mem_addr', 'mem_wdata', 'mem_la_addr', 'mem_la_wdata', 'pcpi_insn', 'pcpi_rs1', 'pcpi_rs2', 'eoi']
+input_pad_names_32 = ['mem_rdata', 'pcpi_rd', 'irq', 'wbm_dat_i']
+output_pad_names_32 = ['mem_addr', 'mem_wdata', 'mem_la_addr', 'mem_la_wdata', 'pcpi_insn', 'pcpi_rs1', 'pcpi_rs2', 'eoi', 'wbm_adr_o', 'wbm_dat_o', ]
 
 for i in range(len(input_pad_names_32)):
     for j in range(32):
@@ -26,7 +26,7 @@ for i in range(len(output_pad_names_32)):
     for j in range(32):
         print("PADDO pad_" + str(output_pad_names_32[i]) + str(j) + "(.PAD(" + str(output_pad_names_32[i]) + "[" + str(j) + "]), .A(" + str(output_pad_names_32[i]) + "_w" + "[" + str(j) + "]), .VDD(VDD), .VSS(VSS));")
 
-pad_names_4 = ['mem_wstrb', 'mem_la_wstrb']
+pad_names_4 = ['mem_wstrb', 'mem_la_wstrb', 'wbm_sel_o']
 
 for i in range(len(pad_names_4)):
     for j in range(4):

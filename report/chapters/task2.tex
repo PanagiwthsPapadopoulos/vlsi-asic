@@ -1,0 +1,196 @@
+Η βασική διαφοροποίηση μεταξύ των δύο ασκήσεων έγκειται στη στρατηγική σύνθεσης που ακολουθήθηκε στο εργαλείο Genus. Ενώ στην Άσκηση 1 τηρήθηκε η προεπιλεγμένη ροή με πρωταρχικό στόχο την ικανοποίηση των χρονικών περιορισμών (timing), στην Άσκηση 2 ενεργοποιήθηκαν ρητά εντολές βελτιστοποίησης ισχύος (\texttt{design\_power\_effort high}) με αποκλειστική στόχευση τη δυναμική ισχύ (\texttt{opt\_leakage\_to\_dynamic\_ratio 0.0}). Η αλλαγή αυτή μετέβαλε τη συνάρτηση κόστους του αλγορίθμου, αναγκάζοντας το εργαλείο να προβεί σε δομικές αλλαγές και επιλογή ενεργειακά αποδοτικότερων πυλών, θυσιάζοντας ενδεχομένως μέρος της επιφάνειας ή του πλεονάζοντος χρονισμού.
+
+\begin{table}[H]
+    \centering
+    \caption{Total number of cells of each type post Synthesis}
+    \begin{tabular}{lrrrrrr}
+        \toprule
+         & \multicolumn{3}{c}{\textbf{Άσκηση 1}} & \multicolumn{3}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        Type & Instances & Area ($\mu m^2$) & Area \% & Instances & Area ($\mu m^2$) & Area \% \\
+        \midrule
+        Sequential & 2399 & 18048.366 & 52.8 & 2399 & 15073.992 & 42.8 \\
+        Inverter & 238 & 165.870 & 0.5 & 411 & 292.068 & 0.8 \\
+        Buffer & 27 & 97.470 & 0.3 & 16 & 49.932 & 0.1 \\
+        Logic & 6994 & 15865.722 & 46.4 & 8159 & 19844.550 & 56.3 \\
+        \midrule
+        \textbf{Total} & \textbf{9658} & \textbf{34177.428} & \textbf{100.0} & \textbf{10985} & \textbf{35260.542} & \textbf{100.0} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power consumption per category post Synthesis}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Register & $2.06\times10^{-3}$ & 4.04 & 3.21 & 7.26 & 66.30\% & $1.66\times10^{-3}$ & 2.8 & 2.88 & 5.68 & 68.20\% \\
+        Logic & $2.20\times10^{-3}$ & 1.10 & 2.31 & 3.40 & 33.70\% & $2.05\times10^{-3}$ & 0.9 & 1.74 & 2.65 & 31.8\% \\
+        Subtotal & $4.26\times10^{-3}$ & 5.14 & 5.52 & 10.07 & 100.0\% & $3.72\times10^{-3}$ & 3.7 & 4.63 & 8.33 & 100.0\% \\
+        Percentage & 0.04\% & 48.21\% & 51.75\% & 100.0\% & & 0.04\% & 44.41\% & 55.54\% & 100\% & \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Slack for each path type post Synthesis}
+    \begin{tabular}{lrr}
+        \toprule
+        Category & Άσκηση 1 Slack (ns) & Άσκηση 2 Slack (ns) \\
+        \midrule
+        I2O & - & - \\
+        I2R & 2.141 & 2.193 \\
+        R2O & 3.125 & 3.051 \\
+        R2R & 0.994 & 0.986 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Total Area pre Clock Tree Synthesis}
+    \begin{tabular}{lr}
+        \toprule
+        Category & Area ($\mu m^2$) \\
+        \midrule
+        Άσκηση 1 & 34284.474 \\
+        Άσκηση 2 & 34783.794 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Setup Slack for each path type pre Clock Tree Synthesis}
+    \begin{tabular}{lrr}
+        \toprule
+        Category & Άσκηση 1 Setup Slack (ns) & Άσκηση 2 Setup Slack (ns) \\
+        \midrule
+        I2O & - & - \\
+        I2R & 2.566 & 2.601 \\
+        R2O & 3.053 & 2.998 \\
+        R2R & 1.444 & 1.349 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power Consumption per Category pre Clock Tree Synthesis}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Sequential & $1.94\times10^{-3}$ & 3.556 & 0.521 & 4.079 & 43.65 & $1.44\times10^{-3}$ & 2.736 & 0.289 & 3.026 & 36.45 \\
+        Combinational & $2.36\times10^{-3}$ & 1.486 & 3.779 & 5.267 & 59.35 & $2.26\times10^{-3}$ & 1.322 & 3.951 & 5.275 & 63.55 \\
+        Total & $4.27\times10^{-3}$ & 5.042 & 4.3 & 9.346 & 100.0 & $3.7\times10^{-3}$ & 4.059 & 4.239 & 8.302 & 100.0 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Total area post Clock Tree Synthesis}
+    \begin{tabular}{lr}
+        \toprule
+        Category & Area ($\mu m^2$) \\
+        \midrule
+        Άσκηση 1 & 34627.842 \\
+        Άσκηση 2 & 34953.084 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Setup and Hold Slack post Clock Tree Synthesis}
+    \begin{tabular}{lrrrr}
+        \toprule
+         & \multicolumn{2}{c}{\textbf{Άσκηση 1}} & \multicolumn{2}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        Category & Setup Slack (ns) & Hold Slack (ns) & Setup Slack (ns) & Hold Slack (ns) \\
+        \midrule
+        I2O & - & - & - & - \\
+        I2R & 2.519 & 0.240 & 2.595 & 0.248 \\
+        R2O & 3.052 & 0.296 & 2.996 & 0.302 \\
+        R2R & 1.413 & 0.033 & 1.336 & 0.030 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power Consumption per Category post Clock Tree Synthesis}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Sequential & $1.93\times10^{-3}$ & 3.535 & 0.46 & 3.997 & 38.14 & $1.44\times10^{-3}$ & 2.723 & 0.291 & 3.015 & 32.27 \\
+        Combinational & $2.38\times10^{-3}$ & 1.515 & 3.899 & 5.416 & 51.68 & $2.26\times10^{-3}$ & 1.322 & 3.953 & 5.277 & 56.48 \\
+        Clock (Comb) & $4.81\times10^{-5}$ & 0.232 & 0.8352 & 1.067 & 10.19 & $4.59\times10^{-5}$ & 0.2192 & 0.832 & 1.052 & 11.25 \\
+        Total & $4.36\times10^{-3}$ & 5.283 & 5.194 & 10.48 & 100.0 & $3.75\times10^{-3}$ & 4.264 & 5.076 & 9.344 & 100 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Total Area post Routing}
+    \begin{tabular}{lr}
+        \toprule
+        Category & Area ($\mu m^2$) \\
+        \midrule
+        Άσκηση 1 & 34627.842 \\
+        Άσκηση 2 & 34953.084 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Setup and Hold Slack post Routing}
+    \begin{tabular}{lrrrr}
+        \toprule
+         & \multicolumn{2}{c}{\textbf{Άσκηση 1}} & \multicolumn{2}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        Category & Setup Slack (ns) & Hold Slack (ns) & Setup Slack (ns) & Hold Slack (ns) \\
+        \midrule
+        I2O & - & - & - & - \\
+        I2R & 2.531 & 0.241 & 2.573 & 0.249 \\
+        R2O & 3.054 & 0.295 & 2.992 & 0.301 \\
+        R2R & 1.452 & 0.032 & 1.363 & 0.031 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power Consumption per Category post Routing}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 2}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Sequential & $1.93\times10^{-3}$ & 3.537 & 0.452 & 3.991 & 38.15 & $1.44\times10^{-3}$ & 2.717 & 0.267 & 2.986 & 32.87 \\
+        Combinational & $2.38\times10^{-3}$ & 1.513 & 3.863 & 5.379 & 51.43 & $2.26\times10^{-3}$ & 1.311 & 3.796 & 5.109 & 56.23 \\
+        Clock (Comb) & $4.81\times10^{-5}$ & 0.232 & 0.858 & 1.09 & 10.42 & $4.59\times10^{-5}$ & 0.2191 & 0.7715 & 0.991 & 10.9 \\
+        Total & $4.355\times10^{-3}$ & 5.283 & 5.173 & 10.46 & 100 & $3.75\times10^{-3}$ & 4.246 & 4.835 & 9.086 & 100 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+Τα συγκεντρωτικά δεδομένα των πινάκων καταδεικνύουν την επιτυχή εφαρμογή της βελτιστοποίησης, η οποία επέφερε σημαντική μείωση της συνολικής κατανάλωσης ισχύος κατά 17,3\% (από 10,07 mW σε 8,33 mW) στο στάδιο Post-Synthesis, η οποία διατηρήθηκε και μετά τη δρομολόγηση (Post-Routing) με τελική μείωση 13,1\% (από 10,46 mW σε 9,086 mW). Η μείωση προήλθε σχεδόν αποκλειστικά από τον περιορισμό της δυναμικής ισχύος (Switching \& Internal). Ως αντιστάθμισμα (trade-off) για αυτήν την ενεργειακή βελτίωση, παρατηρείται αφενός μια μικρή αύξηση της τάξης του 3\% στην επιφάνεια και το πλήθος των κελιών -γεγονός που υποδηλώνει αναδιάρθρωση της λογικής για μείωση της δραστηριότητας μεταγωγής και αφετέρου μια αναμενόμενη, μικρή μείωση στα χρονικά περιθώρια (Slack), τα οποία ωστόσο παρέμειναν θετικά, διασφαλίζοντας την ορθή λειτουργία του κυκλώματος.

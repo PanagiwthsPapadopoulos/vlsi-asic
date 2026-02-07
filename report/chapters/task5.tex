@@ -1,0 +1,220 @@
+Στην Άσκηση 5, εφαρμόστηκε η τεχνική της φραγής ρολογιού (Clock Gating) με στόχο τη δραστική μείωση της δυναμικής κατανάλωσης ισχύος, διατηρώντας τις παραμέτρους της βασικής υλοποίησης (Task 1: 250 MHz, Fast Library). Η διαδικασία ενεργοποιήθηκε στο εργαλείο Genus μέσω της εντολής \texttt{set\_db lp\_insert\_clock\_gating true} πριν από το στάδιο του elaboration, επιτρέποντας στον αλγόριθμο σύνθεσης να εντοπίσει αυτόματα τις ομάδες καταχωρητών που μπορούν να μοιραστούν ένα κοινό σήμα ενεργοποίησης και να προσθέσει ειδικά κελιά ICG (Integrated Clock Gating) στο δέντρο του ρολογιού.
+
+\begin{table}[H]
+    \centering
+    \caption{Total number of cells of each type post Synthesis}
+    \begin{tabular}{lrrrrrr}
+        \toprule
+         & \multicolumn{3}{c}{\textbf{Άσκηση 1}} & \multicolumn{3}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+        Type & Instances & Area ($\mu m^2$) & Area \% & Instances & Area ($\mu m^2$) & Area \% \\
+        \midrule
+        Sequential & 2399 & 18048.366 & 52.8 & 2398 & 14214.546 & 48.2 \\
+        Inverter & 238 & 165.870 & 0.5 & 239 & 167.238 & 0.6 \\
+        Buffer & 27 & 97.470 & 0.3 & 7 & 19.494 & 0.1 \\
+        Logic & 6994 & 15865.722 & 46.4 & 6508 & 14725.494 & 49.9 \\
+        Clock Gating Integrated Cell & - & - & - & 60 & 389.880 & 1.3 \\
+        \midrule
+        \textbf{Total} & \textbf{9658} & \textbf{34177.428} & \textbf{100.0} & \textbf{9212} & \textbf{29516.652} & \textbf{100.0} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power consumption per category post Synthesis}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Register & $2.06\times10^{-3}$ & 4.04 & 3.21 & 7.26 & 66.30\% & $1.9\times10^{-3}$ & 1.7 & 2.50 & 4.21 & 74.95\% \\
+        Logic & $2.20\times10^{-3}$ & 1.10 & 2.31 & 3.40 & 33.70\% & $2.06\times10^{-3}$ & 0.44 & 0.79 & 1.23 & 21.83\% \\
+        Clock & 0.0 & 0.0 & 0.0 & 0.0 & 0.0\% & $4.06\times10^{-5}$ & 0.08 & 0.1 & 0.18 & 3.22\% \\
+        Subtotal & $4.26\times10^{-3}$ & 5.14 & 5.52 & 10.07 & 100.0\% & $4\times10^{-3}$ & 2.23 & 3.38 & 5.61 & 100.0\% \\
+        Percentage & 0.04\% & 48.21\% & 51.75\% & 100.0\% & & 0.07\% & 39.73\% & 60.2\% & 100\% & \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Slack for each path type post Synthesis}
+    \begin{tabular}{lrr}
+        \toprule
+        Category & Άσκηση 1 Slack (ns) & Άσκηση 5 Slack (ns) \\
+        \midrule
+        I2O & - & - \\
+        I2R & 2.141 & 2.606 \\
+        R2O & 3.125 & 3.125 \\
+        R2R & 0.994 & 1.033 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Clock Gating Use Statistics}
+    \begin{tabular}{lrrr}
+        \toprule
+        Category & Number & Percentage & Average Toggle Saving \% \\
+        \midrule
+        Total Clock Gating Instances & 60 & 100.00 & - \\
+        RC Clock Gating Instances & 60 & 100.00 & 83.39 \\
+        RC Gated Flip-Flops & 2013 & 83.94 & 85.07 \\
+        Total Gated Flip-Flops & 2013 & 83.94 & - \\
+        Total Ungated Flip-Flops & 385 & 16.06 & - \\
+        Enable not found & 336 & 87.27 & - \\
+        Register bank width too small & 49 & 12.73 & - \\
+        Total Flip-Flops & 2398 & 100.00 & - \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Total Area pre Clock Tree Synthesis}
+    \begin{tabular}{lr}
+        \toprule
+        Category & Area ($\mu m^2$) \\
+        \midrule
+        Άσκηση 1 & 34284.474 \\
+        Άσκηση 5 & 29616.858 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Setup Slack for each path type pre Clock Tree Synthesis}
+    \begin{tabular}{lrr}
+        \toprule
+        Category & Άσκηση 1 Setup Slack (ns) & Άσκηση 5 Setup Slack (ns) \\
+        \midrule
+        I2O & - & - \\
+        I2R & 2.566 & 2.700 \\
+        R2O & 3.053 & 3.081 \\
+        R2R & 1.444 & 1.428 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power Consumption per Category pre Clock Tree Synthesis}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Sequential & $1.94\times10^{-3}$ & 3.556 & 0.521 & 4.079 & 43.65 & $1.77\times10^{-3}$ & 1.744 & 0.746 & 2.492 & 32.96 \\
+        Combinational & $2.36\times10^{-3}$ & 1.486 & 3.779 & 5.267 & 59.35 & $2.2\times10^{-3}$ & 1.44 & 3.536 & 4.978 & 65.84 \\
+        Clock (Sequential) & - & - & - & - & - & $4.06\times10^{-5}$ & 0.091 & 0 & 0.091 & 1.204 \\
+        Total & $4.27\times10^{-3}$ & 5.042 & 4.3 & 9.346 & 100.0 & $4.01\times10^{-3}$ & 3.275 & 4.283 & 7.561 & 100.0 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Total area post Clock Tree Synthesis}
+    \begin{tabular}{lr}
+        \toprule
+        Category & Area ($\mu m^2$) \\
+        \midrule
+        Άσκηση 1 & 34627.842 \\
+        Άσκηση 5 & 29770.416 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Setup and Hold Slack post Clock Tree Synthesis}
+    \begin{tabular}{lrrrr}
+        \toprule
+         & \multicolumn{2}{c}{\textbf{Άσκηση 1}} & \multicolumn{2}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        Category & Setup Slack (ns) & Hold Slack (ns) & Setup Slack (ns) & Hold Slack (ns) \\
+        \midrule
+        I2O & - & - & - & - \\
+        I2R & 2.519 & 0.240 & 2.688 & 0.238 \\
+        R2O & 3.052 & 0.296 & 3.092 & 0.286 \\
+        R2R & 1.413 & 0.033 & 0.006 & 1.404 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power Consumption per Category post Clock Tree Synthesis}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Sequential & $1.93\times10^{-3}$ & 3.535 & 0.46 & 3.997 & 38.14 & $1.77\times10^{-3}$ & 1.737 & 0.749 & 2.488 & 31.05 \\
+        Combinational & $2.38\times10^{-3}$ & 1.515 & 3.899 & 5.416 & 51.68 & $2.2\times10^{-3}$ & 1.44 & 3.533 & 4.976 & 62.11 \\
+        Clock (Comb) & $4.81\times10^{-5}$ & 0.232 & 0.8352 & 1.067 & 10.19 & $0.008\times10^{-3}$ & 0.038 & 0.1484 & 0.1866 & 2.329 \\
+        Clock (Sequential) & - & - & - & - & - & $0.08\times10^{-3}$ & 0.206 & 0.1553 & 0.361 & 4.51 \\
+        Total & $4.36\times10^{-3}$ & 5.283 & 5.194 & 10.48 & 100.0 & $4.1\times10^{-3}$ & 3.422 & 4.586 & 8.011 & 100 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Total Area post Routing}
+    \begin{tabular}{lr}
+        \toprule
+        Category & Area ($\mu m^2$) \\
+        \midrule
+        Άσκηση 1 & 34627.842 \\
+        Άσκηση 5 & 29770.416 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Setup and Hold Slack post Routing}
+    \begin{tabular}{lrrrr}
+        \toprule
+         & \multicolumn{2}{c}{\textbf{Άσκηση 1}} & \multicolumn{2}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        Category & Setup Slack (ns) & Hold Slack (ns) & Setup Slack (ns) & Hold Slack (ns) \\
+        \midrule
+        I2O & - & - & - & - \\
+        I2R & 2.531 & 0.241 & 2.671 & 0.238 \\
+        R2O & 3.054 & 0.295 & 3.090 & 0.285 \\
+        R2R & 1.452 & 0.032 & 1.410 & 0.005 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Power Consumption per Category post Routing}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrrrr}
+        \toprule
+         & \multicolumn{5}{c}{\textbf{Άσκηση 1}} & \multicolumn{5}{c}{\textbf{Άσκηση 5}} \\
+        \cmidrule(lr){2-6} \cmidrule(lr){7-11}
+        Category & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% & Leakage (mW) & Internal (mW) & Switching (mW) & Total (mW) & Row \% \\
+        \midrule
+        Sequential & $1.93\times10^{-3}$ & 3.537 & 0.452 & 3.991 & 38.15 & $1.77\times10^{-3}$ & 1.733 & 0.7216 & 2.456 & 31.37 \\
+        Combinational & $2.38\times10^{-3}$ & 1.513 & 3.863 & 5.379 & 51.43 & $2.2\times10^{-3}$ & 1.432 & 3.41 & 4.844 & 61.87 \\
+        Clock (Comb) & $4.81\times10^{-5}$ & 0.232 & 0.858 & 1.09 & 10.42 & $8\times10^{-6}$ & 0.038 & 0.1396 & 0.1778 & 2.271 \\
+        Clock (Sequential) & - & - & - & - & - & $8\times10^{-5}$ & 0.206 & 0.146 & 0.3519 & 4.495 \\
+        Total & $4.355\times10^{-3}$ & 5.283 & 5.173 & 10.46 & 100 & $4.1\times10^{-3}$ & 3.409 & 4.417 & 7.83 & 100 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+Τα στατιστικά στοιχεία δείχνουν ότι η εφαρμογή της τεχνικής ήταν ιδιαίτερα επιτυχής, με την εισαγωγή 60 κελιών ICG που οδήγησαν στη φραγή του 83,94\% των συνολικών flip-flops. Η επίδραση αυτή αποτυπώνεται ξεκάθαρα στα αποτελέσματα μετά τη δρομολόγηση, όπου η συνολική κατανάλωση ισχύος μειώθηκε κατά 25,1\% (από 10,46 mW σε 7,83 mW), κυρίως λόγω του περιορισμού της κατανάλωσης του δικτύου ρολογιού και της Internal Power. Επιπλέον, η επιφάνεια μειώθηκε εντυπωσιακά κατά $\approx$14\% (από $34.627~\mu m^2$ σε $29.770~\mu m^2$), πιθανώς λόγω της αφαίρεσης των πολυπλεκτών επανατροφοδότησης που αντικαταστάθηκαν από τη λογική clock gating, ενώ το Setup Slack παρέμεινε σε εξαιρετικά επίπεδα, αποδεικνύοντας ότι η εξοικονόμηση ενέργειας δεν επιβάρυνε την απόδοση.
