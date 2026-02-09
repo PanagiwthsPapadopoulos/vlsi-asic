@@ -1,0 +1,72 @@
+* The organization, structure, and layout of this file are copyrights and
+* confidential and proprietary trade secrets of Cadence Design Systems, Inc.,
+* subject to the terms and conditions of the license agreement in effect
+* between you and Cadence Design Systems, Inc. This file and its information
+* may not be disclosed, sold, or otherwise transferred to any third party
+* without the express written consent of Cadence Design Systems, Inc. Export
+* of any or all of this file in violation of any statute or regulation is
+* strictly prohibited.
+* 
+
+FORMAT: 11.0
+PROJECT: picorv32_wb
+NET: VDD 
+CREATOR: smg
+
+CREATED: 2025-Nov-27 15:58:26 (2025-Nov-27 13:58:26 GMT)
+
+LAYOUT_XMIN: 0
+LAYOUT_YMIN: 0
+LAYOUT_XMAX: 500000
+LAYOUT_YMAX: 500080
+
+NODES: 14267
+NODE_FILE: VDD.mnode
+RESISTORS: 15274
+INDUCTORS: 0
+
+LAYERS: 27
+LAYER: METAL_11 M 8 VDD.ml00
+LAYER: VIA_10 V 10 VDD.ml01
+LAYER: METAL_10 M 119 VDD.ml02
+LAYER: VIA_9 V 122 VDD.ml03
+LAYER: METAL_9 M 257 VDD.ml04
+LAYER: VIA_8 V 244 VDD.ml05
+LAYER: METAL_8 M 181 VDD.ml06
+LAYER: VIA_7 V 238 VDD.ml07
+LAYER: METAL_7 M 116 VDD.ml08
+LAYER: VIA_6 V 238 VDD.ml09
+LAYER: METAL_6 M 116 VDD.ml10
+LAYER: VIA_5 V 238 VDD.ml11
+LAYER: METAL_5 M 122 VDD.ml12
+LAYER: VIA_4 V 238 VDD.ml13
+LAYER: METAL_4 M 116 VDD.ml14
+LAYER: VIA_3 V 238 VDD.ml15
+LAYER: METAL_3 M 120 VDD.ml16
+LAYER: VIA_2 V 238 VDD.ml17
+LAYER: METAL_2 M 128 VDD.ml18
+LAYER: VIA_1 V 248 VDD.ml19
+LAYER: METAL_1 M 11939 VDD.ml20
+LAYER: CONT V 0 VDD.ml21
+LAYER: POLYCIDE P 0 VDD.ml22
+LAYER: P_SOURCE_DRAIN D 0 VDD.ml23
+LAYER: N_SOURCE_DRAIN D 0 VDD.ml24
+LAYER: CSUBSTRATE M 0 VDD.ml25
+LAYER: REDUCED V 0 VDD.ml26
+
+CUT_LAYER: none
+GRID_CAP: false
+DIFF_CAP: false
+NUM_PINS: 9990
+PINS: VDD.bmpin
+NUM_INSTANCE_TAPS: 9990
+INSTANCES: VDD.bminst
+NUM_INSTANCES: 9990
+I_LOADS:
+NODE_MAP:
+RESISTOR_MAP:
+OUTPUT_WLT: drawn
+LAYOUT_SCALE_FACTOR: 1
+TEMPERATURE: 25
+BINARY_INST: true
+MICRON_UNITS: 2000

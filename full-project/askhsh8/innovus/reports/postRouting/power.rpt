@@ -1,0 +1,401 @@
+
+Power Net Detected:
+        Voltage	    Name
+          1.32V	    VDD
+             0V	    VSS
+Using Power View: analysis1.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: deleting AAE DB due to opIsDesignInPostRouteState() is changed ...
+AAE DB initialization (MEM=5708.18 CPU=0:00:00.1 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: picorv32_pads
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'picorv32_pads' of instances=11396 and nets=12721 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design picorv32_pads.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:03.9  Real Time: 0:00:04.0  MEM: 5682.180M)
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=5689.7)
+siFlow : Timing analysis mode is single, using late cdB files
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_stb_o has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_stb_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[0] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[1] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[2] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[3] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_we_o has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_we_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[0] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[1] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[2] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[3] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[4] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[5] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[5]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[6] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[6]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[7] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[7]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[8] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[8]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[9] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[9]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[10] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[10]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[11] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[11]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[12] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[12]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[13] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[13]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[14]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[15]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[16]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[17]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[18]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[19]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[20]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[21]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[22]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[23]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[24]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[25]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[26]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[27]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[28]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[29]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[30]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[31]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net mem_instr. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[5]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[6]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[7]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[8]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[9]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[10]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[11]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[12]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[13]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[14]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[15]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[16]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[17]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[18]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[19]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[20]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[21]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[22]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[23]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[24]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[25]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[26]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[27]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[28]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[29]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[30]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_insn[31]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_valid. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[22]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[23]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[24]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[25]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[26]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[27]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[28]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[29]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[30]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[31]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[5]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[6]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[7]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[8]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[9]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[10]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[11]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[12]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[13]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[14]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[15]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[16]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[17]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[18]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[19]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[20]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[21]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[22]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[23]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[24]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[25]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[26]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[27]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[28]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[29]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[30]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[31]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net trap. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_cyc_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[8]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[6]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[5]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[9]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[11]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[13]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[14]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs2[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[10]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[7]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[15]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[12]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[21]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[20]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[19]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[18]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[17]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net pcpi_rs1[16]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+Total number of fetched objects 12178
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=5752.73 CPU=0:00:03.2 REAL=0:00:03.0)
+End delay calculation (fullDC). (MEM=5752.73 CPU=0:00:04.0 REAL=0:00:04.0)
+
+Begin Power Analysis
+
+          1.32V	    VDD
+             0V	    VSS
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5156.21MB/7038.76MB/14110.30MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(250MHz) CK: assigning clock clk to net wb_clk_i
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5157.33MB/7038.76MB/14110.30MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5157.33MB/7038.76MB/14110.30MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT)
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 10%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 20%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 30%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 40%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 50%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 60%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 70%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 80%
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 90%
+
+Finished Levelizing
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT)
+
+Starting Activity Propagation
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2025-Dec-08 12:39:21 (2025-Dec-08 10:39:21 GMT): 10%
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 20%
+
+Finished Activity Propagation
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5157.96MB/7038.76MB/14110.30MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT)
+ ... Calculating switching power
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 10%
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 20%
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 30%
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 40%
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Dec-08 12:39:22 (2025-Dec-08 10:39:22 GMT): 60%
+2025-Dec-08 12:39:23 (2025-Dec-08 10:39:23 GMT): 70%
+2025-Dec-08 12:39:23 (2025-Dec-08 10:39:23 GMT): 80%
+2025-Dec-08 12:39:23 (2025-Dec-08 10:39:23 GMT): 90%
+
+Finished Calculating power
+2025-Dec-08 12:39:24 (2025-Dec-08 10:39:24 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=5159.58MB/7046.76MB/14110.30MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5159.71MB/7046.76MB/14110.30MB)
+
+Ended Power Analysis: (cpu=0:00:03, real=0:00:03, mem(process/total/peak)=5159.71MB/7046.76MB/14110.30MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=5159.71MB/7046.76MB/14110.30MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2025-Dec-08 12:39:24 (2025-Dec-08 10:39:24 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32_pads
+*
+*	Liberty Libraries used:
+*	        analysis1: /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib
+*	        analysis1: /mnt/apps/prebuilt/eda/designkits/GPDK/giolib045/lan/flow/rfkit/reference_libs/GPDK045/giolib045_v3.5/timing/pads_SS_s1vg.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : analysis1
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+  4 instances have no static power
+** WARN:  (VOLTUS_POWR-2152): Instance corner_ll (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance corner_lr (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance corner_ul (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance corner_ur (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:      253.66580232 	   87.9922%
+Total Switching Power:       5.75506339 	    1.9963%
+Total Leakage Power:        28.86111273 	   10.0114%
+Total Power:               288.28197845
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.792       1.337    0.002771       5.131        1.78
+Macro                                  0           0           0           0           0
+IO                                 248.2       1.919       28.86         279       96.77
+Combinational                      1.667       2.499    0.003094       4.169       1.446
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              253.7       5.755       28.86       288.3         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.32      253.7       5.755       28.86       288.3         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:              pad_wb_clk_i (PADDI):            3.529
+*              Highest Leakage Power:                  pad_trap (PADDO):          0.07626
+*                Total Cap:      1.38192e-10 F
+*                Total instances in design: 11396
+*                Total instances in design with no power:     4
+*                Total instances in design with no activty:     4
+
+*                Total Fillers and Decap:     4
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 4 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=5163.83MB/7046.76MB/14110.30MB)
+

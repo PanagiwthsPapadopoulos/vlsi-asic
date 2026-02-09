@@ -5,6 +5,7 @@
 \usepackage[LGR,T1]{fontenc} % Fixed encoding for Greek
 \usepackage[greek,english]{babel}
 \usepackage{alphabeta} % Allows typing Greek directly
+\usepackage{xcolor} % Required for coloring negative slack red
 
 % --- Overflow Fixes ---
 \usepackage{microtype} % Subtle spacing adjustments to fit more text per line
@@ -18,10 +19,14 @@
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage{caption}
-\usepackage[breaklinks=true]{hyperref} % Clickable links that can break across lines
+\usepackage[hidelinks]{hyperref} % Clickable links that can break across lines
 \usepackage{titlesec}
 \usepackage{parskip}
 \usepackage{amsmath}
+
+% --- Numbering Fix (Chapter.Number) ---
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
 
 % --- Redefine \texttt to allow breaking (Optional but recommended for file paths) ---
 \newcommand{\code}[1]{\texttt{\detokenize{#1}}}
@@ -67,7 +72,5 @@
 \section{Άσκηση 8}
 \input{chapters/task8}
 \newpage
-
-
 
 \end{document}

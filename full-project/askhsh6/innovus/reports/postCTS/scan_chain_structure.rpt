@@ -1,0 +1,7 @@
+*** Scan Trace Summary (runtime: cpu: 0:00:00.0 , real: 0:00:00.0): 
+Successfully traced 1 scan chain  (total 2399 scan bits).
+Start applying DEF ordered sections ...
+Successfully applied all DEF ordered sections.
+*** Scan Sanity Check Summary:
+*** 1 scan chain  passed sanity check.
+save out the reporting file "scanChain.rpt"

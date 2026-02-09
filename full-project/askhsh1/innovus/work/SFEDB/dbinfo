@@ -1,0 +1,16 @@
+designName: picorv32_wb 
+numXParts: 1 
+numYParts: 1 
+minX: 0 
+minY: 0 
+maxX: 2500000 
+maxY: 2500400 
+dbUnit: 10000 
+maxDEFUnit: 2000 
+HALO: 12 
+totalNumCells: 9990 
+totalNumIgnoredCells: 0 
+hasCellInstNameIDMap: 1 
+globalDelimiter: / 
+defInstDataFile: defInstData 
+version: 1.1

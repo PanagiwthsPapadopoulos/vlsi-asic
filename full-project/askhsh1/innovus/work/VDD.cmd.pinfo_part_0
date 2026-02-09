@@ -1,0 +1,23 @@
+
+Begin Preparing Data for Parasitic Extraction
+.
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=264.24MB/4181.52MB/2462.68MB)
+
+Begin Parasitic Extraction
+
+Nets to Extract:
+VDD
+
+   0% at 15:58:24 11/27/2025 
+
+ 100% at 15:58:24 11/27/2025 
+
+Ended Parasitic Extraction: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=265.98MB/4181.52MB/2462.68MB)
+
+Hostname cn89.it.auth.gr
+
+Wall clock 6.153725
+
+CPU time 1.215563
+
+Peak memory (process): 354791424

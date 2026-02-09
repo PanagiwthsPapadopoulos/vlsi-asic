@@ -1,0 +1,17 @@
+################################################################################
+#
+# Innovus mode file
+# Created by Genus(TM) Synthesis Solution on 11/28/2025 14:37:20
+#
+################################################################################
+
+
+# General Mode Settings
+################################################################################
+
+set_db timing_apply_default_primary_input_assertion false
+set_db design_power_effort high
+set_db opt_leakage_to_dynamic_ratio 0.0
+set_db timing_analysis_async_checks no_async
+set_db extract_rc_layer_independent 1
+set_db place_global_reorder_scan false

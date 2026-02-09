@@ -1,0 +1,83 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -checkType hold }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -activeSetupViews { analysis1 } }
+catch { setOptMode -autoSetupViews { analysis1} }
+catch { setOptMode -autoTDGRSetupViews { analysis1} }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -preserveAllSequential false }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setPathGroupOptions default -effortLevel low }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setPathGroupOptions reg2out -effortLevel low }
+catch { setPathGroupOptions in2reg -effortLevel low }
+catch { setPathGroupOptions in2out -effortLevel low }
+catch { setExtractRCMode  -engine preRoute }
+catch {setNanoRouteMode -quiet -drouteEndIteration 5}
+catch {setNanoRouteMode -quiet -drouteFixAntenna true}
+catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
+catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 9.900000}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 1}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 11}
+catch {setNanoRouteMode -quiet -routeWithSiDriven true}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -timingEngine ".timing_file_797874.tif.gz"}
+
+catch { setPlaceMode -place_detail_check_route false }
+catch { setPlaceMode -place_detail_preserve_routing true }
+catch { setPlaceMode -place_detail_remove_affected_routing false }
+catch { setPlaceMode -place_detail_swap_eeq_cells false }
+catch { setPlaceMode -place_global_clock_gate_aware true }
+catch { setPlaceMode -place_global_cong_effort high }
+catch { setPlaceMode -place_global_ignore_scan true }
+catch { setPlaceMode -place_global_ignore_spare false }
+catch { setPlaceMode -place_global_module_aware_spare false }
+catch { setPlaceMode -place_global_place_io_pins true }
+catch { setPlaceMode -place_global_reorder_scan true }
+catch { setPlaceMode -powerDriven false }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setUsefulSkewMode -ecoRoute false }
+catch { setUsefulSkewMode -maxAllowedDelay 1 }
+catch { setUsefulSkewMode -noBoundary false }
+catch { setSrouteMode -viaConnectToShape noshape }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setAddRingMode -avoid_short false }
+catch { setAddRingMode -extend_over_row false }
+catch { setAddRingMode -ignore_rows false }
+catch { setAddRingMode -orthogonal_only true }
+catch { setAddRingMode -ring_target default }
+catch { setAddRingMode -skip_crossing_trunks none }
+catch { setAddRingMode -skip_via_on_pin standardcell }
+catch { setAddRingMode -skip_via_on_wire_shape noshape }
+catch { setAddRingMode -stacked_via_bottom_layer Metal1 }
+catch { setAddRingMode -stacked_via_top_layer Metal11 }
+catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setAddStripeMode -allow_jog {padcore_ring block_ring} }
+catch { setAddStripeMode -stacked_via_bottom_layer Metal1 }
+catch { setAddStripeMode -stacked_via_top_layer Metal11 }
+catch { setRouteMode -earlyGlobalHonorMsvRouteConstraint false }
+catch { setRouteMode -earlyGlobalRoutePartitionPinGuide true }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setEndCapMode -boundary_tap false }
+catch { setFPlanMode -defaultTechSite CoreSite }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

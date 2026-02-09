@@ -1,0 +1,211 @@
+{
+ "filetype": "conformal-table",
+ "data": [
+  {
+   "Object": "/wbm_stb_o_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/wbm_cyc_o_reg",
+   "LEC representative": "/wbm_cyc_o_reg",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_rs2_reg[1]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[1]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[1]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_rs2_reg[2]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[2]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[2]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_rs2_reg[3]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[3]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[3]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_rs2_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[4]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[4]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_rs2_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[11]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[11]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[21]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[22]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[23]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[24]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[25]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[26]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[27]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[28]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[29]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[30]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/decoded_imm_j_reg[31]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "LEC representative": "/picorv32_core/decoded_imm_j_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/genblk2.pcpi_div/pcpi_wr_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/picorv32_core/genblk2.pcpi_div/pcpi_ready_reg",
+   "LEC representative": "/picorv32_core/genblk2.pcpi_div/pcpi_ready_reg",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  }
+ ],
+ "cols": [
+  {
+   "key": "Object"
+  },
+  {
+   "key": "Type"
+  },
+  {
+   "key": "Design"
+  },
+  {
+   "key": "User Setup representative"
+  },
+  {
+   "key": "LEC representative"
+  },
+  {
+   "key": "User Setup phase"
+  },
+  {
+   "key": "LEC phase"
+  }
+ ],
+ "sort": [
+  "-highlite"
+ ]
+}

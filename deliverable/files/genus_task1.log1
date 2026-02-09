@@ -1,0 +1,353 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[17:57:48.187905] Configured Lic search path (21.01-s002): 5280@cadence.it.auth.gr
+
+Version: 21.15-s080_1, built Fri Sep 23 02:57:55 PDT 2022
+Options: 
+Date:    Thu Nov 27 17:57:48 2025
+Host:    cn91.it.auth.gr (x86_64 w/Linux 5.14.0-570.52.1.el9_6.x86_64) (12cores*12cpus*1physical cpu*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB) (49034320KB)
+PID:     1375400
+OS:      Rocky Linux release 9.6 (Blue Onyx)
+
+
+[17:57:48.248226] Periodic Lic check successful
+[17:57:48.248235] Feature usage summary:
+[17:57:48.248240] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (11 seconds elapsed).
+
+WARNING: This version of the tool is 1161 days old.
+@genus:root: 1> report_timing -from [all_registers] -to [all_registers] > reports/r2r.rpt
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [all_registers]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+Failed on find_unique_design
+@genus:root: 2> report_timing -from [all_inputs]    -to [all_registers] > reports/i2r.rpt
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [all_inputs]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 3> report_timing -from [all_registers] -to [all_outputs]   > reports/r2o.rpt
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [all_registers]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 4> report_timing -from [all_inputs] -to [all_outputs] > reports/i20.rpt
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [all_inputs]
+        : There is no design here.
+Failed on find_unique_design
+@genus:root: 5> read_db
+Error   : Command read_db requires either a file name argument or option -from_tcl. [DATABASE-119] [read_db]
+        : read_db called with neither a file name nor option -from_tcl.
+        : To read a database from a file, specify the file name and do not use option -from_tcl. To read a database from a Tcl variable, specify option -from_tcl and do not give a file name.
+1
+@genus:root: 6> read_db genus_invis_des/genus.v
+Reading database file 'genus_invis_des/genus.v'.
+Warning : Could not open file. [TUI-504]
+        : Cannot open file 'genus_invis_des/genus.v' for reading: No such file or directory.
+        : Check permissions of the file and directory.
+1
+@genus:root: 7> read_db genus_invis_des/genus.g
+Reading database file 'genus_invis_des/genus.g'.
+Warning : Could not open file. [TUI-504]
+        : Cannot open file 'genus_invis_des/genus.g' for reading: No such file or directory.
+1
+@genus:root: 8> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.v
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.v'.
+Warning : Could not open file. [TUI-504]
+        : Not a database.
+1
+@genus:root: 9> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.g
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.g'.
+Warning : Could not open file. [TUI-504]
+        : Not a database.
+1
+@genus:root: 10> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.mode
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.mode'.
+Warning : Could not open file. [TUI-504]
+        : Not a database.
+1
+@genus:root: 11> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des'.
+Warning : Could not open file. [TUI-504]
+        : Error reading from file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des': Is a directory.
+1
+@genus:root: 12> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.mode
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.mode'.
+Warning : Could not open file. [TUI-504]
+        : Not a database.
+1
+@genus:root: 13> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.mode
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.mode'.
+Warning : Could not open file. [TUI-504]
+        : Not a database.
+1
+@genus:root: 14> read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+Reading database file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl'.
+Warning : Could not open file. [TUI-504]
+        : Not a database.
+1
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 465s, ST: 17s, FG: 17s, CPU: 3.4%}, MEM {curr: 0.7G, peak: 0.7G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.1, cpu: 12, total: 46.8G, free: 10.0G}
+@genus:root: 15> source
+Error   : A required argument was not specified. [TUI-202] [parse_options]
+        : An argument of type '<string>' was not specified.
+        : Rerun the command specifying all required arguments.
+
+Usage: source [-quiet] [-verbose] [-rsrc] [-rsrcid] [-echo] <string>
+
+    [-quiet]:
+        do not print line-by-line information 
+    [-verbose]:
+        print line-by-line information 
+    [-rsrc]:
+        skip unsupported option 
+    [-rsrcid]:
+        skip unsupported option 
+    [-echo]:
+        echo each line 
+    <string>:
+        the file to source 
+@genus:root: 16> source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/
+File '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/' cannot be opened for reading.
+1
+@genus:root: 17> source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+Sourcing '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl' (Thu Nov 27 18:06:20 EET 2025)...
+#@ Begin verbose source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+@file(genus.genus_setup.tcl) 17: if {[::legacy::find -design design:picorv32_wb] ne ""} {
+  puts "** A design with the same name is already loaded. It will be removed. **"
+  delete_obj design:picorv32_wb
+}
+@file(genus.genus_setup.tcl) 25: ::legacy::set_attribute -quiet force_tui_is_remote 1 /
+@file(genus.genus_setup.tcl) 30: ::legacy::set_attribute library {/mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib} /
+
+Threads Configured:3
+
+  Message Summary for Library fast_vdd1v2_basicCells.lib:
+  *******************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  *******************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.320000, 0.000000) in library 'fast_vdd1v2_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+  Setting attribute of root '/': 'library' = /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib
+@file(genus.genus_setup.tcl) 32: ::legacy::set_attribute lef_library {/mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_tech.lef /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_macro.lef} /
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HV' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VV' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+
+  According to lef_library, there are total 11 routing layers [ V(5) / H(6) ]
+
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF2RX1 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF2RX2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF2X1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF2X2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF4RX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF4RX2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF4X1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFF4X2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL16 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL32 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FSWNX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FSWX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWDNX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWDX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWNX1 cannot be found in library.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-279'.
+  Setting attribute of root '/': 'lef_library' = /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_tech.lef /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_macro.lef
+@file(genus.genus_setup.tcl) 33: ::legacy::set_attribute qrc_tech_file /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch /
+
+  According to qrc_tech_file, there are total 11 routing layers [ V(5) / H(6) ]
+
+  Setting attribute of root '/': 'qrc_tech_file' = /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch
+@file(genus.genus_setup.tcl) 38: read_netlist -top picorv32_wb genus_invs_des/genus.v
+  Done reading and elaborating the structural design 'picorv32_wb'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+@file(genus.genus_setup.tcl) 39: read_metric -id current genus_invs_des/genus.metrics.json
+@file(genus.genus_setup.tcl) 41: phys::read_script genus_invs_des/genus.g
+Sourcing script file genus_invs_des/genus.g...
+Done reading script file genus_invs_des/genus.g.
+@file(genus.genus_setup.tcl) 42: puts "\n** Restoration Completed **\n"
+
+** Restoration Completed **
+
+@file(genus.genus_setup.tcl) 48: if {"[string_representation [::legacy::get_attribute program_version /]]" != "21.15-s080_1"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-91] "golden program_version: 21.15-s080_1  current program_version: [string_representation [::legacy::get_attribute program_version /]]"
+}
+@file(genus.genus_setup.tcl) 52: if {"[string_representation [::legacy::get_attribute startup_license /]]" != "Genus_Synthesis"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-91] "golden license: Genus_Synthesis  current license: [string_representation [::legacy::get_attribute startup_license /]]"
+}
+@file(genus.genus_setup.tcl) 56: set _slk_ [::legacy::get_attribute slack design:picorv32_wb]
+@file(genus.genus_setup.tcl) 57: if {[regexp {^-?[0-9.]+$} $_slk_]} {
+  set _slk_ [format %.1f $_slk_]
+}
+@file(genus.genus_setup.tcl) 60: if {$_slk_ != "994.2"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-92] "golden slack: 994.2,  current slack: $_slk_"
+}
+@file(genus.genus_setup.tcl) 63: unset _slk_
+@file(genus.genus_setup.tcl) 66: set _tns_ [::legacy::get_attribute tns design:picorv32_wb]
+@file(genus.genus_setup.tcl) 67: if {[regexp {^-?[0-9.]+$} $_tns_]} {
+  set _tns_ [format %.0f $_tns_]
+}
+@file(genus.genus_setup.tcl) 70: if {$_tns_ != "0"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-92] "golden tns: 0,  current tns: $_tns_"
+}
+@file(genus.genus_setup.tcl) 73: unset _tns_
+@file(genus.genus_setup.tcl) 75: set _cell_area_ [::legacy::get_attribute cell_area design:picorv32_wb]
+@file(genus.genus_setup.tcl) 76: if {[regexp {^-?[0-9.]+$} $_cell_area_]} {
+  set _cell_area_ [format %.0f $_cell_area_]
+}
+@file(genus.genus_setup.tcl) 79: if {$_cell_area_ != "34177"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-92] "golden cell area: 34177,  current cell area: $_cell_area_"
+}
+@file(genus.genus_setup.tcl) 82: unset _cell_area_
+@file(genus.genus_setup.tcl) 84: set _net_area_ [::legacy::get_attribute net_area design:picorv32_wb]
+@file(genus.genus_setup.tcl) 85: if {[regexp {^-?[0-9.]+$} $_net_area_]} {
+  set _net_area_ [format %.0f $_net_area_]
+}
+@file(genus.genus_setup.tcl) 88: if {$_net_area_ != "13902"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-92] "golden net area: 13902,  current net area: $_net_area_"
+}
+@file(genus.genus_setup.tcl) 91: unset _net_area_
+#@ End verbose source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+@genus:root: 18> report_timing -from [all_registers] -to [all_registers] > reports/r2r.rpt
+Warning : Timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32_wb'.
+        : Use 'check_timing_intent' or 'report timing -lint' to report more information.
+@genus:root: 19> report_timing -from [all_inputs]    -to [all_registers] > reports/i2r.rpt
+Warning : Timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32_wb'.
+@genus:root: 20> report_timing -from [all_registers] -to [all_outputs]   > reports/r2o.rpt
+Warning : Timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32_wb'.
+@genus:root: 21> report_timing -from [all_inputs] -to [all_outputs] > reports/i20.rpt
+Warning : Timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32_wb'.
+Fatal error: glibc detected an invalid stdio handle
+
+Fatal internal error, code 6 (Aborted)
+
+Dumping stack trace (tid:7f12fa7bc5c0/main thread).

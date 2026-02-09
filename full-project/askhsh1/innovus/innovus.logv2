@@ -1,0 +1,1143 @@
+[12/21 18:27:57      0s] 
+[12/21 18:27:57      0s] Cadence Innovus(TM) Implementation System.
+[12/21 18:27:57      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/21 18:27:57      0s] 
+[12/21 18:27:57      0s] Version:	v21.35-s114_1, built Thu Oct 13 12:11:47 PDT 2022
+[12/21 18:27:57      0s] Options:	
+[12/21 18:27:57      0s] Date:		Sun Dec 21 18:27:57 2025
+[12/21 18:27:57      0s] Host:		cn99.it.auth.gr (x86_64 w/Linux 5.14.0-611.13.1.el9_7.x86_64) (12cores*12cpus*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+[12/21 18:27:57      0s] OS:		Rocky Linux release 9.7 (Blue Onyx)
+[12/21 18:27:57      0s] 
+[12/21 18:27:57      0s] License:
+[12/21 18:27:57      0s] 		[18:27:57.187889] Configured Lic search path (21.01-s002): 5280@cadence.it.auth.gr
+
+[12/21 18:27:58      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[12/21 18:27:58      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/21 18:29:03     15s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+[12/21 18:29:19     19s] @(#)CDS: NanoRoute 21.35-s114_1 NR220912-2004/21_15-UB (database version 18.20.592_1) {superthreading v2.17}
+[12/21 18:29:19     19s] @(#)CDS: AAE 21.15-s039 (64bit) 10/13/2022 (Linux 3.10.0-693.el7.x86_64)
+[12/21 18:29:19     19s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[12/21 18:29:19     19s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[12/21 18:29:19     19s] @(#)CDS: CPE v21.15-s076
+[12/21 18:29:19     19s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[12/21 18:29:19     19s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[12/21 18:29:19     19s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/21 18:29:19     19s] @(#)CDS: RCDB 11.15.0
+[12/21 18:29:19     19s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[12/21 18:29:19     19s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[12/21 18:29:19     19s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1026889_cn99.it.auth.gr_ppapadoe_stD7yA.
+
+[12/21 18:29:19     19s] Change the soft stacksize limit to 0.2%RAM (95 mbytes). Set global soft_stack_size_limit to change the value.
+[12/21 18:29:28     21s] 
+[12/21 18:29:28     21s] **INFO:  MMMC transition support version v31-84 
+[12/21 18:29:28     21s] 
+[12/21 18:29:28     21s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/21 18:29:28     21s] <CMD> suppressMessage ENCEXT-2799
+[12/21 18:29:28     21s] <CMD> getVersion
+[12/21 18:29:28     21s] <CMD> getVersion
+[12/21 18:29:28     21s] <CMD> getVersion
+[12/21 18:29:29     21s] [INFO] Loading PVS 21.12 fill procedures
+[12/21 18:29:30     21s] <CMD> win
+[12/21 18:29:52     23s] <CMD> encMessage warning 0
+[12/21 18:29:52     23s] Suppress "**WARN ..." messages.
+[12/21 18:29:52     23s] <CMD> encMessage debug 0
+[12/21 18:29:52     23s] <CMD> is_common_ui_mode
+[12/21 18:29:52     23s] <CMD> restoreDesign /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat picorv32_wb
+[12/21 18:29:53     23s] #% Begin load design ... (date=12/21 18:29:53, mem=974.0M)
+[12/21 18:29:53     24s] Loading design 'picorv32_wb' saved by 'Innovus' '21.35-s114_1' on 'Thu Nov 27 21:40:42 2025'.
+[12/21 18:29:54     24s] % Begin Load MMMC data ... (date=12/21 18:29:54, mem=977.0M)
+[12/21 18:29:55     24s] % End Load MMMC data ... (date=12/21 18:29:55, total cpu=0:00:00.0, real=0:00:01.0, peak res=977.6M, current mem=977.6M)
+[12/21 18:29:55     24s] 
+[12/21 18:29:55     24s] Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/libs/lef/gsclib045_tech.lef ...
+[12/21 18:29:55     24s] 
+[12/21 18:29:55     24s] Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/libs/lef/gsclib045_macro.lef ...
+[12/21 18:29:55     24s] Set DBUPerIGU to M2 pitch 400.
+[12/21 18:29:55     24s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/21 18:29:55     24s] Type 'man IMPLF-200' for more detail.
+[12/21 18:29:56     24s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[12/21 18:29:56     24s] Loading view definition file from /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/viewDefinition.tcl
+[12/21 18:29:56     24s] Reading lib1 timing library '/mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib' ...
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[12/21 18:29:57     25s] Read 489 cells in library 'fast_vdd1v2' 
+[12/21 18:29:57     25s] Ending "PreSetAnalysisView" (total cpu=0:00:00.5, real=0:00:01.0, peak res=1047.7M, current mem=1004.8M)
+[12/21 18:29:57     25s] *** End library_loading (cpu=0.01min, real=0.02min, mem=23.5M, fe_cpu=0.42min, fe_real=2.00min, fe_mem=1047.1M) ***
+[12/21 18:29:57     25s] % Begin Load netlist data ... (date=12/21 18:29:57, mem=1004.8M)
+[12/21 18:29:57     25s] *** Begin netlist parsing (mem=1047.1M) ***
+[12/21 18:29:58     25s] Created 489 new cells from 1 timing libraries.
+[12/21 18:29:58     25s] Reading netlist ...
+[12/21 18:29:58     25s] Backslashed names will retain backslash and a trailing blank character.
+[12/21 18:29:58     25s] Reading verilogBinary netlist '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.v.bin'
+[12/21 18:29:58     25s] 
+[12/21 18:29:58     25s] *** Memory Usage v#1 (Current mem = 1057.117M, initial mem = 483.848M) ***
+[12/21 18:29:58     25s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:01.0, mem=1057.1M) ***
+[12/21 18:29:58     25s] % End Load netlist data ... (date=12/21 18:29:58, total cpu=0:00:00.1, real=0:00:01.0, peak res=1019.5M, current mem=1016.1M)
+[12/21 18:29:58     25s] Top level cell is picorv32_wb.
+[12/21 18:29:58     25s] Hooked 489 DB cells to tlib cells.
+[12/21 18:29:58     25s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1028.2M, current mem=1028.2M)
+[12/21 18:29:58     25s] Starting recursive module instantiation check.
+[12/21 18:29:58     25s] No recursion found.
+[12/21 18:29:58     25s] Building hierarchical netlist for Cell picorv32_wb ...
+[12/21 18:29:59     25s] *** Netlist is unique.
+[12/21 18:29:59     25s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[12/21 18:29:59     25s] ** info: there are 584 modules.
+[12/21 18:29:59     25s] ** info: there are 10099 stdCell insts.
+[12/21 18:29:59     25s] 
+[12/21 18:29:59     25s] *** Memory Usage v#1 (Current mem = 1110.031M, initial mem = 483.848M) ***
+[12/21 18:29:59     25s] *info: set bottom ioPad orient R0
+[12/21 18:29:59     25s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/21 18:29:59     25s] Type 'man IMPFP-3961' for more detail.
+[12/21 18:29:59     25s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/21 18:29:59     25s] Type 'man IMPFP-3961' for more detail.
+[12/21 18:29:59     25s] Start create_tracks
+[12/21 18:30:00     25s] Loading preference file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/gui.pref.tcl ...
+[12/21 18:30:00     25s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[12/21 18:30:00     25s] Type 'man IMPOPT-3602' for more detail.
+[12/21 18:30:00     25s] Effort level <high> specified for reg2reg path_group
+[12/21 18:30:00     25s] **WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+[12/21 18:30:00     25s] Type 'man IMPOPT-3602' for more detail.
+[12/21 18:30:00     25s] Effort level <low> specified for reg2out path_group
+[12/21 18:30:00     25s] **WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+[12/21 18:30:00     25s] Type 'man IMPOPT-3602' for more detail.
+[12/21 18:30:00     25s] Effort level <low> specified for in2reg path_group
+[12/21 18:30:00     25s] **WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+[12/21 18:30:00     25s] Type 'man IMPOPT-3602' for more detail.
+[12/21 18:30:00     25s] Effort level <low> specified for in2out path_group
+[12/21 18:30:00     25s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[12/21 18:30:00     25s] #WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[12/21 18:30:00     25s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[12/21 18:30:00     25s] addRing command will ignore shorts while creating rings.
+[12/21 18:30:00     25s] addRing command will disallow rings to go over rows.
+[12/21 18:30:00     25s] addRing command will consider rows while creating rings.
+[12/21 18:30:00     25s] The ring targets are set to core/block ring wires.
+[12/21 18:30:00     25s] addStripe will allow jog to connect padcore ring and block ring.
+[12/21 18:30:00     25s] 
+[12/21 18:30:00     25s] **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+[12/21 18:30:00     25s] **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMinRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -bottomRoutingLayer' instead.
+[12/21 18:30:00     25s] Change floorplan default-technical-site to 'CoreSite'.
+[12/21 18:30:00     25s] Extraction setup Delayed 
+[12/21 18:30:00     25s] *Info: initialize multi-corner CTS.
+[12/21 18:30:00     25s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1299.2M, current mem=1063.5M)
+[12/21 18:30:01     25s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/21 18:30:01     25s] Summary for sequential cells identification: 
+[12/21 18:30:01     25s]   Identified SBFF number: 104
+[12/21 18:30:01     25s]   Identified MBFF number: 0
+[12/21 18:30:01     25s]   Identified SB Latch number: 0
+[12/21 18:30:01     25s]   Identified MB Latch number: 0
+[12/21 18:30:01     25s]   Not identified SBFF number: 16
+[12/21 18:30:01     25s]   Not identified MBFF number: 0
+[12/21 18:30:01     25s]   Not identified SB Latch number: 0
+[12/21 18:30:01     25s]   Not identified MB Latch number: 0
+[12/21 18:30:01     25s]   Number of sequential cells which are not FFs: 32
+[12/21 18:30:01     25s] Total number of combinational cells: 327
+[12/21 18:30:01     25s] Total number of sequential cells: 152
+[12/21 18:30:01     25s] Total number of tristate cells: 10
+[12/21 18:30:01     25s] Total number of level shifter cells: 0
+[12/21 18:30:01     25s] Total number of power gating cells: 0
+[12/21 18:30:01     25s] Total number of isolation cells: 0
+[12/21 18:30:01     25s] Total number of power switch cells: 0
+[12/21 18:30:01     25s] Total number of pulse generator cells: 0
+[12/21 18:30:01     25s] Total number of always on buffers: 0
+[12/21 18:30:01     25s] Total number of retention cells: 0
+[12/21 18:30:01     25s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[12/21 18:30:01     25s] Total number of usable buffers: 16
+[12/21 18:30:01     25s] List of unusable buffers:
+[12/21 18:30:01     25s] Total number of unusable buffers: 0
+[12/21 18:30:01     25s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[12/21 18:30:01     25s] Total number of usable inverters: 19
+[12/21 18:30:01     25s] List of unusable inverters:
+[12/21 18:30:01     25s] Total number of unusable inverters: 0
+[12/21 18:30:01     25s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[12/21 18:30:01     25s] Total number of identified usable delay cells: 8
+[12/21 18:30:01     25s] List of identified unusable delay cells:
+[12/21 18:30:01     25s] Total number of identified unusable delay cells: 0
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Deleting Cell Server Begin ...
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Deleting Cell Server End ...
+[12/21 18:30:01     25s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1315.8M, current mem=1308.2M)
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[12/21 18:30:01     25s] Summary for sequential cells identification: 
+[12/21 18:30:01     25s]   Identified SBFF number: 104
+[12/21 18:30:01     25s]   Identified MBFF number: 0
+[12/21 18:30:01     25s]   Identified SB Latch number: 0
+[12/21 18:30:01     25s]   Identified MB Latch number: 0
+[12/21 18:30:01     25s]   Not identified SBFF number: 16
+[12/21 18:30:01     25s]   Not identified MBFF number: 0
+[12/21 18:30:01     25s]   Not identified SB Latch number: 0
+[12/21 18:30:01     25s]   Not identified MB Latch number: 0
+[12/21 18:30:01     25s]   Number of sequential cells which are not FFs: 32
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] Trim Metal Layers:
+[12/21 18:30:01     25s]  Visiting view : analysis1
+[12/21 18:30:01     25s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[12/21 18:30:01     25s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[12/21 18:30:01     25s]  Visiting view : analysis1
+[12/21 18:30:01     25s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[12/21 18:30:01     25s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Deleting Cell Server Begin ...
+[12/21 18:30:01     25s] 
+[12/21 18:30:01     25s] TimeStamp Deleting Cell Server End ...
+[12/21 18:30:01     25s] Reading floorplan file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.fp.gz (mem = 1359.1M).
+[12/21 18:30:01     25s] % Begin Load floorplan data ... (date=12/21 18:30:01, mem=1310.7M)
+[12/21 18:30:01     25s] *info: reset 11161 existing net BottomPreferredLayer and AvoidDetour
+[12/21 18:30:01     25s] Deleting old partition specification.
+[12/21 18:30:02     25s] Set FPlanBox to (0 0 500000 500080)
+[12/21 18:30:02     25s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/21 18:30:02     25s] Type 'man IMPFP-3961' for more detail.
+[12/21 18:30:02     25s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/21 18:30:02     25s] Type 'man IMPFP-3961' for more detail.
+[12/21 18:30:02     25s] Start create_tracks
+[12/21 18:30:02     25s]  ... processed partition successfully.
+[12/21 18:30:02     25s] Reading binary special route file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.fp.spr.gz (Created by Innovus v21.35-s114_1 on Thu Nov 27 21:40:41 2025, version: 1)
+[12/21 18:30:02     26s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1319.8M, current mem=1319.8M)
+[12/21 18:30:02     26s] There are 25 nets with weight being set
+[12/21 18:30:02     26s] There are 25 nets with bottomPreferredRoutingLayer being set
+[12/21 18:30:02     26s] There are 25 nets with avoidDetour being set
+[12/21 18:30:02     26s] Extracting standard cell pins and blockage ...... 
+[12/21 18:30:02     26s] Pin and blockage extraction finished
+[12/21 18:30:02     26s] % End Load floorplan data ... (date=12/21 18:30:02, total cpu=0:00:00.1, real=0:00:01.0, peak res=1320.4M, current mem=1319.8M)
+[12/21 18:30:02     26s] % Begin Load SymbolTable ... (date=12/21 18:30:02, mem=1320.2M)
+[12/21 18:30:02     26s] Reading congestion map file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.route.congmap.gz ...
+[12/21 18:30:02     26s] % End Load SymbolTable ... (date=12/21 18:30:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=1322.3M, current mem=1322.3M)
+[12/21 18:30:02     26s] Loading place ...
+[12/21 18:30:02     26s] % Begin Load placement data ... (date=12/21 18:30:02, mem=1322.4M)
+[12/21 18:30:02     26s] Reading placement file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.place.gz.
+[12/21 18:30:02     26s] ** Reading stdCellPlacement_binary (Created by Innovus v21.35-s114_1 on Thu Nov 27 21:40:41 2025, version# 2) ...
+[12/21 18:30:02     26s] Read Views for adaptive view pruning ...
+[12/21 18:30:02     26s] Read 0 views from Binary DB for adaptive view pruning
+[12/21 18:30:02     26s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1369.1M) ***
+[12/21 18:30:02     26s] Total net length = 1.679e+05 (7.422e+04 9.367e+04) (ext = 1.116e+04)
+[12/21 18:30:02     26s] % End Load placement data ... (date=12/21 18:30:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=1324.6M, current mem=1324.6M)
+[12/21 18:30:02     26s] routingBox: (0 0) (500000 500080)
+[12/21 18:30:02     26s] coreBox:    (40000 39900) (460000 460180)
+[12/21 18:30:02     26s] Un-suppress "**WARN ..." messages.
+[12/21 18:30:02     26s] Reading PG file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.pg.gz, version#2, (Created by Innovus v21.35-s114_1 on       Thu Nov 27 21:40:41 2025)
+[12/21 18:30:03     26s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1366.1M) ***
+[12/21 18:30:03     26s] % Begin Load routing data ... (date=12/21 18:30:03, mem=1325.4M)
+[12/21 18:30:03     26s] Reading routing file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.route.gz.
+[12/21 18:30:03     26s] Reading Innovus routing data (Created by Innovus v21.35-s114_1 on Thu Nov 27 21:40:42 2025 Format: 20.1) ...
+[12/21 18:30:03     26s] *** Total 11102 nets are successfully restored.
+[12/21 18:30:03     26s] *** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1382.1M) ***
+[12/21 18:30:03     26s] % End Load routing data ... (date=12/21 18:30:03, total cpu=0:00:00.1, real=0:00:00.0, peak res=1342.1M, current mem=1341.6M)
+[12/21 18:30:03     26s] Loading Drc markers ...
+[12/21 18:30:03     26s] ... 38 markers are loaded ...
+[12/21 18:30:03     26s] ... 38 geometry drc markers are loaded ...
+[12/21 18:30:03     26s] ... 0 antenna drc markers are loaded ...
+[12/21 18:30:03     26s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[12/21 18:30:03     26s] Reading property file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.prop
+[12/21 18:30:03     26s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1386.2M) ***
+[12/21 18:30:04     26s] Reading dirtyarea snapshot file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.db.da.gz (Create by Innovus v21.35-s114_1 on Thu Nov 27 21:40:42 2025, version: 4).
+[12/21 18:30:04     26s] Loading preRoute extraction data from directory '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/extraction/' ...
+[12/21 18:30:04     26s] Restore PreRoute RC Grid meta data successful.
+[12/21 18:30:04     26s] Extraction setup Started 
+[12/21 18:30:04     26s] 
+[12/21 18:30:04     26s] Trim Metal Layers:
+[12/21 18:30:04     26s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[12/21 18:30:04     26s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[12/21 18:30:04     26s] __QRC_SADV_USE_LE__ is set 0
+[12/21 18:30:06     27s] Metal Layer Id 1 is Metal1 
+[12/21 18:30:06     27s] Metal Layer Id 2 is Metal2 
+[12/21 18:30:06     27s] Metal Layer Id 3 is Metal3 
+[12/21 18:30:06     27s] Metal Layer Id 4 is Metal4 
+[12/21 18:30:06     27s] Metal Layer Id 5 is Metal5 
+[12/21 18:30:06     27s] Metal Layer Id 6 is Metal6 
+[12/21 18:30:06     27s] Metal Layer Id 7 is Metal7 
+[12/21 18:30:06     27s] Metal Layer Id 8 is Metal8 
+[12/21 18:30:06     27s] Metal Layer Id 9 is Metal9 
+[12/21 18:30:06     27s] Metal Layer Id 10 is Metal10 
+[12/21 18:30:06     27s] Metal Layer Id 11 is Metal11 
+[12/21 18:30:06     27s] Via Layer Id 33 is Cont 
+[12/21 18:30:06     27s] Via Layer Id 34 is Via1 
+[12/21 18:30:06     27s] Via Layer Id 35 is Via2 
+[12/21 18:30:06     27s] Via Layer Id 36 is Via3 
+[12/21 18:30:06     27s] Via Layer Id 37 is Via4 
+[12/21 18:30:06     27s] Via Layer Id 38 is Via5 
+[12/21 18:30:06     27s] Via Layer Id 39 is Via6 
+[12/21 18:30:06     27s] Via Layer Id 40 is Via7 
+[12/21 18:30:06     27s] Via Layer Id 41 is Via8 
+[12/21 18:30:06     27s] Via Layer Id 42 is Via9 
+[12/21 18:30:06     27s] Via Layer Id 43 is Via10 
+[12/21 18:30:06     27s] Via Layer Id 44 is Bondpad 
+[12/21 18:30:06     27s] 
+[12/21 18:30:06     27s] Trim Metal Layers:
+[12/21 18:30:06     27s] Generating auto layer map file.
+[12/21 18:30:06     27s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer metal_1 
+[12/21 18:30:06     27s]  lef via Layer Id 1 mapped to tech Id 6 of Layer via_1 
+[12/21 18:30:06     27s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer metal_2 
+[12/21 18:30:06     27s]  lef via Layer Id 2 mapped to tech Id 8 of Layer via_2 
+[12/21 18:30:06     27s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer metal_3 
+[12/21 18:30:06     27s]  lef via Layer Id 3 mapped to tech Id 10 of Layer via_3 
+[12/21 18:30:06     27s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer metal_4 
+[12/21 18:30:06     27s]  lef via Layer Id 4 mapped to tech Id 12 of Layer via_4 
+[12/21 18:30:06     27s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer metal_5 
+[12/21 18:30:06     27s]  lef via Layer Id 5 mapped to tech Id 14 of Layer via_5 
+[12/21 18:30:06     27s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer metal_6 
+[12/21 18:30:06     27s]  lef via Layer Id 6 mapped to tech Id 16 of Layer via_6 
+[12/21 18:30:06     27s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer metal_7 
+[12/21 18:30:06     27s]  lef via Layer Id 7 mapped to tech Id 18 of Layer via_7 
+[12/21 18:30:06     27s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer metal_8 
+[12/21 18:30:06     27s]  lef via Layer Id 8 mapped to tech Id 20 of Layer via_8 
+[12/21 18:30:06     27s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer metal_9 
+[12/21 18:30:06     27s]  lef via Layer Id 9 mapped to tech Id 22 of Layer via_9 
+[12/21 18:30:06     27s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer metal_10 
+[12/21 18:30:06     27s]  lef via Layer Id 10 mapped to tech Id 24 of Layer via_10 
+[12/21 18:30:06     27s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer metal_11 
+[12/21 18:30:06     27s] Metal Layer Id 1 mapped to 5 
+[12/21 18:30:06     27s] Via Layer Id 1 mapped to 6 
+[12/21 18:30:06     27s] Metal Layer Id 2 mapped to 7 
+[12/21 18:30:06     27s] Via Layer Id 2 mapped to 8 
+[12/21 18:30:06     27s] Metal Layer Id 3 mapped to 9 
+[12/21 18:30:06     27s] Via Layer Id 3 mapped to 10 
+[12/21 18:30:06     27s] Metal Layer Id 4 mapped to 11 
+[12/21 18:30:06     27s] Via Layer Id 4 mapped to 12 
+[12/21 18:30:06     27s] Metal Layer Id 5 mapped to 13 
+[12/21 18:30:06     27s] Via Layer Id 5 mapped to 14 
+[12/21 18:30:06     27s] Metal Layer Id 6 mapped to 15 
+[12/21 18:30:06     27s] Via Layer Id 6 mapped to 16 
+[12/21 18:30:06     27s] Metal Layer Id 7 mapped to 17 
+[12/21 18:30:06     27s] Via Layer Id 7 mapped to 18 
+[12/21 18:30:06     27s] Metal Layer Id 8 mapped to 19 
+[12/21 18:30:06     27s] Via Layer Id 8 mapped to 20 
+[12/21 18:30:06     27s] Metal Layer Id 9 mapped to 21 
+[12/21 18:30:06     27s] Via Layer Id 9 mapped to 22 
+[12/21 18:30:06     27s] Metal Layer Id 10 mapped to 23 
+[12/21 18:30:06     27s] Via Layer Id 10 mapped to 24 
+[12/21 18:30:06     27s] Metal Layer Id 11 mapped to 25 
+[12/21 18:30:06     27s] eee: pegPreRouteEnableSaveRestoreRCPatterns:1, retVal:1, doesAnyTechFileNeedExtraction1
+[12/21 18:30:06     27s] eee: Reading patterns meta data.
+[12/21 18:30:06     27s] Restore PreRoute Pattern Extraction data successful in header.
+[12/21 18:30:06     27s] Loading preRoute extracted patterns from file '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/picorv32_wb.techData.gz' ...
+[12/21 18:30:06     27s] readViaRC viaRead:119, nrVia:119
+[12/21 18:30:06     27s] isWireRCValid Validate checksum:4857120, FromFile:4857120accessWirePatterns Pattern count:32760, FromFile:32760 Checksum:4857120, FromFile:4857120
+[12/21 18:30:06     27s] eee: PatternAvail:1, PreRoutePatternReadFailed:0
+[12/21 18:30:06     27s] Restore PreRoute Pattern Extraction data successful.
+[12/21 18:30:06     27s] Completed (cpu: 0:00:00.9 real: 0:00:01.0)
+[12/21 18:30:06     27s] Set Shrink Factor to 1.00000
+[12/21 18:30:06     27s] Summary of Active RC-Corners : 
+[12/21 18:30:06     27s]  
+[12/21 18:30:06     27s]  Analysis View: analysis1
+[12/21 18:30:06     27s]     RC-Corner Name        : rc1
+[12/21 18:30:06     27s]     RC-Corner Index       : 0
+[12/21 18:30:06     27s]     RC-Corner Temperature : 0 Celsius
+[12/21 18:30:06     27s]     RC-Corner Cap Table   : ''
+[12/21 18:30:06     27s]     RC-Corner PreRoute Res Factor         : 1
+[12/21 18:30:06     27s]     RC-Corner PreRoute Cap Factor         : 1
+[12/21 18:30:06     27s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/21 18:30:06     27s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/21 18:30:06     27s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/21 18:30:06     27s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/21 18:30:06     27s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/21 18:30:06     27s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[12/21 18:30:06     27s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[12/21 18:30:06     27s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[12/21 18:30:06     27s]     RC-Corner Technology file: '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/libs/mmmc/rc1/gpdk045.tch'
+[12/21 18:30:06     27s] 
+[12/21 18:30:06     27s] Trim Metal Layers:
+[12/21 18:30:06     27s] LayerId::1 widthSet size::2
+[12/21 18:30:06     27s] LayerId::2 widthSet size::2
+[12/21 18:30:06     27s] LayerId::3 widthSet size::2
+[12/21 18:30:06     27s] LayerId::4 widthSet size::2
+[12/21 18:30:06     27s] LayerId::5 widthSet size::2
+[12/21 18:30:06     27s] LayerId::6 widthSet size::2
+[12/21 18:30:06     27s] LayerId::7 widthSet size::2
+[12/21 18:30:06     27s] LayerId::8 widthSet size::2
+[12/21 18:30:06     27s] LayerId::9 widthSet size::2
+[12/21 18:30:06     27s] LayerId::10 widthSet size::2
+[12/21 18:30:06     27s] LayerId::11 widthSet size::2
+[12/21 18:30:06     27s] Checksum of RCGrid density data read::(132 132) passed::1
+[12/21 18:30:06     27s] Restore PreRoute RC Grid data successful.
+[12/21 18:30:06     27s] Restored RC grid for preRoute extraction.
+[12/21 18:30:06     27s] eee: pegSigSF::1.070000
+[12/21 18:30:06     27s] Initializing multi-corner resistance tables ...
+[12/21 18:30:06     27s] ReadRoutingBlockageFactor status::1
+[12/21 18:30:06     27s] Restore PreRoute Blockage data successful.
+[12/21 18:30:06     27s] eee: Reading Grid unit RC.
+[12/21 18:30:06     27s] pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::rc1
+[12/21 18:30:06     27s] RCCorner in design data Name::rc1 Tech::/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/libs/mmmc/rc1/gpdk045.tch 0.000000 1.000000 1.000000 
+[12/21 18:30:06     27s] RCCorner in saved data Name::rc1 Tech::/home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat/libs/mmmc/rc1/gpdk045.tch 0.000000 1.000000 1.000000 
+[12/21 18:30:06     27s] Unit RC read checksum: 11264, count: 11264, status: 1
+[12/21 18:30:06     27s] Number of RC corner to be extracted::0
+[12/21 18:30:06     27s] eee: l::1 avDens::0.111752 usedTrk::2262.987638 availTrk::20250.000000 sigTrk::2262.987638
+[12/21 18:30:06     27s] eee: l::2 avDens::0.232303 usedTrk::4468.925056 availTrk::19237.500000 sigTrk::4468.925056
+[12/21 18:30:06     27s] eee: l::3 avDens::0.225302 usedTrk::4562.359694 availTrk::20250.000000 sigTrk::4562.359694
+[12/21 18:30:06     27s] eee: l::4 avDens::0.180967 usedTrk::3481.353801 availTrk::19237.500000 sigTrk::3481.353801
+[12/21 18:30:06     27s] eee: l::5 avDens::0.115175 usedTrk::2332.295935 availTrk::20250.000000 sigTrk::2332.295935
+[12/21 18:30:06     27s] eee: l::6 avDens::0.100859 usedTrk::1905.780904 availTrk::18895.500000 sigTrk::1905.780904
+[12/21 18:30:06     27s] eee: l::7 avDens::0.057345 usedTrk::1130.277775 availTrk::19710.000000 sigTrk::1130.277775
+[12/21 18:30:06     27s] eee: l::8 avDens::0.034868 usedTrk::646.922690 availTrk::18553.500000 sigTrk::646.922690
+[12/21 18:30:06     27s] eee: l::9 avDens::0.032881 usedTrk::648.084062 availTrk::19710.000000 sigTrk::648.084062
+[12/21 18:30:06     27s] eee: l::10 avDens::0.095641 usedTrk::732.682835 availTrk::7660.800000 sigTrk::732.682835
+[12/21 18:30:06     27s] eee: l::11 avDens::0.091030 usedTrk::737.343130 availTrk::8100.000000 sigTrk::737.343130
+[12/21 18:30:07     27s] {RT rc1 0 10 10 {8 0} {9 0} 2}
+[12/21 18:30:07     27s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.273002 uaWl=1.000000 uaWlH=0.383366 aWlH=0.000000 lMod=0 pMax=0.843200 pMod=81 wcR=0.772700 newSi=0.001600 wHLS=1.931750 siPrev=0 viaL=0.000000
+[12/21 18:30:07     27s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[12/21 18:30:07     27s] Restore PreRoute all RC Grid data successful.Start generating vias ..
+[12/21 18:30:07     27s] #create default rule from bind_ndr_rule rule=0x7f19f364f2f0 0x7f19d7348568
+[12/21 18:30:07     27s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[12/21 18:30:07     27s] #Skip building auto via since it is not turned on.
+[12/21 18:30:07     27s] Extracting standard cell pins and blockage ...... 
+[12/21 18:30:07     27s] Pin and blockage extraction finished
+[12/21 18:30:07     27s] Via generation completed.
+[12/21 18:30:07     27s] % Begin Load power constraints ... (date=12/21 18:30:07, mem=1392.5M)
+[12/21 18:30:07     28s] % End Load power constraints ... (date=12/21 18:30:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=1399.6M, current mem=1399.6M)
+[12/21 18:30:08     28s] % Begin load AAE data ... (date=12/21 18:30:07, mem=1437.8M)
+[12/21 18:30:08     28s] AAE DB initialization (MEM=1508.5 CPU=0:00:00.1 REAL=0:00:00.0) 
+[12/21 18:30:08     28s] % End load AAE data ... (date=12/21 18:30:08, total cpu=0:00:00.7, real=0:00:00.0, peak res=1447.2M, current mem=1447.2M)
+[12/21 18:30:09     28s] Restoring CCOpt config...
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[12/21 18:30:09     28s] Summary for sequential cells identification: 
+[12/21 18:30:09     28s]   Identified SBFF number: 104
+[12/21 18:30:09     28s]   Identified MBFF number: 0
+[12/21 18:30:09     28s]   Identified SB Latch number: 0
+[12/21 18:30:09     28s]   Identified MB Latch number: 0
+[12/21 18:30:09     28s]   Not identified SBFF number: 16
+[12/21 18:30:09     28s]   Not identified MBFF number: 0
+[12/21 18:30:09     28s]   Not identified SB Latch number: 0
+[12/21 18:30:09     28s]   Not identified MB Latch number: 0
+[12/21 18:30:09     28s]   Number of sequential cells which are not FFs: 32
+[12/21 18:30:09     28s]  Visiting view : analysis1
+[12/21 18:30:09     28s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[12/21 18:30:09     28s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[12/21 18:30:09     28s]  Visiting view : analysis1
+[12/21 18:30:09     28s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[12/21 18:30:09     28s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[12/21 18:30:09     28s]   Extracting original clock gating for clk...
+[12/21 18:30:09     28s]     clock_tree clk contains 2399 sinks and 0 clock gates.
+[12/21 18:30:09     28s]   Extracting original clock gating for clk done.
+[12/21 18:30:09     28s]   The skew group clk/constraint1 was created. It contains 2399 sinks and 1 sources.
+[12/21 18:30:09     28s]   The skew group clk/constraint1 was created. It contains 2399 sinks and 1 sources.
+[12/21 18:30:09     28s] Restoring CCOpt config done.
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Deleting Cell Server Begin ...
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Deleting Cell Server End ...
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/21 18:30:09     28s] Summary for sequential cells identification: 
+[12/21 18:30:09     28s]   Identified SBFF number: 104
+[12/21 18:30:09     28s]   Identified MBFF number: 0
+[12/21 18:30:09     28s]   Identified SB Latch number: 0
+[12/21 18:30:09     28s]   Identified MB Latch number: 0
+[12/21 18:30:09     28s]   Not identified SBFF number: 16
+[12/21 18:30:09     28s]   Not identified MBFF number: 0
+[12/21 18:30:09     28s]   Not identified SB Latch number: 0
+[12/21 18:30:09     28s]   Not identified MB Latch number: 0
+[12/21 18:30:09     28s]   Number of sequential cells which are not FFs: 32
+[12/21 18:30:09     28s] Total number of combinational cells: 327
+[12/21 18:30:09     28s] Total number of sequential cells: 152
+[12/21 18:30:09     28s] Total number of tristate cells: 10
+[12/21 18:30:09     28s] Total number of level shifter cells: 0
+[12/21 18:30:09     28s] Total number of power gating cells: 0
+[12/21 18:30:09     28s] Total number of isolation cells: 0
+[12/21 18:30:09     28s] Total number of power switch cells: 0
+[12/21 18:30:09     28s] Total number of pulse generator cells: 0
+[12/21 18:30:09     28s] Total number of always on buffers: 0
+[12/21 18:30:09     28s] Total number of retention cells: 0
+[12/21 18:30:09     28s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[12/21 18:30:09     28s] Total number of usable buffers: 16
+[12/21 18:30:09     28s] List of unusable buffers:
+[12/21 18:30:09     28s] Total number of unusable buffers: 0
+[12/21 18:30:09     28s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[12/21 18:30:09     28s] Total number of usable inverters: 19
+[12/21 18:30:09     28s] List of unusable inverters:
+[12/21 18:30:09     28s] Total number of unusable inverters: 0
+[12/21 18:30:09     28s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[12/21 18:30:09     28s] Total number of identified usable delay cells: 8
+[12/21 18:30:09     28s] List of identified unusable delay cells:
+[12/21 18:30:09     28s] Total number of identified unusable delay cells: 0
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Deleting Cell Server Begin ...
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] TimeStamp Deleting Cell Server End ...
+[12/21 18:30:09     28s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[12/21 18:30:09     28s] timing_enable_separate_device_slew_effect_sensitivities
+[12/21 18:30:09     28s] #% End load design ... (date=12/21 18:30:09, total cpu=0:00:05.2, real=0:00:16.0, peak res=1468.2M, current mem=1452.0M)
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] *** Summary of all messages that are not suppressed in this session:
+[12/21 18:30:09     28s] Severity  ID               Count  Summary                                  
+[12/21 18:30:09     28s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/21 18:30:09     28s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[12/21 18:30:09     28s] WARNING   IMPOPT-3602          4  The specified path group name %s is not ...
+[12/21 18:30:09     28s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/21 18:30:09     28s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[12/21 18:30:09     28s] WARNING   IMPPSP-1003          2  Found use of '%s'. This will continue to...
+[12/21 18:30:09     28s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[12/21 18:30:09     28s] *** Message Summary: 23 warning(s), 0 error(s)
+[12/21 18:30:09     28s] 
+[12/21 18:30:09     28s] <CMD> setDrawView fplan
+[12/21 18:30:09     28s] <CMD> encMessage warning 1
+[12/21 18:30:09     28s] <CMD> encMessage debug 0
+[12/21 18:39:09     60s] <CMD> add_ndr -width {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 Metal10 0.4 Metal11 0.4 } -name 2W1S
+[12/21 18:39:09     60s] **ERROR: (IMPSYC-3604):	NONDEFAULTRULE '2W1S' cannot be created because it already exists. Use 'dbGet head.rules.name' to see name for all existing rules. Re-run the command with a new rule name.
+
+[12/21 18:39:09     60s] <CMD> create_route_type -non_default_rule 2W1S -top_preferred_layer 7 -bottom_preferred_layer 6 -shield_side both_side -shield_net VSS -name route_type_trunk
+[12/21 18:39:09     60s] **ERROR: (IMPDB-2532):	RouteType 'route_type_trunk' already exists.
+Type 'man IMPDB-2532' for more detail.
+[12/21 18:39:09     60s] 
+[12/21 18:39:09     60s] <CMD> create_route_type -top_preferred_layer 7 -bottom_preferred_layer 6 -shield_side both_side -shield_net VSS -name route_type_leaf
+[12/21 18:39:09     60s] **ERROR: (IMPDB-2532):	RouteType 'route_type_leaf' already exists.
+Type 'man IMPDB-2532' for more detail.
+[12/21 18:39:09     60s] 
+[12/21 18:39:09     60s] <CMD> set_ccopt_property -route_type route_type_trunk -net_type trunk
+[12/21 18:39:09     60s] <CMD> set_ccopt_property -route_type route_type_leaf -net_type leaf
+[12/21 18:39:09     60s] <CMD> set_ccopt_property target_skew 1
+[12/21 18:39:09     60s] <CMD> set_ccopt_property target_max_trans 0.04
+[12/21 18:39:09     60s] <CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+[12/21 18:39:09     60s] Creating clock tree spec for modes (timing configs): constraint1
+[12/21 18:39:09     60s] extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+[12/21 18:39:09     60s] **ERROR: (IMPCCOPT-2048):	Clock tree extraction failed. Reason Cannot run automatic clock tree extraction as clock trees are already defined..
+
+[12/21 18:39:10     60s] <CMD> ccopt_design
+[12/21 18:39:10     60s] #% Begin ccopt_design (date=12/21 18:39:10, mem=1492.9M)
+[12/21 18:39:10     60s] *** ccopt_design #1 [begin] : totSession cpu/real = 0:01:00.9/0:10:43.5 (0.1), mem = 1536.0M
+[12/21 18:39:10     60s] Runtime...
+[12/21 18:39:10     60s] **INFO: User's settings:
+[12/21 18:39:10     60s] setNanoRouteMode -drouteAntennaFactor                           1
+[12/21 18:39:10     60s] setNanoRouteMode -drouteEndIteration                            1
+[12/21 18:39:10     60s] setNanoRouteMode -drouteFixAntenna                              true
+[12/21 18:39:10     60s] setNanoRouteMode -droutePostRouteSpreadWire                     1
+[12/21 18:39:10     60s] setNanoRouteMode -droutePostRouteWidenWireRule                  LEFSpecialRouteSpec
+[12/21 18:39:10     60s] setNanoRouteMode -drouteStartIteration                          0
+[12/21 18:39:10     60s] setNanoRouteMode -drouteUseMinSpacingForBlockage                auto
+[12/21 18:39:10     60s] setNanoRouteMode -drouteUseMultiCutViaEffort                    medium
+[12/21 18:39:10     60s] setNanoRouteMode -extractThirdPartyCompatible                   false
+[12/21 18:39:10     60s] setNanoRouteMode -grouteExpTdStdDelay                           9.9
+[12/21 18:39:10     60s] setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+[12/21 18:39:10     60s] setNanoRouteMode -routeBottomRoutingLayer                       1
+[12/21 18:39:10     60s] setNanoRouteMode -routeStrictlyHonorNonDefaultRule              false
+[12/21 18:39:10     60s] setNanoRouteMode -routeTopRoutingLayer                          11
+[12/21 18:39:10     60s] setNanoRouteMode -routeWithSiDriven                             true
+[12/21 18:39:10     60s] setNanoRouteMode -routeWithTimingDriven                         true
+[12/21 18:39:10     60s] setNanoRouteMode -timingEngine                                  {}
+[12/21 18:39:10     60s] setExtractRCMode -engine                                        preRoute
+[12/21 18:39:10     60s] setDelayCalMode -enable_high_fanout                             true
+[12/21 18:39:10     60s] setDelayCalMode -engine                                         aae
+[12/21 18:39:10     60s] setDelayCalMode -ignoreNetLoad                                  false
+[12/21 18:39:10     60s] setDelayCalMode -socv_accuracy_mode                             low
+[12/21 18:39:10     60s] setOptMode -activeSetupViews                                    { analysis1 }
+[12/21 18:39:10     60s] setOptMode -autoSetupViews                                      { analysis1}
+[12/21 18:39:10     60s] setOptMode -autoTDGRSetupViews                                  { analysis1}
+[12/21 18:39:10     60s] setOptMode -drcMargin                                           0
+[12/21 18:39:10     60s] setOptMode -fixDrc                                              true
+[12/21 18:39:10     60s] setOptMode -optimizeFF                                          true
+[12/21 18:39:10     60s] setOptMode -preserveAllSequential                               true
+[12/21 18:39:10     60s] setOptMode -setupTargetSlack                                    0
+[12/21 18:39:10     60s] setRouteMode -earlyGlobalHonorMsvRouteConstraint                false
+[12/21 18:39:10     60s] setRouteMode -earlyGlobalMaxRouteLayer                          10
+[12/21 18:39:10     60s] setRouteMode -earlyGlobalMinRouteLayer                          5
+[12/21 18:39:10     60s] setRouteMode -earlyGlobalRoutePartitionPinGuide                 true
+[12/21 18:39:10     60s] 
+[12/21 18:39:10     60s] (ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+[12/21 18:39:10     60s] Not setting up route_type 'default_route_type_nonleaf' from CTS mode settings, as it has already been done
+[12/21 18:39:10     60s] Not setting up route_type 'default_route_type_leaf' from CTS mode settings, as it has already been done
+[12/21 18:39:10     60s] Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+[12/21 18:39:10     60s] Set place::cacheFPlanSiteMark to 1
+[12/21 18:39:10     60s] 'setDesignMode -flowEffort standard' => 'setOptMode -usefulSkewCCOpt standard' 
+[12/21 18:39:10     60s] Using CCOpt effort standard.
+[12/21 18:39:10     60s] CCOpt::Phase::Initialization...
+[12/21 18:39:10     60s] Check Prerequisites...
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'wb_clk_i' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_24' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_25' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_1' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_2' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_3' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_4' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_5' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_6' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_7' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_8' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_9' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_10' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_11' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_12' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_13' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_14' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_15' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_16' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5046):	Net 'CTS_17' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:39:10     60s] **WARN: (EMS-27):	Message (IMPCCOPT-5046) has exceeded the current message display limit of 20.
+[12/21 18:39:10     60s] To increase the message display limit, refer to the product command reference manual.
+[12/21 18:39:10     60s] **WARN: (IMPCCOPT-5047):	Found 25 clock net(s) with existing routing that will be removed by CCOpt.
+[12/21 18:39:10     60s] Type 'man IMPCCOPT-5047' for more detail.
+[12/21 18:39:10     60s] Leaving CCOpt scope - CheckPlace...
+[12/21 18:39:10     60s] OPERPROF: Starting checkPlace at level 1, MEM:1536.0M, EPOCH TIME: 1766335150.985316
+[12/21 18:39:11     60s] # Init pin-track-align, new floorplan.
+[12/21 18:39:11     60s] Processing tracks to init pin-track alignment.
+[12/21 18:39:11     60s] z: 2, totalTracks: 1
+[12/21 18:39:11     60s] z: 4, totalTracks: 1
+[12/21 18:39:11     60s] z: 6, totalTracks: 1
+[12/21 18:39:11     60s] z: 8, totalTracks: 1
+[12/21 18:39:11     61s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[12/21 18:39:11     61s] All LLGs are deleted
+[12/21 18:39:11     61s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:11     61s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:11     61s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1536.0M, EPOCH TIME: 1766335151.606082
+[12/21 18:39:11     61s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.105, MEM:1536.0M, EPOCH TIME: 1766335151.711561
+[12/21 18:39:11     61s] # Building picorv32_wb llgBox search-tree.
+[12/21 18:39:11     61s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1536.0M, EPOCH TIME: 1766335151.731432
+[12/21 18:39:11     61s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:11     61s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:11     61s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1536.0M, EPOCH TIME: 1766335151.748221
+[12/21 18:39:11     61s] Max number of tech site patterns supported in site array is 256.
+[12/21 18:39:11     61s] Core basic site is CoreSite
+[12/21 18:39:11     61s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1536.0M, EPOCH TIME: 1766335151.776622
+[12/21 18:39:11     61s] After signature check, allow fast init is false, keep pre-filter is false.
+[12/21 18:39:11     61s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[12/21 18:39:11     61s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.011, REAL:0.011, MEM:1536.0M, EPOCH TIME: 1766335151.787588
+[12/21 18:39:11     61s] Use non-trimmed site array because memory saving is not enough.
+[12/21 18:39:11     61s] SiteArray: non-trimmed site array dimensions = 122 x 1050
+[12/21 18:39:11     61s] SiteArray: use 782,336 bytes
+[12/21 18:39:11     61s] SiteArray: current memory after site array memory allocation 1536.7M
+[12/21 18:39:11     61s] SiteArray: FP blocked sites are writable
+[12/21 18:39:11     61s] SiteArray: number of non floorplan blocked sites for llg default is 128100
+[12/21 18:39:11     61s] Atter site array init, number of instance map data is 0.
+[12/21 18:39:11     61s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.016, REAL:0.102, MEM:1536.7M, EPOCH TIME: 1766335151.849902
+[12/21 18:39:11     61s] 
+[12/21 18:39:11     61s]  Pre_CCE_Colorizing is not ON! (0:0:583:0)
+[12/21 18:39:11     61s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.019, REAL:0.186, MEM:1536.7M, EPOCH TIME: 1766335151.917136
+[12/21 18:39:11     61s] Begin checking placement ... (start mem=1536.0M, init mem=1536.7M)
+[12/21 18:39:11     61s] Begin checking exclusive groups violation ...
+[12/21 18:39:11     61s] There are 0 groups to check, max #box is 0, total #box is 0
+[12/21 18:39:11     61s] Finished checking exclusive groups violations. Found 0 Vio.
+[12/21 18:39:12     61s] 
+[12/21 18:39:12     61s] Running CheckPlace using 1 thread in normal mode...
+[12/21 18:39:12     61s] 
+[12/21 18:39:12     61s] ...checkPlace normal is done!
+[12/21 18:39:12     61s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:1536.7M, EPOCH TIME: 1766335152.171100
+[12/21 18:39:12     61s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.007, REAL:0.007, MEM:1536.7M, EPOCH TIME: 1766335152.178097
+[12/21 18:39:12     61s] *info: Placed = 10075         
+[12/21 18:39:12     61s] *info: Unplaced = 24          
+[12/21 18:39:12     61s] Placement Density:79.04%(34628/43810)
+[12/21 18:39:12     61s] Placement Density (including fixed std cells):79.04%(34628/43810)
+[12/21 18:39:12     61s] All LLGs are deleted
+[12/21 18:39:12     61s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:10075).
+[12/21 18:39:12     61s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:12     61s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1536.7M, EPOCH TIME: 1766335152.224872
+[12/21 18:39:12     61s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1536.7M, EPOCH TIME: 1766335152.225209
+[12/21 18:39:12     61s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:12     61s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:12     61s] Finished checkPlace (total: cpu=0:00:00.3, real=0:00:02.0; vio checks: cpu=0:00:00.1, real=0:00:01.0; mem=1536.7M)
+[12/21 18:39:12     61s] OPERPROF: Finished checkPlace at level 1, CPU:0.263, REAL:1.241, MEM:1536.7M, EPOCH TIME: 1766335152.226508
+[12/21 18:39:12     61s] **ERROR: (IMPCCOPT-2028):	Too many clock instances are unplaced in the clock tree for CCOpt to continue. Found 24 unplaced from 2423 total. Place more of these instances to continue.
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.3 real=0:00:01.3)
+[12/21 18:39:12     61s] Check Prerequisites done. (took cpu=0:00:00.3 real=0:00:01.3)
+[12/21 18:39:12     61s] CCOpt::Phase::Initialization done. (took cpu=0:00:00.3 real=0:00:01.4)
+[12/21 18:39:12     61s] **ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+[12/21 18:39:12     61s] Set place::cacheFPlanSiteMark to 0
+[12/21 18:39:12     61s] All LLGs are deleted
+[12/21 18:39:12     61s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:12     61s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:39:12     61s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1536.7M, EPOCH TIME: 1766335152.299046
+[12/21 18:39:12     61s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1536.7M, EPOCH TIME: 1766335152.299130
+[12/21 18:39:12     61s] 
+[12/21 18:39:12     61s] *** Summary of all messages that are not suppressed in this session:
+[12/21 18:39:12     61s] Severity  ID               Count  Summary                                  
+[12/21 18:39:12     61s] ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+[12/21 18:39:12     61s] WARNING   IMPCCOPT-5046       25  Net '%s' in clock tree '%s' has existing...
+[12/21 18:39:12     61s] WARNING   IMPCCOPT-5047        1  Found %d clock net(s) with existing rout...
+[12/21 18:39:12     61s] ERROR     IMPCCOPT-2028        1  Too many %s instances are unplaced in %s...
+[12/21 18:39:12     61s] *** Message Summary: 26 warning(s), 2 error(s)
+[12/21 18:39:12     61s] 
+[12/21 18:39:12     61s] *** ccopt_design #1 [finish] : cpu/real = 0:00:00.3/0:00:01.6 (0.2), totSession cpu/real = 0:01:01.2/0:10:45.1 (0.1), mem = 1536.7M
+[12/21 18:39:12     61s] 
+[12/21 18:39:12     61s] =============================================================================================
+[12/21 18:39:12     61s]  Final TAT Report : ccopt_design #1                                             21.35-s114_1
+[12/21 18:39:12     61s] =============================================================================================
+[12/21 18:39:12     61s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[12/21 18:39:12     61s] ---------------------------------------------------------------------------------------------
+[12/21 18:39:12     61s] [ MISC                   ]          0:00:01.6  ( 100.0 % )     0:00:01.6 /  0:00:00.3    0.2
+[12/21 18:39:12     61s] ---------------------------------------------------------------------------------------------
+[12/21 18:39:12     61s]  ccopt_design #1 TOTAL              0:00:01.6  ( 100.0 % )     0:00:01.6 /  0:00:00.3    0.2
+[12/21 18:39:12     61s] ---------------------------------------------------------------------------------------------
+[12/21 18:39:12     61s] 
+[12/21 18:39:12     61s] #% End ccopt_design (date=12/21 18:39:12, total cpu=0:00:00.3, real=0:00:02.0, peak res=1497.7M, current mem=1496.6M)
+[12/21 18:39:12     61s] 
+[12/21 18:39:53     63s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[12/21 18:41:16     68s] invalid command name "delete_clock_tree_spec"
+[12/21 18:41:17     68s] invalid command name "delete_obj"
+[12/21 18:41:18     68s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[12/21 18:41:36     69s] <CMD> add_ndr -width {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 Metal10 0.4 Metal11 0.4 } -name 2W1S
+[12/21 18:41:36     69s] **ERROR: (IMPSYC-3604):	NONDEFAULTRULE '2W1S' cannot be created because it already exists. Use 'dbGet head.rules.name' to see name for all existing rules. Re-run the command with a new rule name.
+
+[12/21 18:41:36     69s] <CMD> create_route_type -non_default_rule 2W1S -top_preferred_layer 7 -bottom_preferred_layer 6 -shield_side both_side -shield_net VSS -name route_type_trunk
+[12/21 18:41:36     69s] **ERROR: (IMPDB-2532):	RouteType 'route_type_trunk' already exists.
+Type 'man IMPDB-2532' for more detail.
+[12/21 18:41:36     69s] 
+[12/21 18:41:36     69s] <CMD> create_route_type -top_preferred_layer 7 -bottom_preferred_layer 6 -shield_side both_side -shield_net VSS -name route_type_leaf
+[12/21 18:41:36     69s] **ERROR: (IMPDB-2532):	RouteType 'route_type_leaf' already exists.
+Type 'man IMPDB-2532' for more detail.
+[12/21 18:41:36     69s] 
+[12/21 18:41:36     69s] <CMD> set_ccopt_property -route_type route_type_trunk -net_type trunk
+[12/21 18:41:36     69s] <CMD> set_ccopt_property -route_type route_type_leaf -net_type leaf
+[12/21 18:41:36     69s] <CMD> set_ccopt_property target_skew 1
+[12/21 18:41:36     69s] <CMD> set_ccopt_property target_max_trans 0.04
+[12/21 18:41:36     69s] <CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+[12/21 18:41:36     69s] Creating clock tree spec for modes (timing configs): constraint1
+[12/21 18:41:36     69s] extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+[12/21 18:41:36     69s] **ERROR: (IMPCCOPT-2048):	Clock tree extraction failed. Reason Cannot run automatic clock tree extraction as clock trees are already defined..
+
+[12/21 18:41:37     69s] <CMD> ccopt_design
+[12/21 18:41:37     69s] #% Begin ccopt_design (date=12/21 18:41:37, mem=1574.3M)
+[12/21 18:41:37     69s] *** ccopt_design #2 [begin] : totSession cpu/real = 0:01:09.9/0:13:10.0 (0.1), mem = 1614.8M
+[12/21 18:41:37     69s] **INFO: User's settings:
+[12/21 18:41:37     69s] setNanoRouteMode -drouteAntennaFactor                           1
+[12/21 18:41:37     69s] setNanoRouteMode -drouteEndIteration                            1
+[12/21 18:41:37     69s] setNanoRouteMode -drouteFixAntenna                              true
+[12/21 18:41:37     69s] setNanoRouteMode -droutePostRouteSpreadWire                     1
+[12/21 18:41:37     69s] setNanoRouteMode -droutePostRouteWidenWireRule                  LEFSpecialRouteSpec
+[12/21 18:41:37     69s] setNanoRouteMode -drouteStartIteration                          0
+[12/21 18:41:37     69s] setNanoRouteMode -drouteUseMinSpacingForBlockage                auto
+[12/21 18:41:37     69s] setNanoRouteMode -drouteUseMultiCutViaEffort                    medium
+[12/21 18:41:37     69s] setNanoRouteMode -extractThirdPartyCompatible                   false
+[12/21 18:41:37     69s] setNanoRouteMode -grouteExpTdStdDelay                           9.9
+[12/21 18:41:37     69s] setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+[12/21 18:41:37     69s] setNanoRouteMode -routeBottomRoutingLayer                       1
+[12/21 18:41:37     69s] setNanoRouteMode -routeStrictlyHonorNonDefaultRule              false
+[12/21 18:41:37     69s] setNanoRouteMode -routeTopRoutingLayer                          11
+[12/21 18:41:37     69s] setNanoRouteMode -routeWithSiDriven                             true
+[12/21 18:41:37     69s] setNanoRouteMode -routeWithTimingDriven                         true
+[12/21 18:41:37     69s] setNanoRouteMode -timingEngine                                  {}
+[12/21 18:41:37     69s] setExtractRCMode -engine                                        preRoute
+[12/21 18:41:37     69s] setDelayCalMode -enable_high_fanout                             true
+[12/21 18:41:37     69s] setDelayCalMode -engine                                         aae
+[12/21 18:41:37     69s] setDelayCalMode -ignoreNetLoad                                  false
+[12/21 18:41:37     69s] setDelayCalMode -socv_accuracy_mode                             low
+[12/21 18:41:37     69s] setOptMode -activeSetupViews                                    { analysis1 }
+[12/21 18:41:37     69s] setOptMode -autoSetupViews                                      { analysis1}
+[12/21 18:41:37     69s] setOptMode -autoTDGRSetupViews                                  { analysis1}
+[12/21 18:41:37     69s] setOptMode -drcMargin                                           0
+[12/21 18:41:37     69s] setOptMode -fixDrc                                              true
+[12/21 18:41:37     69s] setOptMode -optimizeFF                                          true
+[12/21 18:41:37     69s] setOptMode -preserveAllSequential                               true
+[12/21 18:41:37     69s] setOptMode -setupTargetSlack                                    0
+[12/21 18:41:37     69s] setRouteMode -earlyGlobalHonorMsvRouteConstraint                false
+[12/21 18:41:37     69s] setRouteMode -earlyGlobalMaxRouteLayer                          10
+[12/21 18:41:37     69s] setRouteMode -earlyGlobalMinRouteLayer                          5
+[12/21 18:41:37     69s] setRouteMode -earlyGlobalRoutePartitionPinGuide                 true
+[12/21 18:41:37     69s] 
+[12/21 18:41:37     69s] (ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+[12/21 18:41:37     69s] Not setting up route_type 'default_route_type_nonleaf' from CTS mode settings, as it has already been done
+[12/21 18:41:37     69s] Not setting up route_type 'default_route_type_leaf' from CTS mode settings, as it has already been done
+[12/21 18:41:37     69s] Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+[12/21 18:41:37     69s] Set place::cacheFPlanSiteMark to 1
+[12/21 18:41:37     69s] 'setDesignMode -flowEffort standard' => 'setOptMode -usefulSkewCCOpt standard' 
+[12/21 18:41:37     69s] Using CCOpt effort standard.
+[12/21 18:41:37     69s] CCOpt::Phase::Initialization...
+[12/21 18:41:37     69s] Check Prerequisites...
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'wb_clk_i' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_24' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_25' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_1' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_2' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_3' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_4' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_5' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_6' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_7' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_8' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_9' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_10' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_11' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_12' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_13' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_14' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_15' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_16' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5046):	Net 'CTS_17' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:41:37     69s] **WARN: (EMS-27):	Message (IMPCCOPT-5046) has exceeded the current message display limit of 20.
+[12/21 18:41:37     69s] To increase the message display limit, refer to the product command reference manual.
+[12/21 18:41:37     69s] **WARN: (IMPCCOPT-5047):	Found 25 clock net(s) with existing routing that will be removed by CCOpt.
+[12/21 18:41:37     69s] Type 'man IMPCCOPT-5047' for more detail.
+[12/21 18:41:37     69s] Leaving CCOpt scope - CheckPlace...
+[12/21 18:41:37     69s] OPERPROF: Starting checkPlace at level 1, MEM:1614.8M, EPOCH TIME: 1766335297.282255
+[12/21 18:41:37     69s] Processing tracks to init pin-track alignment.
+[12/21 18:41:37     69s] z: 2, totalTracks: 1
+[12/21 18:41:37     69s] z: 4, totalTracks: 1
+[12/21 18:41:37     69s] z: 6, totalTracks: 1
+[12/21 18:41:37     69s] z: 8, totalTracks: 1
+[12/21 18:41:37     69s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[12/21 18:41:37     69s] All LLGs are deleted
+[12/21 18:41:37     69s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     69s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     69s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1622.8M, EPOCH TIME: 1766335297.292220
+[12/21 18:41:37     69s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1622.8M, EPOCH TIME: 1766335297.292506
+[12/21 18:41:37     69s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1622.8M, EPOCH TIME: 1766335297.292890
+[12/21 18:41:37     69s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     69s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     69s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1622.8M, EPOCH TIME: 1766335297.294613
+[12/21 18:41:37     69s] Max number of tech site patterns supported in site array is 256.
+[12/21 18:41:37     69s] Core basic site is CoreSite
+[12/21 18:41:37     69s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1622.8M, EPOCH TIME: 1766335297.295012
+[12/21 18:41:37     69s] After signature check, allow fast init is true, keep pre-filter is true.
+[12/21 18:41:37     69s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[12/21 18:41:37     69s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.011, REAL:0.011, MEM:1622.8M, EPOCH TIME: 1766335297.305672
+[12/21 18:41:37     69s] SiteArray: non-trimmed site array dimensions = 122 x 1050
+[12/21 18:41:37     69s] SiteArray: use 782,336 bytes
+[12/21 18:41:37     69s] SiteArray: current memory after site array memory allocation 1622.8M
+[12/21 18:41:37     69s] SiteArray: FP blocked sites are writable
+[12/21 18:41:37     69s] SiteArray: number of non floorplan blocked sites for llg default is 128100
+[12/21 18:41:37     69s] Atter site array init, number of instance map data is 0.
+[12/21 18:41:37     69s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.015, REAL:0.016, MEM:1622.8M, EPOCH TIME: 1766335297.310130
+[12/21 18:41:37     69s] 
+[12/21 18:41:37     69s]  Pre_CCE_Colorizing is not ON! (0:0:583:0)
+[12/21 18:41:37     69s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.018, REAL:0.018, MEM:1622.8M, EPOCH TIME: 1766335297.311105
+[12/21 18:41:37     69s] Begin checking placement ... (start mem=1614.8M, init mem=1622.8M)
+[12/21 18:41:37     69s] Begin checking exclusive groups violation ...
+[12/21 18:41:37     69s] There are 0 groups to check, max #box is 0, total #box is 0
+[12/21 18:41:37     69s] Finished checking exclusive groups violations. Found 0 Vio.
+[12/21 18:41:37     69s] 
+[12/21 18:41:37     69s] Running CheckPlace using 1 thread in normal mode...
+[12/21 18:41:37     70s] 
+[12/21 18:41:37     70s] ...checkPlace normal is done!
+[12/21 18:41:37     70s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:1623.8M, EPOCH TIME: 1766335297.404051
+[12/21 18:41:37     70s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.007, REAL:0.007, MEM:1623.8M, EPOCH TIME: 1766335297.411048
+[12/21 18:41:37     70s] *info: Placed = 10075         
+[12/21 18:41:37     70s] *info: Unplaced = 24          
+[12/21 18:41:37     70s] Placement Density:79.04%(34628/43810)
+[12/21 18:41:37     70s] Placement Density (including fixed std cells):79.04%(34628/43810)
+[12/21 18:41:37     70s] All LLGs are deleted
+[12/21 18:41:37     70s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:10075).
+[12/21 18:41:37     70s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     70s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1623.8M, EPOCH TIME: 1766335297.414274
+[12/21 18:41:37     70s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1623.8M, EPOCH TIME: 1766335297.414576
+[12/21 18:41:37     70s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     70s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     70s] Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=1623.8M)
+[12/21 18:41:37     70s] OPERPROF: Finished checkPlace at level 1, CPU:0.133, REAL:0.134, MEM:1623.8M, EPOCH TIME: 1766335297.415764
+[12/21 18:41:37     70s] **ERROR: (IMPCCOPT-2028):	Too many clock instances are unplaced in the clock tree for CCOpt to continue. Found 24 unplaced from 2423 total. Place more of these instances to continue.
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.1 real=0:00:00.1)
+[12/21 18:41:37     70s] Check Prerequisites done. (took cpu=0:00:00.1 real=0:00:00.1)
+[12/21 18:41:37     70s] CCOpt::Phase::Initialization done. (took cpu=0:00:00.1 real=0:00:00.1)
+[12/21 18:41:37     70s] **ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+[12/21 18:41:37     70s] Set place::cacheFPlanSiteMark to 0
+[12/21 18:41:37     70s] All LLGs are deleted
+[12/21 18:41:37     70s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     70s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:41:37     70s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1623.8M, EPOCH TIME: 1766335297.420057
+[12/21 18:41:37     70s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1623.8M, EPOCH TIME: 1766335297.420122
+[12/21 18:41:37     70s] 
+[12/21 18:41:37     70s] *** Summary of all messages that are not suppressed in this session:
+[12/21 18:41:37     70s] Severity  ID               Count  Summary                                  
+[12/21 18:41:37     70s] ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+[12/21 18:41:37     70s] WARNING   IMPCCOPT-5046       25  Net '%s' in clock tree '%s' has existing...
+[12/21 18:41:37     70s] WARNING   IMPCCOPT-5047        1  Found %d clock net(s) with existing rout...
+[12/21 18:41:37     70s] ERROR     IMPCCOPT-2028        1  Too many %s instances are unplaced in %s...
+[12/21 18:41:37     70s] *** Message Summary: 26 warning(s), 2 error(s)
+[12/21 18:41:37     70s] 
+[12/21 18:41:37     70s] *** ccopt_design #2 [finish] : cpu/real = 0:00:00.2/0:00:00.2 (1.0), totSession cpu/real = 0:01:10.0/0:13:10.2 (0.1), mem = 1623.8M
+[12/21 18:41:37     70s] 
+[12/21 18:41:37     70s] =============================================================================================
+[12/21 18:41:37     70s]  Final TAT Report : ccopt_design #2                                             21.35-s114_1
+[12/21 18:41:37     70s] =============================================================================================
+[12/21 18:41:37     70s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[12/21 18:41:37     70s] ---------------------------------------------------------------------------------------------
+[12/21 18:41:37     70s] [ MISC                   ]          0:00:00.2  ( 100.0 % )     0:00:00.2 /  0:00:00.2    1.0
+[12/21 18:41:37     70s] ---------------------------------------------------------------------------------------------
+[12/21 18:41:37     70s]  ccopt_design #2 TOTAL              0:00:00.2  ( 100.0 % )     0:00:00.2 /  0:00:00.2    1.0
+[12/21 18:41:37     70s] ---------------------------------------------------------------------------------------------
+[12/21 18:41:37     70s] 
+[12/21 18:41:37     70s] #% End ccopt_design (date=12/21 18:41:37, total cpu=0:00:00.2, real=0:00:00.0, peak res=1583.6M, current mem=1583.3M)
+[12/21 18:41:37     70s] 
+[12/21 18:41:52     71s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[12/21 18:42:35     73s] invalid command name "delete_obj"
+[12/21 18:42:35     73s] invalid command name "delete_clock_tree_spec"
+[12/21 18:42:35     73s] **WARN: The setCCOptMode/set_ccopt_mode command is obsolete and will be removed in a future release. This command still works in this release, but to avoid this warning and to ensure compatibility with future releases, transition to set_ccopt_property.
+[12/21 18:42:35     73s] **WARN:  -is_mode_set_route_top_mask is not supported by the native integration of CCOpt and will be ignored.
+[12/21 18:42:35     73s] **WARN:  -is_mode_set_route_top_preferred_extra_space is not supported by the native integration of CCOpt and will be ignored.
+[12/21 18:42:51     74s] <CMD> add_ndr -width {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 Metal10 0.4 Metal11 0.4 } -name 2W1S
+[12/21 18:42:51     74s] **ERROR: (IMPSYC-3604):	NONDEFAULTRULE '2W1S' cannot be created because it already exists. Use 'dbGet head.rules.name' to see name for all existing rules. Re-run the command with a new rule name.
+
+[12/21 18:42:51     74s] <CMD> create_route_type -non_default_rule 2W1S -top_preferred_layer 7 -bottom_preferred_layer 6 -shield_side both_side -shield_net VSS -name route_type_trunk
+[12/21 18:42:51     74s] **ERROR: (IMPDB-2532):	RouteType 'route_type_trunk' already exists.
+Type 'man IMPDB-2532' for more detail.
+[12/21 18:42:51     74s] 
+[12/21 18:42:51     74s] <CMD> create_route_type -top_preferred_layer 7 -bottom_preferred_layer 6 -shield_side both_side -shield_net VSS -name route_type_leaf
+[12/21 18:42:51     74s] **ERROR: (IMPDB-2532):	RouteType 'route_type_leaf' already exists.
+Type 'man IMPDB-2532' for more detail.
+[12/21 18:42:51     74s] 
+[12/21 18:42:51     74s] <CMD> set_ccopt_property -route_type route_type_trunk -net_type trunk
+[12/21 18:42:51     74s] <CMD> set_ccopt_property -route_type route_type_leaf -net_type leaf
+[12/21 18:42:51     74s] <CMD> set_ccopt_property target_skew 1
+[12/21 18:42:51     74s] <CMD> set_ccopt_property target_max_trans 0.04
+[12/21 18:42:51     74s] <CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+[12/21 18:42:51     74s] Creating clock tree spec for modes (timing configs): constraint1
+[12/21 18:42:51     74s] extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+[12/21 18:42:51     74s] **ERROR: (IMPCCOPT-2048):	Clock tree extraction failed. Reason Cannot run automatic clock tree extraction as clock trees are already defined..
+
+[12/21 18:42:52     74s] <CMD> ccopt_design
+[12/21 18:42:52     74s] #% Begin ccopt_design (date=12/21 18:42:52, mem=1583.0M)
+[12/21 18:42:52     74s] *** ccopt_design #3 [begin] : totSession cpu/real = 0:01:14.5/0:14:24.9 (0.1), mem = 1626.1M
+[12/21 18:42:52     74s] **INFO: User's settings:
+[12/21 18:42:52     74s] setNanoRouteMode -drouteAntennaFactor                           1
+[12/21 18:42:52     74s] setNanoRouteMode -drouteEndIteration                            1
+[12/21 18:42:52     74s] setNanoRouteMode -drouteFixAntenna                              true
+[12/21 18:42:52     74s] setNanoRouteMode -droutePostRouteSpreadWire                     1
+[12/21 18:42:52     74s] setNanoRouteMode -droutePostRouteWidenWireRule                  LEFSpecialRouteSpec
+[12/21 18:42:52     74s] setNanoRouteMode -drouteStartIteration                          0
+[12/21 18:42:52     74s] setNanoRouteMode -drouteUseMinSpacingForBlockage                auto
+[12/21 18:42:52     74s] setNanoRouteMode -drouteUseMultiCutViaEffort                    medium
+[12/21 18:42:52     74s] setNanoRouteMode -extractThirdPartyCompatible                   false
+[12/21 18:42:52     74s] setNanoRouteMode -grouteExpTdStdDelay                           9.9
+[12/21 18:42:52     74s] setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+[12/21 18:42:52     74s] setNanoRouteMode -routeBottomRoutingLayer                       1
+[12/21 18:42:52     74s] setNanoRouteMode -routeStrictlyHonorNonDefaultRule              false
+[12/21 18:42:52     74s] setNanoRouteMode -routeTopRoutingLayer                          11
+[12/21 18:42:52     74s] setNanoRouteMode -routeWithSiDriven                             true
+[12/21 18:42:52     74s] setNanoRouteMode -routeWithTimingDriven                         true
+[12/21 18:42:52     74s] setNanoRouteMode -timingEngine                                  {}
+[12/21 18:42:52     74s] setExtractRCMode -engine                                        preRoute
+[12/21 18:42:52     74s] setDelayCalMode -enable_high_fanout                             true
+[12/21 18:42:52     74s] setDelayCalMode -engine                                         aae
+[12/21 18:42:52     74s] setDelayCalMode -ignoreNetLoad                                  false
+[12/21 18:42:52     74s] setDelayCalMode -socv_accuracy_mode                             low
+[12/21 18:42:52     74s] setOptMode -activeSetupViews                                    { analysis1 }
+[12/21 18:42:52     74s] setOptMode -autoSetupViews                                      { analysis1}
+[12/21 18:42:52     74s] setOptMode -autoTDGRSetupViews                                  { analysis1}
+[12/21 18:42:52     74s] setOptMode -drcMargin                                           0
+[12/21 18:42:52     74s] setOptMode -fixDrc                                              true
+[12/21 18:42:52     74s] setOptMode -optimizeFF                                          true
+[12/21 18:42:52     74s] setOptMode -preserveAllSequential                               true
+[12/21 18:42:52     74s] setOptMode -setupTargetSlack                                    0
+[12/21 18:42:52     74s] setRouteMode -earlyGlobalHonorMsvRouteConstraint                false
+[12/21 18:42:52     74s] setRouteMode -earlyGlobalMaxRouteLayer                          10
+[12/21 18:42:52     74s] setRouteMode -earlyGlobalMinRouteLayer                          5
+[12/21 18:42:52     74s] setRouteMode -earlyGlobalRoutePartitionPinGuide                 true
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] (ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+[12/21 18:42:52     74s] Not setting up route_type 'default_route_type_nonleaf' from CTS mode settings, as it has already been done
+[12/21 18:42:52     74s] Not setting up route_type 'default_route_type_leaf' from CTS mode settings, as it has already been done
+[12/21 18:42:52     74s] Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+[12/21 18:42:52     74s] Set place::cacheFPlanSiteMark to 1
+[12/21 18:42:52     74s] 'setDesignMode -flowEffort standard' => 'setOptMode -usefulSkewCCOpt standard' 
+[12/21 18:42:52     74s] Using CCOpt effort standard.
+[12/21 18:42:52     74s] CCOpt::Phase::Initialization...
+[12/21 18:42:52     74s] Check Prerequisites...
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'wb_clk_i' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_24' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_25' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_1' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_2' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_3' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_4' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_5' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_6' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_7' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_8' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_9' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_10' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_11' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_12' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_13' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_14' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_15' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_16' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5046):	Net 'CTS_17' in clock tree 'clk' has existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5046' for more detail.
+[12/21 18:42:52     74s] **WARN: (EMS-27):	Message (IMPCCOPT-5046) has exceeded the current message display limit of 20.
+[12/21 18:42:52     74s] To increase the message display limit, refer to the product command reference manual.
+[12/21 18:42:52     74s] **WARN: (IMPCCOPT-5047):	Found 25 clock net(s) with existing routing that will be removed by CCOpt.
+[12/21 18:42:52     74s] Type 'man IMPCCOPT-5047' for more detail.
+[12/21 18:42:52     74s] Leaving CCOpt scope - CheckPlace...
+[12/21 18:42:52     74s] OPERPROF: Starting checkPlace at level 1, MEM:1626.1M, EPOCH TIME: 1766335372.169518
+[12/21 18:42:52     74s] Processing tracks to init pin-track alignment.
+[12/21 18:42:52     74s] z: 2, totalTracks: 1
+[12/21 18:42:52     74s] z: 4, totalTracks: 1
+[12/21 18:42:52     74s] z: 6, totalTracks: 1
+[12/21 18:42:52     74s] z: 8, totalTracks: 1
+[12/21 18:42:52     74s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[12/21 18:42:52     74s] All LLGs are deleted
+[12/21 18:42:52     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1626.1M, EPOCH TIME: 1766335372.176316
+[12/21 18:42:52     74s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1626.1M, EPOCH TIME: 1766335372.176613
+[12/21 18:42:52     74s] OPERPROF:   Starting spInitSiteArr at level 2, MEM:1626.1M, EPOCH TIME: 1766335372.176979
+[12/21 18:42:52     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] OPERPROF:     Starting spiInitFpSiteArr at level 3, MEM:1626.1M, EPOCH TIME: 1766335372.178686
+[12/21 18:42:52     74s] Max number of tech site patterns supported in site array is 256.
+[12/21 18:42:52     74s] Core basic site is CoreSite
+[12/21 18:42:52     74s] OPERPROF:       Starting spiCheckSiteIfFastDPInitAvailable at level 4, MEM:1626.1M, EPOCH TIME: 1766335372.179086
+[12/21 18:42:52     74s] After signature check, allow fast init is true, keep pre-filter is true.
+[12/21 18:42:52     74s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[12/21 18:42:52     74s] OPERPROF:       Finished spiCheckSiteIfFastDPInitAvailable at level 4, CPU:0.011, REAL:0.011, MEM:1626.1M, EPOCH TIME: 1766335372.189700
+[12/21 18:42:52     74s] SiteArray: non-trimmed site array dimensions = 122 x 1050
+[12/21 18:42:52     74s] SiteArray: use 782,336 bytes
+[12/21 18:42:52     74s] SiteArray: current memory after site array memory allocation 1626.1M
+[12/21 18:42:52     74s] SiteArray: FP blocked sites are writable
+[12/21 18:42:52     74s] SiteArray: number of non floorplan blocked sites for llg default is 128100
+[12/21 18:42:52     74s] Atter site array init, number of instance map data is 0.
+[12/21 18:42:52     74s] OPERPROF:     Finished spiInitFpSiteArr at level 3, CPU:0.015, REAL:0.015, MEM:1626.1M, EPOCH TIME: 1766335372.194029
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s]  Pre_CCE_Colorizing is not ON! (0:0:583:0)
+[12/21 18:42:52     74s] OPERPROF:   Finished spInitSiteArr at level 2, CPU:0.018, REAL:0.018, MEM:1626.1M, EPOCH TIME: 1766335372.194994
+[12/21 18:42:52     74s] Begin checking placement ... (start mem=1626.1M, init mem=1626.1M)
+[12/21 18:42:52     74s] Begin checking exclusive groups violation ...
+[12/21 18:42:52     74s] There are 0 groups to check, max #box is 0, total #box is 0
+[12/21 18:42:52     74s] Finished checking exclusive groups violations. Found 0 Vio.
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] Running CheckPlace using 1 thread in normal mode...
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] ...checkPlace normal is done!
+[12/21 18:42:52     74s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:1626.1M, EPOCH TIME: 1766335372.286827
+[12/21 18:42:52     74s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.007, REAL:0.007, MEM:1626.1M, EPOCH TIME: 1766335372.293794
+[12/21 18:42:52     74s] *info: Placed = 10075         
+[12/21 18:42:52     74s] *info: Unplaced = 24          
+[12/21 18:42:52     74s] Placement Density:79.04%(34628/43810)
+[12/21 18:42:52     74s] Placement Density (including fixed std cells):79.04%(34628/43810)
+[12/21 18:42:52     74s] All LLGs are deleted
+[12/21 18:42:52     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:10075).
+[12/21 18:42:52     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1626.1M, EPOCH TIME: 1766335372.297048
+[12/21 18:42:52     74s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1626.1M, EPOCH TIME: 1766335372.297331
+[12/21 18:42:52     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=1626.1M)
+[12/21 18:42:52     74s] OPERPROF: Finished checkPlace at level 1, CPU:0.128, REAL:0.129, MEM:1626.1M, EPOCH TIME: 1766335372.298550
+[12/21 18:42:52     74s] **ERROR: (IMPCCOPT-2028):	Too many clock instances are unplaced in the clock tree for CCOpt to continue. Found 24 unplaced from 2423 total. Place more of these instances to continue.
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.1 real=0:00:00.1)
+[12/21 18:42:52     74s] Check Prerequisites done. (took cpu=0:00:00.1 real=0:00:00.1)
+[12/21 18:42:52     74s] CCOpt::Phase::Initialization done. (took cpu=0:00:00.1 real=0:00:00.1)
+[12/21 18:42:52     74s] **ERROR: (IMPCCOPT-2196):	Cannot run ccopt_design because the command prerequisites were not met. Review the previous error messages for more details about the failure.
+[12/21 18:42:52     74s] Set place::cacheFPlanSiteMark to 0
+[12/21 18:42:52     74s] All LLGs are deleted
+[12/21 18:42:52     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[12/21 18:42:52     74s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1626.1M, EPOCH TIME: 1766335372.302903
+[12/21 18:42:52     74s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1626.1M, EPOCH TIME: 1766335372.302968
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] *** Summary of all messages that are not suppressed in this session:
+[12/21 18:42:52     74s] Severity  ID               Count  Summary                                  
+[12/21 18:42:52     74s] ERROR     IMPCCOPT-2196        1  Cannot run ccopt_design because the comm...
+[12/21 18:42:52     74s] WARNING   IMPCCOPT-5046       25  Net '%s' in clock tree '%s' has existing...
+[12/21 18:42:52     74s] WARNING   IMPCCOPT-5047        1  Found %d clock net(s) with existing rout...
+[12/21 18:42:52     74s] ERROR     IMPCCOPT-2028        1  Too many %s instances are unplaced in %s...
+[12/21 18:42:52     74s] *** Message Summary: 26 warning(s), 2 error(s)
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] *** ccopt_design #3 [finish] : cpu/real = 0:00:00.2/0:00:00.2 (1.0), totSession cpu/real = 0:01:14.7/0:14:25.1 (0.1), mem = 1626.1M
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] =============================================================================================
+[12/21 18:42:52     74s]  Final TAT Report : ccopt_design #3                                             21.35-s114_1
+[12/21 18:42:52     74s] =============================================================================================
+[12/21 18:42:52     74s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[12/21 18:42:52     74s] ---------------------------------------------------------------------------------------------
+[12/21 18:42:52     74s] [ MISC                   ]          0:00:00.2  ( 100.0 % )     0:00:00.2 /  0:00:00.2    1.0
+[12/21 18:42:52     74s] ---------------------------------------------------------------------------------------------
+[12/21 18:42:52     74s]  ccopt_design #3 TOTAL              0:00:00.2  ( 100.0 % )     0:00:00.2 /  0:00:00.2    1.0
+[12/21 18:42:52     74s] ---------------------------------------------------------------------------------------------
+[12/21 18:42:52     74s] 
+[12/21 18:42:52     74s] #% End ccopt_design (date=12/21 18:42:52, total cpu=0:00:00.2, real=0:00:00.0, peak res=1583.3M, current mem=1583.3M)
+[12/21 18:42:52     74s] 
+[12/21 18:43:20     76s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Dec 21 18:43:20 2025
+  Total CPU time:     0:01:18
+  Total real time:    0:16:17
+  Peak memory (main): 1586.45MB
+
+[12/21 18:43:20     76s] 
+[12/21 18:43:20     76s] *** Memory Usage v#1 (Current mem = 1626.051M, initial mem = 483.848M) ***
+[12/21 18:43:20     76s] 
+[12/21 18:43:20     76s] *** Summary of all messages that are not suppressed in this session:
+[12/21 18:43:20     76s] Severity  ID               Count  Summary                                  
+[12/21 18:43:20     76s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/21 18:43:20     76s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[12/21 18:43:20     76s] ERROR     IMPSYC-3604          3  NONDEFAULTRULE '%s' cannot be created be...
+[12/21 18:43:20     76s] ERROR     IMPDB-2532           6  RouteType '%s' already exists.           
+[12/21 18:43:20     76s] WARNING   IMPOPT-3602          4  The specified path group name %s is not ...
+[12/21 18:43:20     76s] ERROR     IMPCCOPT-2048        3  Clock tree extraction failed. Reason %s....
+[12/21 18:43:20     76s] ERROR     IMPCCOPT-2196        3  Cannot run ccopt_design because the comm...
+[12/21 18:43:20     76s] WARNING   IMPCCOPT-5046       75  Net '%s' in clock tree '%s' has existing...
+[12/21 18:43:20     76s] WARNING   IMPCCOPT-5047        3  Found %d clock net(s) with existing rout...
+[12/21 18:43:20     76s] ERROR     IMPCCOPT-2028        3  Too many %s instances are unplaced in %s...
+[12/21 18:43:20     76s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/21 18:43:20     76s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[12/21 18:43:20     76s] WARNING   IMPPSP-1003          2  Found use of '%s'. This will continue to...
+[12/21 18:43:20     76s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[12/21 18:43:20     76s] *** Message Summary: 101 warning(s), 18 error(s)
+[12/21 18:43:20     76s] 
+[12/21 18:43:20     76s] --- Ending "Innovus" (totcpu=0:01:17, real=0:15:23, mem=1626.1M) ---

@@ -1,0 +1,830 @@
+[01/08 17:04:17      0s] 
+[01/08 17:04:17      0s] Cadence Innovus(TM) Implementation System.
+[01/08 17:04:17      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/08 17:04:17      0s] 
+[01/08 17:04:17      0s] Version:	v21.35-s114_1, built Thu Oct 13 12:11:47 PDT 2022
+[01/08 17:04:17      0s] Options:	
+[01/08 17:04:17      0s] Date:		Thu Jan  8 17:04:17 2026
+[01/08 17:04:17      0s] Host:		cn88.it.auth.gr (x86_64 w/Linux 5.14.0-570.52.1.el9_6.x86_64) (12cores*12cpus*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+[01/08 17:04:17      0s] OS:		Rocky Linux release 9.7 (Blue Onyx)
+[01/08 17:04:17      0s] 
+[01/08 17:04:17      0s] License:
+[01/08 17:04:17      0s] 		[17:04:17.187809] Configured Lic search path (21.01-s002): 5280@cadence.it.auth.gr
+
+[01/08 17:04:17      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[01/08 17:04:17      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/08 17:04:52     15s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+[01/08 17:05:06     18s] @(#)CDS: NanoRoute 21.35-s114_1 NR220912-2004/21_15-UB (database version 18.20.592_1) {superthreading v2.17}
+[01/08 17:05:06     18s] @(#)CDS: AAE 21.15-s039 (64bit) 10/13/2022 (Linux 3.10.0-693.el7.x86_64)
+[01/08 17:05:06     18s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[01/08 17:05:06     18s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[01/08 17:05:06     18s] @(#)CDS: CPE v21.15-s076
+[01/08 17:05:06     18s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[01/08 17:05:06     18s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[01/08 17:05:06     18s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[01/08 17:05:06     18s] @(#)CDS: RCDB 11.15.0
+[01/08 17:05:06     18s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[01/08 17:05:06     18s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[01/08 17:05:06     18s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2971708_cn88.it.auth.gr_ppapadoe_kgtjXo.
+
+[01/08 17:05:06     18s] Change the soft stacksize limit to 0.2%RAM (95 mbytes). Set global soft_stack_size_limit to change the value.
+[01/08 17:05:13     21s] 
+[01/08 17:05:13     21s] **INFO:  MMMC transition support version v31-84 
+[01/08 17:05:13     21s] 
+[01/08 17:05:13     21s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/08 17:05:13     21s] <CMD> suppressMessage ENCEXT-2799
+[01/08 17:05:13     21s] <CMD> getVersion
+[01/08 17:05:13     21s] <CMD> getVersion
+[01/08 17:05:14     21s] <CMD> getVersion
+[01/08 17:05:15     21s] [INFO] Loading PVS 21.12 fill procedures
+[01/08 17:05:16     21s] <CMD> win
+[01/08 17:05:55     25s] <CMD> encMessage warning 0
+[01/08 17:05:55     25s] Suppress "**WARN ..." messages.
+[01/08 17:05:55     25s] <CMD> encMessage debug 0
+[01/08 17:05:55     25s] <CMD> is_common_ui_mode
+[01/08 17:05:55     25s] <CMD> restoreDesign /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat picorv32_pads
+[01/08 17:05:55     25s] #% Begin load design ... (date=01/08 17:05:55, mem=997.7M)
+[01/08 17:05:56     26s] Loading design 'picorv32_pads' saved by 'Innovus' '21.35-s114_1' on 'Mon Dec 8 13:27:21 2025'.
+[01/08 17:05:58     26s] % Begin Load MMMC data ... (date=01/08 17:05:58, mem=1000.1M)
+[01/08 17:05:58     26s] % End Load MMMC data ... (date=01/08 17:05:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1000.9M, current mem=1000.9M)
+[01/08 17:05:58     26s] 
+[01/08 17:05:58     26s] Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/lef/gsclib045_tech.lef ...
+[01/08 17:05:58     26s] 
+[01/08 17:05:58     26s] Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/lef/gsclib045_macro.lef ...
+[01/08 17:05:58     26s] Set DBUPerIGU to M2 pitch 400.
+[01/08 17:05:58     26s] 
+[01/08 17:05:58     26s] Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/lef/giolib045.lef ...
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-201' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-201' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-201' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-201' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-201' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-201' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (IMPLF-200):	Pin 'AY' in macro 'PADANALOG' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/08 17:05:58     26s] Type 'man IMPLF-200' for more detail.
+[01/08 17:05:58     26s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[01/08 17:05:58     26s] To increase the message display limit, refer to the product command reference manual.
+[01/08 17:05:58     26s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[01/08 17:05:58     26s] Loading view definition file from /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/viewDefinition.tcl
+[01/08 17:05:58     26s] Reading timing1 timing library '/mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib' ...
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+[01/08 17:05:59     27s] Read 489 cells in library 'fast_vdd1v2' 
+[01/08 17:05:59     27s] Reading timing1 timing library '/mnt/apps/prebuilt/EDA/designkits/GPDK/giolib045/lan/flow/rfkit/reference_libs/GPDK045/giolib045_v3.5/timing/pads_SS_s1vg.lib' ...
+[01/08 17:05:59     27s] Read 8 cells in library 'giolib045' 
+[01/08 17:05:59     27s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:01.0, peak res=1067.6M, current mem=1023.1M)
+[01/08 17:05:59     27s] *** End library_loading (cpu=0.01min, real=0.02min, mem=23.5M, fe_cpu=0.45min, fe_real=1.70min, fe_mem=1051.6M) ***
+[01/08 17:05:59     27s] % Begin Load netlist data ... (date=01/08 17:05:59, mem=1023.3M)
+[01/08 17:05:59     27s] *** Begin netlist parsing (mem=1051.6M) ***
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDO' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDO' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDO' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDO' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDI' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDI' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDI' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDI' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDB' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDB' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDB' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] **WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDB' is defined in LEF but not in the timing library.
+[01/08 17:05:59     27s] Type 'man IMPVL-159' for more detail.
+[01/08 17:05:59     27s] Created 497 new cells from 2 timing libraries.
+[01/08 17:05:59     27s] Reading netlist ...
+[01/08 17:05:59     27s] Backslashed names will retain backslash and a trailing blank character.
+[01/08 17:05:59     27s] Reading verilogBinary netlist '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.v.bin'
+[01/08 17:05:59     27s] 
+[01/08 17:05:59     27s] *** Memory Usage v#1 (Current mem = 1060.594M, initial mem = 483.848M) ***
+[01/08 17:05:59     27s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1060.6M) ***
+[01/08 17:05:59     27s] % End Load netlist data ... (date=01/08 17:05:59, total cpu=0:00:00.1, real=0:00:00.0, peak res=1035.4M, current mem=1035.4M)
+[01/08 17:05:59     27s] Set top cell to picorv32_pads.
+[01/08 17:05:59     27s] Hooked 497 DB cells to tlib cells.
+[01/08 17:05:59     27s] ** Removed 4 unused lib cells.
+[01/08 17:05:59     27s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1043.7M, current mem=1043.7M)
+[01/08 17:05:59     27s] Starting recursive module instantiation check.
+[01/08 17:05:59     27s] No recursion found.
+[01/08 17:05:59     27s] Building hierarchical netlist for Cell picorv32_pads ...
+[01/08 17:05:59     27s] *** Netlist is unique.
+[01/08 17:05:59     27s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[01/08 17:05:59     27s] ** info: there are 602 modules.
+[01/08 17:05:59     27s] ** info: there are 10879 stdCell insts.
+[01/08 17:05:59     27s] ** info: there are 517 Pad insts.
+[01/08 17:05:59     27s] 
+[01/08 17:05:59     27s] *** Memory Usage v#1 (Current mem = 1113.508M, initial mem = 483.848M) ***
+[01/08 17:06:00     27s] *info: set bottom ioPad orient R0
+[01/08 17:06:00     27s] Initializing I/O assignment ...
+[01/08 17:06:00     27s] Adjusting Core to Bottom to: 20.1100.
+[01/08 17:06:00     27s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:00     27s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:00     27s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:00     27s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:00     27s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:00     27s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:00     27s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:00     27s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:00     27s] Start create_tracks
+[01/08 17:06:00     27s] Pre-connect netlist-defined P/G connections...
+[01/08 17:06:00     27s]   Updated 517 instances.
+[01/08 17:06:00     27s] Loading preference file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/gui.pref.tcl ...
+[01/08 17:06:00     27s] **WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+[01/08 17:06:00     27s] Type 'man IMPOPT-3602' for more detail.
+[01/08 17:06:00     27s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[01/08 17:06:00     27s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[01/08 17:06:00     27s] Type 'man IMPOPT-3602' for more detail.
+[01/08 17:06:00     27s] Effort level <high> specified for reg2reg path_group
+[01/08 17:06:00     27s] **WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+[01/08 17:06:00     27s] Type 'man IMPOPT-3602' for more detail.
+[01/08 17:06:00     27s] Effort level <low> specified for reg2out path_group
+[01/08 17:06:00     27s] **WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+[01/08 17:06:00     27s] Type 'man IMPOPT-3602' for more detail.
+[01/08 17:06:00     27s] Effort level <low> specified for in2reg path_group
+[01/08 17:06:00     27s] **WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+[01/08 17:06:00     27s] Type 'man IMPOPT-3602' for more detail.
+[01/08 17:06:00     27s] Effort level <low> specified for in2out path_group
+[01/08 17:06:00     27s] #WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[01/08 17:06:00     27s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[01/08 17:06:00     27s] addRing command will ignore shorts while creating rings.
+[01/08 17:06:00     27s] addRing command will disallow rings to go over rows.
+[01/08 17:06:00     27s] addRing command will consider rows while creating rings.
+[01/08 17:06:00     27s] The ring targets are set to core/block ring wires.
+[01/08 17:06:00     27s] addStripe will allow jog to connect padcore ring and block ring.
+[01/08 17:06:00     27s] 
+[01/08 17:06:00     27s] Change floorplan default-technical-site to 'CoreSite'.
+[01/08 17:06:00     27s] Extraction setup Delayed 
+[01/08 17:06:00     27s] *Info: initialize multi-corner CTS.
+[01/08 17:06:00     27s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1317.9M, current mem=1081.4M)
+[01/08 17:06:00     27s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[01/08 17:06:00     27s] 
+[01/08 17:06:00     27s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/08 17:06:00     28s] Summary for sequential cells identification: 
+[01/08 17:06:00     28s]   Identified SBFF number: 104
+[01/08 17:06:00     28s]   Identified MBFF number: 0
+[01/08 17:06:00     28s]   Identified SB Latch number: 0
+[01/08 17:06:00     28s]   Identified MB Latch number: 0
+[01/08 17:06:00     28s]   Not identified SBFF number: 16
+[01/08 17:06:00     28s]   Not identified MBFF number: 0
+[01/08 17:06:00     28s]   Not identified SB Latch number: 0
+[01/08 17:06:00     28s]   Not identified MB Latch number: 0
+[01/08 17:06:00     28s]   Number of sequential cells which are not FFs: 32
+[01/08 17:06:00     28s] Total number of combinational cells: 327
+[01/08 17:06:00     28s] Total number of sequential cells: 152
+[01/08 17:06:00     28s] Total number of tristate cells: 10
+[01/08 17:06:00     28s] Total number of level shifter cells: 0
+[01/08 17:06:00     28s] Total number of power gating cells: 0
+[01/08 17:06:00     28s] Total number of isolation cells: 0
+[01/08 17:06:00     28s] Total number of power switch cells: 0
+[01/08 17:06:00     28s] Total number of pulse generator cells: 0
+[01/08 17:06:00     28s] Total number of always on buffers: 0
+[01/08 17:06:00     28s] Total number of retention cells: 0
+[01/08 17:06:00     28s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[01/08 17:06:00     28s] Total number of usable buffers: 16
+[01/08 17:06:00     28s] List of unusable buffers:
+[01/08 17:06:00     28s] Total number of unusable buffers: 0
+[01/08 17:06:00     28s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[01/08 17:06:00     28s] Total number of usable inverters: 19
+[01/08 17:06:00     28s] List of unusable inverters:
+[01/08 17:06:00     28s] Total number of unusable inverters: 0
+[01/08 17:06:00     28s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[01/08 17:06:00     28s] Total number of identified usable delay cells: 8
+[01/08 17:06:00     28s] List of identified unusable delay cells:
+[01/08 17:06:00     28s] Total number of identified unusable delay cells: 0
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Deleting Cell Server Begin ...
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Deleting Cell Server End ...
+[01/08 17:06:00     28s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1326.8M, current mem=1326.8M)
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/08 17:06:00     28s] Summary for sequential cells identification: 
+[01/08 17:06:00     28s]   Identified SBFF number: 104
+[01/08 17:06:00     28s]   Identified MBFF number: 0
+[01/08 17:06:00     28s]   Identified SB Latch number: 0
+[01/08 17:06:00     28s]   Identified MB Latch number: 0
+[01/08 17:06:00     28s]   Not identified SBFF number: 16
+[01/08 17:06:00     28s]   Not identified MBFF number: 0
+[01/08 17:06:00     28s]   Not identified SB Latch number: 0
+[01/08 17:06:00     28s]   Not identified MB Latch number: 0
+[01/08 17:06:00     28s]   Number of sequential cells which are not FFs: 32
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] Trim Metal Layers:
+[01/08 17:06:00     28s]  Visiting view : analysis1
+[01/08 17:06:00     28s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[01/08 17:06:00     28s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[01/08 17:06:00     28s]  Visiting view : analysis1
+[01/08 17:06:00     28s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[01/08 17:06:00     28s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Deleting Cell Server Begin ...
+[01/08 17:06:00     28s] 
+[01/08 17:06:00     28s] TimeStamp Deleting Cell Server End ...
+[01/08 17:06:00     28s] **WARN: (IMPSYC-2):	Timing information is not defined for cell padIORINGCORNER; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[01/08 17:06:00     28s] Type 'man IMPSYC-2' for more detail.
+[01/08 17:06:00     28s] Reading floorplan file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.fp.gz (mem = 1364.6M).
+[01/08 17:06:00     28s] % Begin Load floorplan data ... (date=01/08 17:06:00, mem=1328.2M)
+[01/08 17:06:00     28s] *info: reset 12721 existing net BottomPreferredLayer and AvoidDetour
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_valid is connected to ground net trace_valid.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data35 is connected to ground net trace_data[35].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data34 is connected to ground net trace_data[34].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data33 is connected to ground net trace_data[33].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data32 is connected to ground net trace_data[32].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data31 is connected to ground net trace_data[31].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data30 is connected to ground net trace_data[30].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data29 is connected to ground net trace_data[29].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data28 is connected to ground net trace_data[28].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data27 is connected to ground net trace_data[27].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data26 is connected to ground net trace_data[26].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data25 is connected to ground net trace_data[25].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data24 is connected to ground net trace_data[24].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data23 is connected to ground net trace_data[23].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data22 is connected to ground net trace_data[22].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data21 is connected to ground net trace_data[21].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data20 is connected to ground net trace_data[20].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data19 is connected to ground net trace_data[19].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data18 is connected to ground net trace_data[18].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] **WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data17 is connected to ground net trace_data[17].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[01/08 17:06:00     28s] Pre-connect netlist-defined P/G connections...
+[01/08 17:06:00     28s]   Updated 517 instances.
+[01/08 17:06:00     28s] Deleting old partition specification.
+[01/08 17:06:01     28s] Set FPlanBox to (0 0 16440000 16440000)
+[01/08 17:06:01     28s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:01     28s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:01     28s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:01     28s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:01     28s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:01     28s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:01     28s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[01/08 17:06:01     28s] Type 'man IMPFP-3961' for more detail.
+[01/08 17:06:01     28s] Start create_tracks
+[01/08 17:06:01     28s]  ... processed partition successfully.
+[01/08 17:06:01     28s] Reading binary special route file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.fp.spr.gz (Created by Innovus v21.35-s114_1 on Mon Dec  8 13:27:15 2025, version: 1)
+[01/08 17:06:01     28s] Convert 0 swires and 0 svias from compressed groups
+[01/08 17:06:01     28s] 75 swires and 240 svias were compressed
+[01/08 17:06:01     28s] 75 swires and 240 svias were decompressed from small or sparse groups
+[01/08 17:06:01     28s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1330.6M, current mem=1330.6M)
+[01/08 17:06:01     28s] There are 517 io inst loaded
+[01/08 17:06:01     28s] There are 62 nets with bottomPreferredRoutingLayer being set
+[01/08 17:06:01     28s] Extracting standard cell pins and blockage ...... 
+[01/08 17:06:01     28s] Pin and blockage extraction finished
+[01/08 17:06:01     28s] % End Load floorplan data ... (date=01/08 17:06:01, total cpu=0:00:00.2, real=0:00:01.0, peak res=1337.4M, current mem=1337.4M)
+[01/08 17:06:01     28s] Reading congestion map file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.route.congmap.gz ...
+[01/08 17:06:01     28s] % Begin Load SymbolTable ... (date=01/08 17:06:01, mem=1337.7M)
+[01/08 17:06:01     28s] % End Load SymbolTable ... (date=01/08 17:06:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=1538.4M, current mem=1538.4M)
+[01/08 17:06:01     28s] Loading place ...
+[01/08 17:06:01     28s] % Begin Load placement data ... (date=01/08 17:06:01, mem=1538.4M)
+[01/08 17:06:01     28s] Reading placement file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.place.gz.
+[01/08 17:06:01     28s] ** Reading stdCellPlacement_binary (Created by Innovus v21.35-s114_1 on Mon Dec  8 13:27:17 2025, version# 2) ...
+[01/08 17:06:01     28s] Read Views for adaptive view pruning ...
+[01/08 17:06:01     28s] Read 0 views from Binary DB for adaptive view pruning
+[01/08 17:06:01     28s] *** Completed restorePlace (cpu=0:00:00.1 real=0:00:00.0 mem=1574.9M) ***
+[01/08 17:06:01     28s] Total net length = 1.286e+06 (5.360e+05 7.496e+05) (ext = 7.429e+05)
+[01/08 17:06:01     28s] % End Load placement data ... (date=01/08 17:06:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=1541.8M, current mem=1541.3M)
+[01/08 17:06:01     28s] Reading PG file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.pg.gz, version#2, (Created by Innovus v21.35-s114_1 on       Mon Dec  8 13:27:15 2025)
+[01/08 17:06:01     28s] *** Completed restorePGFile (cpu=0:00:00.1 real=0:00:00.0 mem=1570.9M) ***
+[01/08 17:06:02     28s] % Begin Load routing data ... (date=01/08 17:06:02, mem=1541.9M)
+[01/08 17:06:02     28s] Reading routing file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.route.gz.
+[01/08 17:06:02     28s] routingBox: (200 250) (16439800 16439810)
+[01/08 17:06:02     28s] coreBox:    (520000 519900) (15920000 15920100)
+[01/08 17:06:02     28s] Un-suppress "**WARN ..." messages.
+[01/08 17:06:02     28s] Reading Innovus routing data (Created by Innovus v21.35-s114_1 on Mon Dec  8 13:27:17 2025 Format: 20.1) ...
+[01/08 17:06:02     29s] *** Total 12660 nets are successfully restored.
+[01/08 17:06:02     29s] *** Completed restoreRoute (cpu=0:00:00.4 real=0:00:00.0 mem=1942.5M) ***
+[01/08 17:06:02     29s] % End Load routing data ... (date=01/08 17:06:02, total cpu=0:00:00.4, real=0:00:00.0, peak res=1914.5M, current mem=1913.6M)
+[01/08 17:06:02     29s] Loading Drc markers ...
+[01/08 17:06:02     29s] ... 2568 markers are loaded ...
+[01/08 17:06:02     29s] ... 1862 geometry drc markers are loaded ...
+[01/08 17:06:02     29s] ... 702 antenna drc markers are loaded ...
+[01/08 17:06:02     30s] TAT_INFO: restoreCongMap REAL = 1 : CPU = 1 : MEM = 0.
+[01/08 17:06:03     30s] Reading property file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.prop
+[01/08 17:06:03     30s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1960.5M) ***
+[01/08 17:06:03     30s] Reading dirtyarea snapshot file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.db.da.gz (Create by Innovus v21.35-s114_1 on Mon Dec  8 13:27:18 2025, version: 4).
+[01/08 17:06:04     30s] Loading preRoute extraction data from directory '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/extraction/' ...
+[01/08 17:06:04     30s] Restore PreRoute RC Grid meta data successful.
+[01/08 17:06:04     30s] Extraction setup Started 
+[01/08 17:06:04     30s] 
+[01/08 17:06:04     30s] Trim Metal Layers:
+[01/08 17:06:04     30s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[01/08 17:06:04     30s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[01/08 17:06:04     30s] __QRC_SADV_USE_LE__ is set 0
+[01/08 17:06:05     31s] Metal Layer Id 1 is Metal1 
+[01/08 17:06:05     31s] Metal Layer Id 2 is Metal2 
+[01/08 17:06:05     31s] Metal Layer Id 3 is Metal3 
+[01/08 17:06:05     31s] Metal Layer Id 4 is Metal4 
+[01/08 17:06:05     31s] Metal Layer Id 5 is Metal5 
+[01/08 17:06:05     31s] Metal Layer Id 6 is Metal6 
+[01/08 17:06:05     31s] Metal Layer Id 7 is Metal7 
+[01/08 17:06:05     31s] Metal Layer Id 8 is Metal8 
+[01/08 17:06:05     31s] Metal Layer Id 9 is Metal9 
+[01/08 17:06:05     31s] Metal Layer Id 10 is Metal10 
+[01/08 17:06:05     31s] Metal Layer Id 11 is Metal11 
+[01/08 17:06:05     31s] Via Layer Id 33 is Cont 
+[01/08 17:06:05     31s] Via Layer Id 34 is Via1 
+[01/08 17:06:05     31s] Via Layer Id 35 is Via2 
+[01/08 17:06:05     31s] Via Layer Id 36 is Via3 
+[01/08 17:06:05     31s] Via Layer Id 37 is Via4 
+[01/08 17:06:05     31s] Via Layer Id 38 is Via5 
+[01/08 17:06:05     31s] Via Layer Id 39 is Via6 
+[01/08 17:06:05     31s] Via Layer Id 40 is Via7 
+[01/08 17:06:05     31s] Via Layer Id 41 is Via8 
+[01/08 17:06:05     31s] Via Layer Id 42 is Via9 
+[01/08 17:06:05     31s] Via Layer Id 43 is Via10 
+[01/08 17:06:05     31s] Via Layer Id 44 is Bondpad 
+[01/08 17:06:05     31s] 
+[01/08 17:06:05     31s] Trim Metal Layers:
+[01/08 17:06:05     31s] Generating auto layer map file.
+[01/08 17:06:05     31s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer metal_1 
+[01/08 17:06:05     31s]  lef via Layer Id 1 mapped to tech Id 6 of Layer via_1 
+[01/08 17:06:05     31s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer metal_2 
+[01/08 17:06:05     31s]  lef via Layer Id 2 mapped to tech Id 8 of Layer via_2 
+[01/08 17:06:05     31s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer metal_3 
+[01/08 17:06:05     31s]  lef via Layer Id 3 mapped to tech Id 10 of Layer via_3 
+[01/08 17:06:05     31s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer metal_4 
+[01/08 17:06:05     31s]  lef via Layer Id 4 mapped to tech Id 12 of Layer via_4 
+[01/08 17:06:05     31s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer metal_5 
+[01/08 17:06:05     31s]  lef via Layer Id 5 mapped to tech Id 14 of Layer via_5 
+[01/08 17:06:05     31s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer metal_6 
+[01/08 17:06:05     31s]  lef via Layer Id 6 mapped to tech Id 16 of Layer via_6 
+[01/08 17:06:05     31s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer metal_7 
+[01/08 17:06:05     31s]  lef via Layer Id 7 mapped to tech Id 18 of Layer via_7 
+[01/08 17:06:05     31s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer metal_8 
+[01/08 17:06:05     31s]  lef via Layer Id 8 mapped to tech Id 20 of Layer via_8 
+[01/08 17:06:05     31s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer metal_9 
+[01/08 17:06:05     31s]  lef via Layer Id 9 mapped to tech Id 22 of Layer via_9 
+[01/08 17:06:05     31s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer metal_10 
+[01/08 17:06:05     31s]  lef via Layer Id 10 mapped to tech Id 24 of Layer via_10 
+[01/08 17:06:05     31s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer metal_11 
+[01/08 17:06:05     31s] Metal Layer Id 1 mapped to 5 
+[01/08 17:06:05     31s] Via Layer Id 1 mapped to 6 
+[01/08 17:06:05     31s] Metal Layer Id 2 mapped to 7 
+[01/08 17:06:05     31s] Via Layer Id 2 mapped to 8 
+[01/08 17:06:05     31s] Metal Layer Id 3 mapped to 9 
+[01/08 17:06:05     31s] Via Layer Id 3 mapped to 10 
+[01/08 17:06:05     31s] Metal Layer Id 4 mapped to 11 
+[01/08 17:06:05     31s] Via Layer Id 4 mapped to 12 
+[01/08 17:06:05     31s] Metal Layer Id 5 mapped to 13 
+[01/08 17:06:05     31s] Via Layer Id 5 mapped to 14 
+[01/08 17:06:05     31s] Metal Layer Id 6 mapped to 15 
+[01/08 17:06:05     31s] Via Layer Id 6 mapped to 16 
+[01/08 17:06:05     31s] Metal Layer Id 7 mapped to 17 
+[01/08 17:06:05     31s] Via Layer Id 7 mapped to 18 
+[01/08 17:06:05     31s] Metal Layer Id 8 mapped to 19 
+[01/08 17:06:05     31s] Via Layer Id 8 mapped to 20 
+[01/08 17:06:05     31s] Metal Layer Id 9 mapped to 21 
+[01/08 17:06:05     31s] Via Layer Id 9 mapped to 22 
+[01/08 17:06:05     31s] Metal Layer Id 10 mapped to 23 
+[01/08 17:06:05     31s] Via Layer Id 10 mapped to 24 
+[01/08 17:06:05     31s] Metal Layer Id 11 mapped to 25 
+[01/08 17:06:05     31s] eee: pegPreRouteEnableSaveRestoreRCPatterns:1, retVal:1, doesAnyTechFileNeedExtraction1
+[01/08 17:06:05     31s] eee: Reading patterns meta data.
+[01/08 17:06:05     31s] Restore PreRoute Pattern Extraction data failed due to mismatch in NDR width count.
+[01/08 17:06:05     31s] eee: PatternAvail:0, PreRoutePatternReadFailed:1
+[01/08 17:06:05     31s] Restore PreRoute Pattern Extraction data failed.
+[01/08 17:06:05     31s] Importing multi-corner technology file(s) for preRoute extraction...
+[01/08 17:06:05     31s] /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/mmmc/rc1/gpdk045.tch
+[01/08 17:06:06     32s] Metal Layer Id 1 is Metal1 
+[01/08 17:06:06     32s] Metal Layer Id 2 is Metal2 
+[01/08 17:06:06     32s] Metal Layer Id 3 is Metal3 
+[01/08 17:06:06     32s] Metal Layer Id 4 is Metal4 
+[01/08 17:06:06     32s] Metal Layer Id 5 is Metal5 
+[01/08 17:06:06     32s] Metal Layer Id 6 is Metal6 
+[01/08 17:06:06     32s] Metal Layer Id 7 is Metal7 
+[01/08 17:06:06     32s] Metal Layer Id 8 is Metal8 
+[01/08 17:06:06     32s] Metal Layer Id 9 is Metal9 
+[01/08 17:06:06     32s] Metal Layer Id 10 is Metal10 
+[01/08 17:06:06     32s] Metal Layer Id 11 is Metal11 
+[01/08 17:06:06     32s] Via Layer Id 33 is Cont 
+[01/08 17:06:06     32s] Via Layer Id 34 is Via1 
+[01/08 17:06:06     32s] Via Layer Id 35 is Via2 
+[01/08 17:06:06     32s] Via Layer Id 36 is Via3 
+[01/08 17:06:06     32s] Via Layer Id 37 is Via4 
+[01/08 17:06:06     32s] Via Layer Id 38 is Via5 
+[01/08 17:06:06     32s] Via Layer Id 39 is Via6 
+[01/08 17:06:06     32s] Via Layer Id 40 is Via7 
+[01/08 17:06:06     32s] Via Layer Id 41 is Via8 
+[01/08 17:06:06     32s] Via Layer Id 42 is Via9 
+[01/08 17:06:06     32s] Via Layer Id 43 is Via10 
+[01/08 17:06:06     32s] Via Layer Id 44 is Bondpad 
+[01/08 17:06:06     32s] 
+[01/08 17:06:06     32s] Trim Metal Layers:
+[01/08 17:06:06     32s] Generating auto layer map file.
+[01/08 17:06:06     32s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer metal_1 
+[01/08 17:06:06     32s]  lef via Layer Id 1 mapped to tech Id 6 of Layer via_1 
+[01/08 17:06:06     32s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer metal_2 
+[01/08 17:06:06     32s]  lef via Layer Id 2 mapped to tech Id 8 of Layer via_2 
+[01/08 17:06:06     32s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer metal_3 
+[01/08 17:06:06     32s]  lef via Layer Id 3 mapped to tech Id 10 of Layer via_3 
+[01/08 17:06:06     32s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer metal_4 
+[01/08 17:06:06     32s]  lef via Layer Id 4 mapped to tech Id 12 of Layer via_4 
+[01/08 17:06:06     32s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer metal_5 
+[01/08 17:06:06     32s]  lef via Layer Id 5 mapped to tech Id 14 of Layer via_5 
+[01/08 17:06:06     32s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer metal_6 
+[01/08 17:06:06     32s]  lef via Layer Id 6 mapped to tech Id 16 of Layer via_6 
+[01/08 17:06:06     32s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer metal_7 
+[01/08 17:06:06     32s]  lef via Layer Id 7 mapped to tech Id 18 of Layer via_7 
+[01/08 17:06:06     32s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer metal_8 
+[01/08 17:06:06     32s]  lef via Layer Id 8 mapped to tech Id 20 of Layer via_8 
+[01/08 17:06:06     32s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer metal_9 
+[01/08 17:06:06     32s]  lef via Layer Id 9 mapped to tech Id 22 of Layer via_9 
+[01/08 17:06:06     32s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer metal_10 
+[01/08 17:06:06     32s]  lef via Layer Id 10 mapped to tech Id 24 of Layer via_10 
+[01/08 17:06:06     32s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer metal_11 
+[01/08 17:06:06     32s] Metal Layer Id 1 mapped to 5 
+[01/08 17:06:06     32s] Via Layer Id 1 mapped to 6 
+[01/08 17:06:06     32s] Metal Layer Id 2 mapped to 7 
+[01/08 17:06:06     32s] Via Layer Id 2 mapped to 8 
+[01/08 17:06:06     32s] Metal Layer Id 3 mapped to 9 
+[01/08 17:06:06     32s] Via Layer Id 3 mapped to 10 
+[01/08 17:06:06     32s] Metal Layer Id 4 mapped to 11 
+[01/08 17:06:06     32s] Via Layer Id 4 mapped to 12 
+[01/08 17:06:06     32s] Metal Layer Id 5 mapped to 13 
+[01/08 17:06:06     32s] Via Layer Id 5 mapped to 14 
+[01/08 17:06:06     32s] Metal Layer Id 6 mapped to 15 
+[01/08 17:06:06     32s] Via Layer Id 6 mapped to 16 
+[01/08 17:06:06     32s] Metal Layer Id 7 mapped to 17 
+[01/08 17:06:06     32s] Via Layer Id 7 mapped to 18 
+[01/08 17:06:06     32s] Metal Layer Id 8 mapped to 19 
+[01/08 17:06:06     32s] Via Layer Id 8 mapped to 20 
+[01/08 17:06:06     32s] Metal Layer Id 9 mapped to 21 
+[01/08 17:06:06     32s] Via Layer Id 9 mapped to 22 
+[01/08 17:06:06     32s] Metal Layer Id 10 mapped to 23 
+[01/08 17:06:06     32s] Via Layer Id 10 mapped to 24 
+[01/08 17:06:06     32s] Metal Layer Id 11 mapped to 25 
+[01/08 17:06:09     35s] Completed (cpu: 0:00:04.8 real: 0:00:05.0)
+[01/08 17:06:09     35s] Set Shrink Factor to 1.00000
+[01/08 17:06:09     35s] Summary of Active RC-Corners : 
+[01/08 17:06:09     35s]  
+[01/08 17:06:09     35s]  Analysis View: analysis1
+[01/08 17:06:09     35s]     RC-Corner Name        : rc1
+[01/08 17:06:09     35s]     RC-Corner Index       : 0
+[01/08 17:06:09     35s]     RC-Corner Temperature : 0 Celsius
+[01/08 17:06:09     35s]     RC-Corner Cap Table   : ''
+[01/08 17:06:09     35s]     RC-Corner PreRoute Res Factor         : 1
+[01/08 17:06:09     35s]     RC-Corner PreRoute Cap Factor         : 1
+[01/08 17:06:09     35s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/08 17:06:09     35s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/08 17:06:09     35s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/08 17:06:09     35s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/08 17:06:09     35s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/08 17:06:09     35s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[01/08 17:06:09     35s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[01/08 17:06:09     35s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/08 17:06:09     35s]     RC-Corner Technology file: '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/mmmc/rc1/gpdk045.tch'
+[01/08 17:06:09     35s] 
+[01/08 17:06:09     35s] Trim Metal Layers:
+[01/08 17:06:09     35s] LayerId::1 widthSet size::2
+[01/08 17:06:09     35s] LayerId::2 widthSet size::2
+[01/08 17:06:09     35s] LayerId::3 widthSet size::2
+[01/08 17:06:09     35s] LayerId::4 widthSet size::2
+[01/08 17:06:09     35s] LayerId::5 widthSet size::2
+[01/08 17:06:09     35s] LayerId::6 widthSet size::2
+[01/08 17:06:09     35s] LayerId::7 widthSet size::2
+[01/08 17:06:09     35s] LayerId::8 widthSet size::2
+[01/08 17:06:09     35s] LayerId::9 widthSet size::2
+[01/08 17:06:09     35s] LayerId::10 widthSet size::2
+[01/08 17:06:09     35s] LayerId::11 widthSet size::2
+[01/08 17:06:09     35s] Checksum of RCGrid density data read::(132 132) passed::1
+[01/08 17:06:09     35s] Restore PreRoute RC Grid data successful.
+[01/08 17:06:09     35s] Restored RC grid for preRoute extraction.
+[01/08 17:06:09     35s] eee: pegSigSF::1.070000
+[01/08 17:06:09     35s] Initializing multi-corner resistance tables ...
+[01/08 17:06:09     35s] ReadRoutingBlockageFactor status::1
+[01/08 17:06:09     35s] Restore PreRoute Blockage data successful.
+[01/08 17:06:09     35s] eee: Reading Grid unit RC.
+[01/08 17:06:10     35s] pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::rc1
+[01/08 17:06:10     35s] RCCorner in design data Name::rc1 Tech::/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/mmmc/rc1/gpdk045.tch 0.000000 1.000000 1.000000 
+[01/08 17:06:10     35s] RCCorner in saved data Name::rc1 Tech::/mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 1.000000 1.000000 
+[01/08 17:06:10     35s] Unit RC read checksum: 10222256, count: 10222256, status: 1
+[01/08 17:06:10     35s] Number of RC corner to be extracted::0
+[01/08 17:06:10     35s] eee: l::1 avDens::0.121943 usedTrk::2240427.568705 availTrk::18372690.126632 sigTrk::2240427.568705
+[01/08 17:06:10     35s] eee: l::2 avDens::0.040548 usedTrk::11399.528956 availTrk::281134.495720 sigTrk::11399.528956
+[01/08 17:06:10     35s] eee: l::3 avDens::0.037690 usedTrk::17721.097967 availTrk::470180.219790 sigTrk::17721.097967
+[01/08 17:06:10     35s] eee: l::4 avDens::0.031058 usedTrk::8071.913439 availTrk::259900.392901 sigTrk::8071.913439
+[01/08 17:06:10     35s] eee: l::5 avDens::0.036479 usedTrk::4256.535673 availTrk::116686.105564 sigTrk::4256.535673
+[01/08 17:06:10     35s] eee: l::6 avDens::0.051492 usedTrk::22395.415789 availTrk::434929.981503 sigTrk::22395.415789
+[01/08 17:06:10     35s] eee: l::7 avDens::0.035400 usedTrk::2928.921635 availTrk::82737.825065 sigTrk::2928.921635
+[01/08 17:06:10     35s] eee: l::8 avDens::0.009870 usedTrk::3053.776614 availTrk::309397.570899 sigTrk::3053.776614
+[01/08 17:06:10     35s] eee: l::9 avDens::0.018727 usedTrk::5410.049705 availTrk::288890.092692 sigTrk::5410.049705
+[01/08 17:06:10     35s] eee: l::10 avDens::0.039769 usedTrk::1933.044444 availTrk::48606.424698 sigTrk::1933.044444
+[01/08 17:06:10     35s] eee: l::11 avDens::0.083185 usedTrk::3647.735100 availTrk::43850.750024 sigTrk::3647.735100
+[01/08 17:06:11     36s] {RT rc1 0 11 11 {8 0} {10 0} 2}
+[01/08 17:06:11     36s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.317635 uaWl=0.956791 uaWlH=0.547991 aWlH=0.040910 lMod=0 pMax=0.884100 pMod=79 wcR=0.772700 newSi=0.002200 wHLS=2.011167 siPrev=0 viaL=0.000000
+[01/08 17:06:11     36s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[01/08 17:06:11     36s] Restore PreRoute all RC Grid data successful.Start generating vias ..
+[01/08 17:06:11     36s] #create default rule from bind_ndr_rule rule=0x7fb8beb815b0 0x7fb87e752568
+[01/08 17:06:11     37s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[01/08 17:06:11     37s] #Skip building auto via since it is not turned on.
+[01/08 17:06:11     37s] Extracting standard cell pins and blockage ...... 
+[01/08 17:06:11     37s] Pin and blockage extraction finished
+[01/08 17:06:11     37s] Via generation completed.
+[01/08 17:06:11     37s] % Begin Load power constraints ... (date=01/08 17:06:11, mem=2035.6M)
+[01/08 17:06:11     37s] % End Load power constraints ... (date=01/08 17:06:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=2042.7M, current mem=2042.7M)
+[01/08 17:06:11     37s] % Begin load AAE data ... (date=01/08 17:06:11, mem=2079.0M)
+[01/08 17:06:12     37s] AAE DB initialization (MEM=2133.84 CPU=0:00:00.0 REAL=0:00:00.0) 
+[01/08 17:06:12     38s] % End load AAE data ... (date=01/08 17:06:12, total cpu=0:00:00.7, real=0:00:01.0, peak res=2086.5M, current mem=2086.5M)
+[01/08 17:06:12     38s] Restoring CCOpt config...
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/08 17:06:12     38s] Summary for sequential cells identification: 
+[01/08 17:06:12     38s]   Identified SBFF number: 104
+[01/08 17:06:12     38s]   Identified MBFF number: 0
+[01/08 17:06:12     38s]   Identified SB Latch number: 0
+[01/08 17:06:12     38s]   Identified MB Latch number: 0
+[01/08 17:06:12     38s]   Not identified SBFF number: 16
+[01/08 17:06:12     38s]   Not identified MBFF number: 0
+[01/08 17:06:12     38s]   Not identified SB Latch number: 0
+[01/08 17:06:12     38s]   Not identified MB Latch number: 0
+[01/08 17:06:12     38s]   Number of sequential cells which are not FFs: 32
+[01/08 17:06:12     38s]  Visiting view : analysis1
+[01/08 17:06:12     38s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[01/08 17:06:12     38s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[01/08 17:06:12     38s]  Visiting view : analysis1
+[01/08 17:06:12     38s]    : PowerDomain = none : Weighted F : unweighted  = 9.80 (1.000) with rcCorner = 0
+[01/08 17:06:12     38s]    : PowerDomain = none : Weighted F : unweighted  = 4.30 (1.000) with rcCorner = -1
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/08 17:06:12     38s]   Extracting original clock gating for clk...
+[01/08 17:06:12     38s]     clock_tree clk contains 2400 sinks and 0 clock gates.
+[01/08 17:06:12     38s]   Extracting original clock gating for clk done.
+[01/08 17:06:12     38s]   The skew group clk/constraint1 was created. It contains 2400 sinks and 1 sources.
+[01/08 17:06:12     38s]   The skew group clk/constraint1 was created. It contains 2400 sinks and 1 sources.
+[01/08 17:06:12     38s] Restoring CCOpt config done.
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Deleting Cell Server Begin ...
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Deleting Cell Server End ...
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/08 17:06:12     38s] Summary for sequential cells identification: 
+[01/08 17:06:12     38s]   Identified SBFF number: 104
+[01/08 17:06:12     38s]   Identified MBFF number: 0
+[01/08 17:06:12     38s]   Identified SB Latch number: 0
+[01/08 17:06:12     38s]   Identified MB Latch number: 0
+[01/08 17:06:12     38s]   Not identified SBFF number: 16
+[01/08 17:06:12     38s]   Not identified MBFF number: 0
+[01/08 17:06:12     38s]   Not identified SB Latch number: 0
+[01/08 17:06:12     38s]   Not identified MB Latch number: 0
+[01/08 17:06:12     38s]   Number of sequential cells which are not FFs: 32
+[01/08 17:06:12     38s] Total number of combinational cells: 327
+[01/08 17:06:12     38s] Total number of sequential cells: 152
+[01/08 17:06:12     38s] Total number of tristate cells: 10
+[01/08 17:06:12     38s] Total number of level shifter cells: 0
+[01/08 17:06:12     38s] Total number of power gating cells: 0
+[01/08 17:06:12     38s] Total number of isolation cells: 0
+[01/08 17:06:12     38s] Total number of power switch cells: 0
+[01/08 17:06:12     38s] Total number of pulse generator cells: 0
+[01/08 17:06:12     38s] Total number of always on buffers: 0
+[01/08 17:06:12     38s] Total number of retention cells: 0
+[01/08 17:06:12     38s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[01/08 17:06:12     38s] Total number of usable buffers: 16
+[01/08 17:06:12     38s] List of unusable buffers:
+[01/08 17:06:12     38s] Total number of unusable buffers: 0
+[01/08 17:06:12     38s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[01/08 17:06:12     38s] Total number of usable inverters: 19
+[01/08 17:06:12     38s] List of unusable inverters:
+[01/08 17:06:12     38s] Total number of unusable inverters: 0
+[01/08 17:06:12     38s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[01/08 17:06:12     38s] Total number of identified usable delay cells: 8
+[01/08 17:06:12     38s] List of identified unusable delay cells:
+[01/08 17:06:12     38s] Total number of identified unusable delay cells: 0
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Deleting Cell Server Begin ...
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] TimeStamp Deleting Cell Server End ...
+[01/08 17:06:12     38s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[01/08 17:06:12     38s] timing_enable_separate_device_slew_effect_sensitivities
+[01/08 17:06:12     38s] #% End load design ... (date=01/08 17:06:12, total cpu=0:00:12.5, real=0:00:17.0, peak res=2116.8M, current mem=2095.4M)
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] *** Summary of all messages that are not suppressed in this session:
+[01/08 17:06:12     38s] Severity  ID               Count  Summary                                  
+[01/08 17:06:12     38s] WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[01/08 17:06:12     38s] WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+[01/08 17:06:12     38s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+[01/08 17:06:12     38s] WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+[01/08 17:06:12     38s] WARNING   IMPVL-159           16  Pin '%s' of cell '%s' is defined in LEF ...
+[01/08 17:06:12     38s] WARNING   IMPDB-2078          37  Output pin %s of instance %s is connecte...
+[01/08 17:06:12     38s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[01/08 17:06:12     38s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/08 17:06:12     38s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[01/08 17:06:12     38s] *** Message Summary: 105 warning(s), 0 error(s)
+[01/08 17:06:12     38s] 
+[01/08 17:06:12     38s] <CMD> setDrawView fplan
+[01/08 17:06:12     38s] <CMD> encMessage warning 1
+[01/08 17:06:12     38s] <CMD> encMessage debug 0
+[01/08 17:06:48     40s] <CMD> report_net wbm_stb_o
+[01/08 17:06:48     40s] 
+[01/08 17:06:48     40s] Usage: report_net [-help] [-hier] [-max_fanout <int>] [-min_fanout <int>]
+[01/08 17:06:48     40s]                   [-output <filename>] [-tcl_list] [> <filename[.gz]>]
+[01/08 17:06:48     40s]                   [>> <filename[.gz]>] [-net <list_of_net_names> | -pin <list_of_pin_names>]
+[01/08 17:06:48     40s] 
+[01/08 17:06:48     40s] 
+[01/08 17:06:54     40s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[01/08 17:07:21     42s] <CMD> report_net -net wbm_stb_o
+[01/08 17:07:21     42s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[01/08 17:07:21     42s] #################################################################################
+[01/08 17:07:21     42s] # Design Stage: PostRoute
+[01/08 17:07:21     42s] # Design Name: picorv32_pads
+[01/08 17:07:21     42s] # Design Mode: 90nm
+[01/08 17:07:21     42s] # Analysis Mode: MMMC Non-OCV 
+[01/08 17:07:21     42s] # Parasitics Mode: No SPEF/RCDB 
+[01/08 17:07:21     42s] # Signoff Settings: SI Off 
+[01/08 17:07:21     42s] #################################################################################
+[01/08 17:07:21     42s] Extraction called for design 'picorv32_pads' of instances=11396 and nets=12721 using extraction engine 'preRoute' .
+[01/08 17:07:21     42s] **WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+[01/08 17:07:21     42s] Type 'man IMPEXT-3530' for more detail.
+[01/08 17:07:21     42s] PreRoute RC Extraction called for design picorv32_pads.
+[01/08 17:07:21     42s] RC Extraction called in multi-corner(1) mode.
+[01/08 17:07:21     42s] RCMode: PreRoute
+[01/08 17:07:21     42s]       RC Corner Indexes            0   
+[01/08 17:07:21     42s] Capacitance Scaling Factor   : 1.00000 
+[01/08 17:07:21     42s] Resistance Scaling Factor    : 1.00000 
+[01/08 17:07:21     42s] Clock Cap. Scaling Factor    : 1.00000 
+[01/08 17:07:21     42s] Clock Res. Scaling Factor    : 1.00000 
+[01/08 17:07:21     42s] Shrink Factor                : 1.00000
+[01/08 17:07:21     42s] PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+[01/08 17:07:21     42s] Using Quantus QRC technology file ...
+[01/08 17:07:21     42s] 
+[01/08 17:07:21     42s] Trim Metal Layers:
+[01/08 17:07:21     42s] LayerId::1 widthSet size::2
+[01/08 17:07:21     42s] LayerId::2 widthSet size::2
+[01/08 17:07:21     42s] LayerId::3 widthSet size::2
+[01/08 17:07:21     42s] LayerId::4 widthSet size::2
+[01/08 17:07:21     42s] LayerId::5 widthSet size::2
+[01/08 17:07:21     42s] LayerId::6 widthSet size::2
+[01/08 17:07:21     42s] LayerId::7 widthSet size::2
+[01/08 17:07:21     42s] LayerId::8 widthSet size::2
+[01/08 17:07:21     42s] LayerId::9 widthSet size::2
+[01/08 17:07:21     42s] LayerId::10 widthSet size::2
+[01/08 17:07:21     42s] LayerId::11 widthSet size::2
+[01/08 17:07:21     42s] Updating RC grid for preRoute extraction ...
+[01/08 17:07:21     42s] eee: pegSigSF::1.070000
+[01/08 17:07:21     42s] Initializing multi-corner resistance tables ...
+[01/08 17:07:22     43s] eee: l::1 avDens::0.121943 usedTrk::2240427.568705 availTrk::18372690.126632 sigTrk::2240427.568705
+[01/08 17:07:22     43s] eee: l::2 avDens::0.040548 usedTrk::11399.528956 availTrk::281134.495720 sigTrk::11399.528956
+[01/08 17:07:22     43s] eee: l::3 avDens::0.037690 usedTrk::17721.097967 availTrk::470180.219790 sigTrk::17721.097967
+[01/08 17:07:22     43s] eee: l::4 avDens::0.031058 usedTrk::8071.913439 availTrk::259900.392901 sigTrk::8071.913439
+[01/08 17:07:22     43s] eee: l::5 avDens::0.036479 usedTrk::4256.535673 availTrk::116686.105564 sigTrk::4256.535673
+[01/08 17:07:22     43s] eee: l::6 avDens::0.051492 usedTrk::22395.415789 availTrk::434929.981503 sigTrk::22395.415789
+[01/08 17:07:22     43s] eee: l::7 avDens::0.035400 usedTrk::2928.921635 availTrk::82737.825065 sigTrk::2928.921635
+[01/08 17:07:22     43s] eee: l::8 avDens::0.009870 usedTrk::3053.776614 availTrk::309397.570899 sigTrk::3053.776614
+[01/08 17:07:22     43s] eee: l::9 avDens::0.018727 usedTrk::5410.049705 availTrk::288890.092692 sigTrk::5410.049705
+[01/08 17:07:22     43s] eee: l::10 avDens::0.039769 usedTrk::1933.044444 availTrk::48606.424698 sigTrk::1933.044444
+[01/08 17:07:22     43s] eee: l::11 avDens::0.083185 usedTrk::3647.735100 availTrk::43850.750024 sigTrk::3647.735100
+[01/08 17:07:23     44s] {RT rc1 0 11 11 {8 0} {10 0} 2}
+[01/08 17:07:23     44s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.317635 uaWl=0.956791 uaWlH=0.547991 aWlH=0.040910 lMod=0 pMax=0.884100 pMod=79 wcR=0.772700 newSi=0.002200 wHLS=2.011167 siPrev=0 viaL=0.000000
+[01/08 17:07:23     45s] PreRoute RC Extraction DONE (CPU Time: 0:00:02.7  Real Time: 0:00:02.0  MEM: 2180.164M)
+[01/08 17:07:24     45s] Calculate delays in Single mode...
+[01/08 17:07:24     45s] Topological Sorting (REAL = 0:00:00.0, MEM = 2229.0M, InitMEM = 2228.0M)
+[01/08 17:07:24     45s] Start delay calculation (fullDC) (1 T). (MEM=2228.97)
+[01/08 17:07:24     45s] siFlow : Timing analysis mode is single, using late cdB files
+[01/08 17:07:24     45s] Start AAE Lib Loading. (MEM=2240.48)
+[01/08 17:07:24     45s] End AAE Lib Loading. (MEM=2278.64 CPU=0:00:00.0 Real=0:00:00.0)
+[01/08 17:07:24     45s] End AAE Lib Interpolated Model. (MEM=2278.64 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net wbm_stb_o has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_stb_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[0] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[1] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[2] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[3] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net wbm_we_o has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_we_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[0] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[1] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[2] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[3] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[4] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[5] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[5]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[6] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[6]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[7] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[7]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[8] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[8]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[9] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[9]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[10] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[10]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[11] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[11]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[12] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[12]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (IMPESI-3017):	 Multi-driver net eoi[13] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+[01/08 17:07:25     46s] **WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[13]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+[01/08 17:07:25     46s] **WARN: (EMS-27):	Message (IMPESI-3017) has exceeded the current message display limit of 20.
+[01/08 17:07:25     46s] To increase the message display limit, refer to the product command reference manual.
+[01/08 17:07:25     46s] **WARN: (EMS-27):	Message (IMPESI-3014) has exceeded the current message display limit of 20.
+[01/08 17:07:25     46s] To increase the message display limit, refer to the product command reference manual.
+[01/08 17:07:26     48s] Total number of fetched objects 12178
+[01/08 17:07:26     48s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[01/08 17:07:26     48s] End delay calculation. (MEM=2376.1 CPU=0:00:01.8 REAL=0:00:02.0)
+[01/08 17:07:26     48s] End delay calculation (fullDC). (MEM=2376.1 CPU=0:00:02.3 REAL=0:00:02.0)
+[01/08 17:07:26     48s] *** CDM Built up (cpu=0:00:05.5  real=0:00:05.0  mem= 2376.1M) ***
+[01/08 17:07:52     50s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[01/08 18:10:48    278s] 
+[01/08 18:10:48    278s] *** Memory Usage v#1 (Current mem = 2328.102M, initial mem = 483.848M) ***
+[01/08 18:10:48    278s] 
+[01/08 18:10:48    278s] *** Summary of all messages that are not suppressed in this session:
+[01/08 18:10:48    278s] Severity  ID               Count  Summary                                  
+[01/08 18:10:48    278s] WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[01/08 18:10:48    278s] WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+[01/08 18:10:48    278s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+[01/08 18:10:48    278s] WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+[01/08 18:10:48    278s] WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+[01/08 18:10:48    278s] WARNING   IMPVL-159           16  Pin '%s' of cell '%s' is defined in LEF ...
+[01/08 18:10:48    278s] WARNING   IMPDB-2078          37  Output pin %s of instance %s is connecte...
+[01/08 18:10:48    278s] WARNING   IMPESI-3014        138  The RC network is incomplete for net %s....
+[01/08 18:10:48    278s] WARNING   IMPESI-3017        138   %s.                                     
+[01/08 18:10:48    278s] WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+[01/08 18:10:48    278s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/08 18:10:48    278s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[01/08 18:10:48    278s] *** Message Summary: 382 warning(s), 0 error(s)
+[01/08 18:10:48    278s] 
+[01/08 18:10:48    278s] --- Ending "Innovus" (totcpu=0:04:38, real=1:06:31, mem=2328.1M) ---

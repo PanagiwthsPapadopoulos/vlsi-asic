@@ -1,0 +1,72 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v21.15-s076_1 (09/23/2022 08:39:08)
+*  Excecutable: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -nt 1 -usecellid -session_file ./work/sfe.session -cmd ./work/voltus_scheduler.cmd 
+*  Run by ppapadoe on Thu Nov 27 15:58:14 2025
+*  Hostname: cn89.it.auth.gr
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 15:58:12 11/27/2025
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Begin Preparing Data for Parasitic Extraction
+ * Begin Load cell library
+ * Ended Load cell library: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=22.12MB/3856.16MB/2326.98MB) TimeFromStart: 2.90s Mem: 22.12MB
+
+ * Begin Pre-parse DEF and build hierachy
+ * Ended Pre-parse DEF and build hierachy: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=44.80MB/3875.16MB/2326.98MB) TimeFromStart: 4.10s Mem: 44.80MB
+
+ * Begin Flatten, partition and dump design
+ * Begin Create cell name DB
+ * Ended Create cell name DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=562.51MB/4645.59MB/2462.68MB) TimeFromStart: 4.23s Mem: 562.51MB
+
+ * Begin Write cell name DB
+ * Ended Write cell name DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=562.51MB/4645.59MB/2462.68MB) TimeFromStart: 4.23s Mem: 562.51MB
+
+ * Ended Flatten, partition and dump design: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=562.52MB/4645.59MB/2462.68MB) TimeFromStart: 4.46s Mem: 562.52MB
+
+Extracting following DFM effects:
+MetalFill        : n/a
+WEE Effects      : n/a
+Erosion Effects  : n/a
+T/B Enlargements : n/a
+R(w) Effects     : n/a
+R(w,s) Effects   : n/a
+R(sw,st) Effects : n/a
+TC(w) Effects    : n/a
+Some effects indicate n/a because of non-availability of relevant input data (or) requested to be off.
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=34.28MB/4645.59MB/2462.68MB)
+
+Finished Voltus Scheduler at 15:58:16 11/27/2025 (cpu=0:00:01, real=0:00:04, peak mem=2462.68MB)
+Current Innovus resource usage: (total cpu=0:03:39, real=0:14:17, mem=1934.45MB)
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v21.15-s076_1 (09/23/2022 08:39:08)
+*  Excecutable: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -skip_prep -nt 1 -usecellid -session_file ./work/sfe.session -cmd ./work/voltus_scheduler.cmd -zx /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_extractor 
+*  Run by ppapadoe on Thu Nov 27 15:58:16 2025
+*  Hostname: cn89.it.auth.gr
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 15:58:15 11/27/2025
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Begin Parasitic Extraction
+Extracting Progress:
+    0% at 15:58:16 11/27/2025
+Extraction command for partition 0: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_extractor -vstorm -partition 0 -partition_bbox 0 -2147483648 2500000 2147483647 -sfedb ./work/SFEDB -cachedir /tmp/innovus_temp_2664019_cn89.it.auth.gr_ppapadoe_46FY2j/zx_tmp_cn89.it.auth.gr_2674517/QiiCrO -cmd ./work/VDD.cmd
+  100% at 15:58:24 11/27/2025
+Ended Parasitic Extraction: (cpu=0:00:01, real=0:00:07, mem(process/total/peak)=17.00MB/3843.16MB/2462.68MB)
+
+Finished Voltus Scheduler at 15:58:24 11/27/2025 (cpu=0:00:01, real=0:00:09, peak mem=2183.39MB)
+Current Innovus resource usage: (total cpu=0:03:39, real=0:14:25, mem=1917.29MB)

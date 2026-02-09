@@ -1,0 +1,57 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Nov 27 21:30:08 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.35-s114_1 NR220912-2004/21_15-UB (database version 18.20.592_1) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 10/13/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/innovus/picorv32_wb.dat picorv32_wb
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setPlaceMode -reset
+ccopt_design
+selectWire 156.4600 161.8400 156.5400 164.2950 2 VSS
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -drouteFixAntenna true
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setNanoRouteMode -quiet -routeTopRoutingLayer 11
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+setNanoRouteMode -quiet -drouteUseMultiCutViaEffort medium
+routeDesign -globalDetail -viaOpt
+report_area -detail > reports/postRouting/area.rpt
+report_power > reports/postRouting/power.rpt
+setAnalysisMode -checkType setup
+report_timing -path_group reg2reg -check_type setup -max_paths 50 > reports/postRouting/setup_reg2reg.rpt
+report_timing -path_group in2reg  -check_type setup -max_paths 50 > reports/postRouting/setup_in2reg.rpt
+report_timing -path_group reg2out -check_type setup -max_paths 50 > reports/postRouting/setup_reg2out.rpt
+report_timing -path_group in2out  -check_type setup -max_paths 50 > reports/postRouting/setup_in2out.rpt
+setAnalysisMode -checkType hold
+report_timing -path_group reg2reg -check_type hold -max_paths 50 > reports/postRouting/reg2reg_hold.rpt
+report_timing -path_group reg2out -check_type hold -max_paths 50 > reports/postRouting/reg2out_hold.rpt
+report_timing -path_group in2reg -check_type hold -max_paths 50 > reports/postRouting/in2reg_hold.rpt
+report_timing -path_group in2out -check_type hold -max_paths 50 > reports/postRouting/in2out_hold.rpt
+saveDesign picorv32_wb
+saveDesign picorv32_wb

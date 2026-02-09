@@ -1,0 +1,17 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         1   -6.4194e-03A   VDDvsrc1   14.00, 121.00  METAL_10
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: -6.419mA, -6.419mA, -6.419mA
+  Total Current: -6.419mA
+    Range 1(  -6.419mA  -    -6.419mA ):         1 (100.00%)
+    Range 2(  -6.419mA  -    -6.419mA ):         0 (  0.00%)
+    Range 3(  -6.419mA  -    -6.419mA ):         0 (  0.00%)
+    Range 4(  -6.419mA  -    -6.419mA ):         0 (  0.00%)
+    Range 5(  -6.419mA  -    -6.419mA ):         0 (  0.00%)
+    Range 6(  -6.419mA  -    -6.419mA ):         0 (  0.00%)
+    Range 7(  -6.419mA  -    -6.419mA ):         0 (  0.00%)
+    Range 8(  -6.420mA  -    -6.419mA ):         0 (  0.00%)

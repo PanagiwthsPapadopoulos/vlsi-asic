@@ -1,0 +1,59 @@
+set_flatten_model -verification_info_strip_cdn_name_extension
+read_implementation_information fv/picorv32_wb -revised picorv32_elabv
+set_parallel_option -threads 1,4 -norelease_license
+set_compare_options -threads 1,4
+set_multiplier_implementation boothrca -both
+set_undefined_cell black_box -noascend -both
+add_search_path . /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/GENUS/tools.lnx86/lib/tech -library -both
+read_library -liberty -both /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib
+set_naming_style genus -golden
+set_naming_rule %s[%d] -instance_array -golden
+set_naming_rule %s_reg -register -golden
+set_naming_rule %L.%s %L[%d].%s %s -instance -golden
+set_naming_rule %L.%s %L[%d].%s %s -variable -golden
+set_naming_rule -ungroup_separator _ -golden
+set_hdl_options -const_port_extend
+set_hdl_options -unsigned_conversion_overflow on
+set_hdl_options -v_to_vd on
+set_hdl_options -VERILOG_INCLUDE_DIR sep:src
+add_search_path . -design -golden
+read_design -define SYNTHESIS -merge bbox -golden -lastmod -noelab -verilog2k /home/p/ppapadoe/Desktop/vlsi-asic/picorv32.v
+elaborate_design -golden -root picorv32_wb -rootonly -rootonly
+read_design -verilog95 -revised -lastmod -noelab picorv32_elab.v
+elaborate_design -revised -root picorv32_wb
+uniquify -all -nolib -golden
+report_design_data
+report_black_box
+set_flatten_model -seq_constant
+set_flatten_model -seq_constant_x_to 0
+set_flatten_model -nodff_to_dlat_zero
+set_flatten_model -nodff_to_dlat_feedback
+set_flatten_model -hier_seq_merge
+set_flatten_model -balanced_modeling
+check_verification_information
+set_analyze_option -auto -report_map
+write_hier_compare_dofile hier_tmp1.lec.do -verbose -noexact_pin_match -constraint -usage -replace -balanced_extraction -input_output_pin_equivalence -prepend_string "report_design_data; report_unmapped_points -summary; report_unmapped_points -notmapped; analyze_datapath -module -verbose; eval analyze_datapath -flowgraph -verbose"
+run_hier_compare hier_tmp1.lec.do -dynamic_hierarchy
+report_hier_compare_result -dynamicflattened
+report_verification -hier -verbose
+set_system_mode lec
+write_compared_points noneq.compared_points.picorv32_wb.rtl.picorv32_elabv.tcl -class noneq -tclmode -replace
+analyze_nonequivalent -source_diagnosis
+report_nonequivalent_analysis
+report_test_vector -noneq
+set_system_mode setup
+write_verification_information
+report_verification_information
+report_implementation_information
+set_system_mode lec
+get_compare_points -count
+get_compare_points -NONequivalent -count
+get_compare_points -abort -count
+get_compare_points -unknown -count
+get_compare_points -count
+get_compare_points -NONequivalent -count
+get_compare_points -abort -count
+get_compare_points -unknown -count
+analyze_results -logfiles rtl_vs_elab.lec.log
+vpxmode
+EXIt -f

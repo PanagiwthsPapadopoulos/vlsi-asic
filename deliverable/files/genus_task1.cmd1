@@ -1,0 +1,27 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.15-s080_1, built Sep 23 2022 12:57:55
+
+# Date: Thu Nov 27 17:57:48 2025
+# Host: cn91.it.auth.gr (x86_64 w/Linux 5.14.0-570.52.1.el9_6.x86_64) (12cores*12cpus*1physical cpu*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+# OS:   Rocky Linux release 9.6 (Blue Onyx)
+
+report_timing -from [all_registers] -to [all_registers] > reports/r2r.rpt
+report_timing -from [all_inputs]    -to [all_registers] > reports/i2r.rpt
+report_timing -from [all_registers] -to [all_outputs]   > reports/r2o.rpt
+report_timing -from [all_inputs] -to [all_outputs] > reports/i20.rpt
+read_db
+read_db genus_invis_des/genus.v
+read_db genus_invis_des/genus.g
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.v
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.g
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.mode
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh2/genus/genus_invs_des/genus.mode
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.mode
+read_db /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+source
+source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/
+source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+report_timing -from [all_registers] -to [all_registers] > reports/r2r.rpt
+report_timing -from [all_inputs]    -to [all_registers] > reports/i2r.rpt
+report_timing -from [all_registers] -to [all_outputs]   > reports/r2o.rpt
+report_timing -from [all_inputs] -to [all_outputs] > reports/i20.rpt

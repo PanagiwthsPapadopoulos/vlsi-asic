@@ -1,0 +1,5 @@
+2025/12/22 16:58:31 System is not a supported distribution
+2025/12/22 16:58:31 An error occurred. We don't recognize OS 
+2025/12/22 16:58:31 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2025/12/22 16:58:31 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+Fatal error: glibc detected an invalid stdio handle

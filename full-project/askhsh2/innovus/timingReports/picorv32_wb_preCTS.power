@@ -1,0 +1,86 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2025-Nov-28 14:55:13 (2025-Nov-28 12:55:13 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32_wb
+*
+*	Liberty Libraries used: 
+*	        analysis1: /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:       1.32 
+*
+*       Power View : analysis1
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ./timingReports/picorv32_wb_preCTS.power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.05861865 	   48.8890%
+Total Switching Power:       4.23938164 	   51.0664%
+Total Leakage Power:         0.00370432 	    0.0446%
+Total Power:                 8.30170462 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         2.736      0.2885    0.001441       3.026       36.45 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                      1.322       3.951    0.002264       5.275       63.55 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              4.059       4.239    0.003704       8.302         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.32      4.059       4.239    0.003704       8.302         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:     FE_OFC677_pcpi_rs2_31 (CLKBUFX8):          0.01369 
+*                Highest Leakage Power: picorv32_core_latched_is_lb_reg (EDFFTRXL):        1.097e-06 
+*          Total Cap:      8.84033e-11 F
+*          Total instances in design: 11422
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
+Total leakage power = 0.00370432 mW
+Cell usage statistics:  
+Library fast_vdd1v2 , 11422 cells ( 100.000000%) , 0.00370432 mW ( 100.000000%  ) 

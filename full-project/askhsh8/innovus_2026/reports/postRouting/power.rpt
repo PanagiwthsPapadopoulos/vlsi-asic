@@ -1,0 +1,299 @@
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+          1.32V	    VDD
+Using Power View: analysis1.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: deleting AAE DB due to opIsDesignInPostRouteState() is changed ...
+AAE DB initialization (MEM=4422.26 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: picorv32_pads
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'picorv32_pads' of instances=11957 and nets=13188 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design picorv32_pads.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:02.9  Real Time: 0:00:03.0  MEM: 4414.258M)
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=4421.78)
+siFlow : Timing analysis mode is single, using late cdB files
+**WARN: (IMPMSMV-1810):	Net FE_OFN201812_pcpi_rs2_w_18, driver FE_OFC2829_pcpi_rs2_w_18/Y (cell BUFX2) voltage 1.32 does not match receiver pad_pcpi_rs218/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN201811_FE_OFN135_pcpi_rs1_w_6, driver FE_OFC2828_FE_OFN135_pcpi_rs1_w_6/Y (cell INVX2) voltage 1.32 does not match receiver pad_pcpi_rs16/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN201809_pcpi_insn_w_4, driver FE_OFC2826_pcpi_insn_w_4/Y (cell INVX4) voltage 1.32 does not match receiver pad_pcpi_insn4/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN201753_FE_OFN92_pcpi_rs1_w_20, driver FE_OFC2502_FE_OFN92_pcpi_rs1_w_20/Y (cell CLKINVX4) voltage 1.32 does not match receiver pad_pcpi_rs120/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN201749_pcpi_insn_w_8, driver FE_OFC2814_pcpi_insn_w_8/Y (cell CLKINVX8) voltage 1.32 does not match receiver pad_pcpi_insn8/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN198963_pcpi_insn_w_23, driver FE_OFC2095_pcpi_insn_w_23/Y (cell CLKINVX6) voltage 1.32 does not match receiver pad_pcpi_insn23/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN198961_pcpi_insn_w_22, driver FE_OFC2093_pcpi_insn_w_22/Y (cell CLKINVX6) voltage 1.32 does not match receiver pad_pcpi_insn22/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN198959_FE_OFN87_pcpi_insn_w_0, driver FE_OFC2091_FE_OFN87_pcpi_insn_w_0/Y (cell CLKBUFX3) voltage 1.32 does not match receiver pad_pcpi_insn0/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN198954_FE_OFN132_pcpi_rs1_w_7, driver FE_OFC2086_FE_OFN132_pcpi_rs1_w_7/Y (cell CLKBUFX3) voltage 1.32 does not match receiver pad_pcpi_rs17/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN170_pcpi_rs2_w_0, driver FE_OFC170_pcpi_rs2_w_0/Y (cell INVX3) voltage 1.32 does not match receiver pad_pcpi_rs20/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN164_pcpi_rs2_w_3, driver FE_OFC164_pcpi_rs2_w_3/Y (cell INVX2) voltage 1.32 does not match receiver pad_pcpi_rs23/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN158_pcpi_rs1_w_0, driver FE_OFC158_pcpi_rs1_w_0/Y (cell CLKINVX6) voltage 1.32 does not match receiver pad_pcpi_rs10/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN150_pcpi_rs1_w_2, driver FE_OFC150_pcpi_rs1_w_2/Y (cell CLKINVX6) voltage 1.32 does not match receiver pad_pcpi_rs12/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN146_pcpi_rs1_w_3, driver FE_OFC146_pcpi_rs1_w_3/Y (cell CLKINVX6) voltage 1.32 does not match receiver pad_pcpi_rs13/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN141_pcpi_rs1_w_4, driver FE_OFC141_pcpi_rs1_w_4/Y (cell CLKINVX6) voltage 1.32 does not match receiver pad_pcpi_rs14/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN114_pcpi_rs1_w_13, driver FE_OFC114_pcpi_rs1_w_13/Y (cell CLKINVX4) voltage 1.32 does not match receiver pad_pcpi_rs113/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN111_pcpi_rs1_w_14, driver FE_OFC111_pcpi_rs1_w_14/Y (cell INVX2) voltage 1.32 does not match receiver pad_pcpi_rs114/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN108_pcpi_rs1_w_15, driver FE_OFC108_pcpi_rs1_w_15/Y (cell INVX2) voltage 1.32 does not match receiver pad_pcpi_rs115/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN105_pcpi_rs1_w_16, driver FE_OFC105_pcpi_rs1_w_16/Y (cell INVX4) voltage 1.32 does not match receiver pad_pcpi_rs116/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (IMPMSMV-1810):	Net FE_OFN102_pcpi_rs1_w_17, driver FE_OFC102_pcpi_rs1_w_17/Y (cell INVX2) voltage 1.32 does not match receiver pad_pcpi_rs117/A (cell PADDO) voltage 0.9 for view analysis1.
+Type 'man IMPMSMV-1810' for more detail.
+**WARN: (EMS-27):	Message (IMPMSMV-1810) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 12947
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=4465.73 CPU=0:00:02.0 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=4465.73 CPU=0:00:02.6 REAL=0:00:02.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+          1.32V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3976.76MB/5750.87MB/14388.09MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(250MHz) CK: assigning clock clk to net wb_clk_i
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3977.88MB/5750.87MB/14388.09MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3978.01MB/5750.87MB/14388.09MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT)
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 10%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 20%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 30%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 40%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 50%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 60%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 70%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 80%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 90%
+
+Finished Levelizing
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT)
+
+Starting Activity Propagation
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 10%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 20%
+
+Finished Activity Propagation
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3978.63MB/5750.87MB/14388.09MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT)
+ ... Calculating switching power
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 10%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 20%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 30%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 40%
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 50%
+ ... Calculating internal and leakage power
+2026-Jan-08 23:36:11 (2026-Jan-08 21:36:11 GMT): 60%
+2026-Jan-08 23:36:12 (2026-Jan-08 21:36:12 GMT): 70%
+2026-Jan-08 23:36:12 (2026-Jan-08 21:36:12 GMT): 80%
+2026-Jan-08 23:36:12 (2026-Jan-08 21:36:12 GMT): 90%
+
+Finished Calculating power
+2026-Jan-08 23:36:12 (2026-Jan-08 21:36:12 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=3980.01MB/5758.87MB/14388.09MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3980.13MB/5758.87MB/14388.09MB)
+
+Ended Power Analysis: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=3980.13MB/5758.87MB/14388.09MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3980.13MB/5758.87MB/14388.09MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Jan-08 23:36:12 (2026-Jan-08 21:36:12 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32_pads
+*
+*	Liberty Libraries used:
+*	        analysis1: /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus_2026/picorv32_pads_preplacement.dat/libs/mmmc/fast_vdd1v2_basicCells.lib
+*	        analysis1: /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus_2026/picorv32_pads_preplacement.dat/libs/mmmc/pads_SS_s1vg.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : analysis1
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+  4 instances have no static power
+** WARN:  (VOLTUS_POWR-2152): Instance corner_ll (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance corner_lr (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance corner_ul (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance corner_ur (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:      253.10271920 	   86.5856%
+Total Switching Power:      10.35104231 	    3.5411%
+Total Leakage Power:        28.86137670 	    9.8734%
+Total Power:               292.31513821
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.493       1.824    0.001972       5.319        1.82
+Macro                                  0           0           0           0           0
+IO                                 247.1       2.677       28.86       278.6       95.31
+Combinational                      1.949       3.944    0.004038       5.897       2.017
+Clock (Combinational)             0.5863       1.905   0.0001195       2.492      0.8524
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              253.1       10.35       28.86       292.3         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.32      253.1       10.35       28.86       292.3         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                                4.115       1.906   0.0003229       6.021        2.06
+-----------------------------------------------------------------------------------------
+Total                              4.115       1.906   0.0003229       6.021        2.06
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.004000 usec 
+Clock Toggle Rate:   500.0000 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:              pad_wb_clk_i (PADDI):            3.529
+*              Highest Leakage Power:                  pad_trap (PADDO):          0.07626
+*                Total Cap:      2.04163e-10 F
+*                Total instances in design: 11957
+*                Total instances in design with no power:     4
+*                Total instances in design with no activty:     4
+
+*                Total Fillers and Decap:     4
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 4 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3984.76MB/5758.87MB/14388.09MB)
+

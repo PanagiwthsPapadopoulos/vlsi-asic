@@ -1,0 +1,6 @@
+temperature -1
+extraction_tech_file /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch
+spice_subckts_xyscaling 1000
+use_powergate_data_from_lib 0
+default_frequency 2e+08
+decap_frequency 1e+08

@@ -1,0 +1,357 @@
+{
+ "layers": [
+  {
+   "id": 0,
+   "type": "LAYER_REDUCED",
+   "techName": "REDUCED",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 1,
+   "type": "LAYER_METAL",
+   "techName": "CSUBSTRATE",
+   "defNames": [],
+   "topLayerIds": [],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 2,
+   "type": "LAYER_DIFFUSION",
+   "techName": "N_SOURCE_DRAIN",
+   "defNames": [],
+   "topLayerIds": [
+    5
+   ],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 3,
+   "type": "LAYER_DIFFUSION",
+   "techName": "P_SOURCE_DRAIN",
+   "defNames": [],
+   "topLayerIds": [
+    5
+   ],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 4,
+   "type": "LAYER_POLY",
+   "techName": "POLYCIDE",
+   "defNames": [],
+   "topLayerIds": [
+    5
+   ],
+   "bottomLayerIds": []
+  },
+  {
+   "id": 5,
+   "type": "LAYER_VIA",
+   "techName": "CONT",
+   "defNames": [],
+   "topLayerIds": [
+    6
+   ],
+   "bottomLayerIds": [
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": 6,
+   "type": "LAYER_METAL",
+   "techName": "METAL_1",
+   "defNames": [
+    "Metal1"
+   ],
+   "topLayerIds": [
+    7
+   ],
+   "bottomLayerIds": [
+    5
+   ]
+  },
+  {
+   "id": 7,
+   "type": "LAYER_VIA",
+   "techName": "VIA_1",
+   "defNames": [
+    "Via1"
+   ],
+   "topLayerIds": [
+    8
+   ],
+   "bottomLayerIds": [
+    6
+   ]
+  },
+  {
+   "id": 8,
+   "type": "LAYER_METAL",
+   "techName": "METAL_2",
+   "defNames": [
+    "Metal2"
+   ],
+   "topLayerIds": [
+    9
+   ],
+   "bottomLayerIds": [
+    7
+   ]
+  },
+  {
+   "id": 9,
+   "type": "LAYER_VIA",
+   "techName": "VIA_2",
+   "defNames": [
+    "Via2"
+   ],
+   "topLayerIds": [
+    10
+   ],
+   "bottomLayerIds": [
+    8
+   ]
+  },
+  {
+   "id": 10,
+   "type": "LAYER_METAL",
+   "techName": "METAL_3",
+   "defNames": [
+    "Metal3"
+   ],
+   "topLayerIds": [
+    11
+   ],
+   "bottomLayerIds": [
+    9
+   ]
+  },
+  {
+   "id": 11,
+   "type": "LAYER_VIA",
+   "techName": "VIA_3",
+   "defNames": [
+    "Via3"
+   ],
+   "topLayerIds": [
+    12
+   ],
+   "bottomLayerIds": [
+    10
+   ]
+  },
+  {
+   "id": 12,
+   "type": "LAYER_METAL",
+   "techName": "METAL_4",
+   "defNames": [
+    "Metal4"
+   ],
+   "topLayerIds": [
+    13
+   ],
+   "bottomLayerIds": [
+    11
+   ]
+  },
+  {
+   "id": 13,
+   "type": "LAYER_VIA",
+   "techName": "VIA_4",
+   "defNames": [
+    "Via4"
+   ],
+   "topLayerIds": [
+    14
+   ],
+   "bottomLayerIds": [
+    12
+   ]
+  },
+  {
+   "id": 14,
+   "type": "LAYER_METAL",
+   "techName": "METAL_5",
+   "defNames": [
+    "Metal5"
+   ],
+   "topLayerIds": [
+    15
+   ],
+   "bottomLayerIds": [
+    13
+   ]
+  },
+  {
+   "id": 15,
+   "type": "LAYER_VIA",
+   "techName": "VIA_5",
+   "defNames": [
+    "Via5"
+   ],
+   "topLayerIds": [
+    16
+   ],
+   "bottomLayerIds": [
+    14
+   ]
+  },
+  {
+   "id": 16,
+   "type": "LAYER_METAL",
+   "techName": "METAL_6",
+   "defNames": [
+    "Metal6"
+   ],
+   "topLayerIds": [
+    17
+   ],
+   "bottomLayerIds": [
+    15
+   ]
+  },
+  {
+   "id": 17,
+   "type": "LAYER_VIA",
+   "techName": "VIA_6",
+   "defNames": [
+    "Via6"
+   ],
+   "topLayerIds": [
+    18
+   ],
+   "bottomLayerIds": [
+    16
+   ]
+  },
+  {
+   "id": 18,
+   "type": "LAYER_METAL",
+   "techName": "METAL_7",
+   "defNames": [
+    "Metal7"
+   ],
+   "topLayerIds": [
+    19
+   ],
+   "bottomLayerIds": [
+    17
+   ]
+  },
+  {
+   "id": 19,
+   "type": "LAYER_VIA",
+   "techName": "VIA_7",
+   "defNames": [
+    "Via7"
+   ],
+   "topLayerIds": [
+    20
+   ],
+   "bottomLayerIds": [
+    18
+   ]
+  },
+  {
+   "id": 20,
+   "type": "LAYER_METAL",
+   "techName": "METAL_8",
+   "defNames": [
+    "Metal8"
+   ],
+   "topLayerIds": [
+    21
+   ],
+   "bottomLayerIds": [
+    19
+   ]
+  },
+  {
+   "id": 21,
+   "type": "LAYER_VIA",
+   "techName": "VIA_8",
+   "defNames": [
+    "Via8"
+   ],
+   "topLayerIds": [
+    22
+   ],
+   "bottomLayerIds": [
+    20
+   ]
+  },
+  {
+   "id": 22,
+   "type": "LAYER_METAL",
+   "techName": "METAL_9",
+   "defNames": [
+    "Metal9"
+   ],
+   "topLayerIds": [
+    23
+   ],
+   "bottomLayerIds": [
+    21
+   ]
+  },
+  {
+   "id": 23,
+   "type": "LAYER_VIA",
+   "techName": "VIA_9",
+   "defNames": [
+    "Via9"
+   ],
+   "topLayerIds": [
+    24
+   ],
+   "bottomLayerIds": [
+    22
+   ]
+  },
+  {
+   "id": 24,
+   "type": "LAYER_METAL",
+   "techName": "METAL_10",
+   "defNames": [
+    "Metal10"
+   ],
+   "topLayerIds": [
+    25
+   ],
+   "bottomLayerIds": [
+    23
+   ]
+  },
+  {
+   "id": 25,
+   "type": "LAYER_VIA",
+   "techName": "VIA_10",
+   "defNames": [
+    "Via10"
+   ],
+   "topLayerIds": [
+    26
+   ],
+   "bottomLayerIds": [
+    24
+   ]
+  },
+  {
+   "id": 26,
+   "type": "LAYER_METAL",
+   "techName": "METAL_11",
+   "defNames": [
+    "Metal11"
+   ],
+   "topLayerIds": [],
+   "bottomLayerIds": [
+    25
+   ]
+  }
+ ]
+}
+

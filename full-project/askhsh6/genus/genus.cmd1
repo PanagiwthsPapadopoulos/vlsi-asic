@@ -1,0 +1,11 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.15-s080_1, built Sep 23 2022 12:57:55
+
+# Date: Sun Nov 30 22:55:15 2025
+# Host: cn91.it.auth.gr (x86_64 w/Linux 5.14.0-570.52.1.el9_6.x86_64) (12cores*12cpus*1physical cpu*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+# OS:   Rocky Linux release 9.6 (Blue Onyx)
+
+source /home/p/ppapadoe/Desktop/vlsi-asic/askhsh1/genus/genus_invs_des/genus.genus_setup.tcl
+report_timing -from [all_registers] -to [all_registers] > reports/r2r.rpt
+report_timing -from [all_inputs]    -to [all_registers] > reports/i2r.rpt
+report_timing -from [all_registers] -to [all_outputs]   > reports/r2o.rpt
+report_timing -from [all_inputs] -to [all_outputs] > reports/i20.rpt

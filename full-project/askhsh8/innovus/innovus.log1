@@ -1,0 +1,541 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.35-s114_1, built Thu Oct 13 12:11:47 PDT 2022
+Options:	
+Date:		Thu Jan  8 17:04:17 2026
+Host:		cn88.it.auth.gr (x86_64 w/Linux 5.14.0-570.52.1.el9_6.x86_64) (12cores*12cpus*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+OS:		Rocky Linux release 9.7 (Blue Onyx)
+
+License:
+		[17:04:17.187809] Configured Lic search path (21.01-s002): 5280@cadence.it.auth.gr
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (95 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 21.12 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat picorv32_pads
+#% Begin load design ... (date=01/08 17:05:55, mem=997.7M)
+Loading design 'picorv32_pads' saved by 'Innovus' '21.35-s114_1' on 'Mon Dec 8 13:27:21 2025'.
+% Begin Load MMMC data ... (date=01/08 17:05:58, mem=1000.1M)
+% End Load MMMC data ... (date=01/08 17:05:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1000.9M, current mem=1000.9M)
+rc1
+
+Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/lef/gsclib045_tech.lef ...
+
+Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/lef/giolib045.lef ...
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADDB' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'AY' in macro 'PADANALOG' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/viewDefinition.tcl
+Reading timing1 timing library '/mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v2_basicCells.lib)
+Read 489 cells in library 'fast_vdd1v2' 
+Reading timing1 timing library '/mnt/apps/prebuilt/EDA/designkits/GPDK/giolib045/lan/flow/rfkit/reference_libs/GPDK045/giolib045_v3.5/timing/pads_SS_s1vg.lib' ...
+Read 8 cells in library 'giolib045' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=23.5M, fe_cpu=0.45min, fe_real=1.70min, fe_mem=1051.6M) ***
+% Begin Load netlist data ... (date=01/08 17:05:59, mem=1023.3M)
+*** Begin netlist parsing (mem=1051.6M) ***
+**WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDOZ' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDO' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDO' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDO' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDO' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDI' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDI' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDI' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDI' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'PADDB' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'PADDB' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSSIOR' of cell 'PADDB' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDDIOR' of cell 'PADDB' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+Created 497 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1060.594M, initial mem = 483.848M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1060.6M) ***
+% End Load netlist data ... (date=01/08 17:05:59, total cpu=0:00:00.1, real=0:00:00.0, peak res=1035.4M, current mem=1035.4M)
+Set top cell to picorv32_pads.
+Hooked 497 DB cells to tlib cells.
+** Removed 4 unused lib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell picorv32_pads ...
+*** Netlist is unique.
+** info: there are 602 modules.
+** info: there are 10879 stdCell insts.
+** info: there are 517 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 1113.508M, initial mem = 483.848M) ***
+*info: set bottom ioPad orient R0
+Initializing I/O assignment ...
+Adjusting Core to Bottom to: 20.1100.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Pre-connect netlist-defined P/G connections...
+  Updated 517 instances.
+Loading preference file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name tdgp_reg2reg_default is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for tdgp_reg2reg_default path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name reg2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for reg2out path_group
+**WARN: (IMPOPT-3602):	The specified path group name in2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2reg path_group
+**WARN: (IMPOPT-3602):	The specified path group name in2out is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <low> specified for in2out path_group
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 327
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPSYC-2):	Timing information is not defined for cell padIORINGCORNER; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+Type 'man IMPSYC-2' for more detail.
+Reading floorplan file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.fp.gz (mem = 1364.6M).
+% Begin Load floorplan data ... (date=01/08 17:06:00, mem=1328.2M)
+*info: reset 12721 existing net BottomPreferredLayer and AvoidDetour
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_valid is connected to ground net trace_valid.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data35 is connected to ground net trace_data[35].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data34 is connected to ground net trace_data[34].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data33 is connected to ground net trace_data[33].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data32 is connected to ground net trace_data[32].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data31 is connected to ground net trace_data[31].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data30 is connected to ground net trace_data[30].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data29 is connected to ground net trace_data[29].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data28 is connected to ground net trace_data[28].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data27 is connected to ground net trace_data[27].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data26 is connected to ground net trace_data[26].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data25 is connected to ground net trace_data[25].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data24 is connected to ground net trace_data[24].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data23 is connected to ground net trace_data[23].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data22 is connected to ground net trace_data[22].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data21 is connected to ground net trace_data[21].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data20 is connected to ground net trace_data[20].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data19 is connected to ground net trace_data[19].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data18 is connected to ground net trace_data[18].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin PAD of instance pad_trace_data17 is connected to ground net trace_data[17].  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+Pre-connect netlist-defined P/G connections...
+  Updated 517 instances.
+Deleting old partition specification.
+Set FPlanBox to (0 0 16440000 16440000)
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.fp.spr.gz (Created by Innovus v21.35-s114_1 on Mon Dec  8 13:27:15 2025, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+75 swires and 240 svias were compressed
+75 swires and 240 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1330.6M, current mem=1330.6M)
+There are 517 io inst loaded
+There are 62 nets with bottomPreferredRoutingLayer being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=01/08 17:06:01, total cpu=0:00:00.2, real=0:00:01.0, peak res=1337.4M, current mem=1337.4M)
+Reading congestion map file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=01/08 17:06:01, mem=1337.7M)
+% End Load SymbolTable ... (date=01/08 17:06:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=1538.4M, current mem=1538.4M)
+Loading place ...
+% Begin Load placement data ... (date=01/08 17:06:01, mem=1538.4M)
+Reading placement file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.35-s114_1 on Mon Dec  8 13:27:17 2025, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.1 real=0:00:00.0 mem=1574.9M) ***
+Total net length = 1.286e+06 (5.360e+05 7.496e+05) (ext = 7.429e+05)
+% End Load placement data ... (date=01/08 17:06:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=1541.8M, current mem=1541.3M)
+Reading PG file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.pg.gz, version#2, (Created by Innovus v21.35-s114_1 on       Mon Dec  8 13:27:15 2025)
+*** Completed restorePGFile (cpu=0:00:00.1 real=0:00:00.0 mem=1570.9M) ***
+% Begin Load routing data ... (date=01/08 17:06:02, mem=1541.9M)
+Reading routing file - /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.route.gz.
+Un-suppress "**WARN ..." messages.
+Reading Innovus routing data (Created by Innovus v21.35-s114_1 on Mon Dec  8 13:27:17 2025 Format: 20.1) ...
+*** Total 12660 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.4 real=0:00:00.0 mem=1942.5M) ***
+% End Load routing data ... (date=01/08 17:06:02, total cpu=0:00:00.4, real=0:00:00.0, peak res=1914.5M, current mem=1913.6M)
+Loading Drc markers ...
+... 2568 markers are loaded ...
+... 1862 geometry drc markers are loaded ...
+... 702 antenna drc markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 1 : CPU = 1 : MEM = 0.
+Reading property file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1960.5M) ***
+Reading dirtyarea snapshot file /home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/picorv32_pads.db.da.gz (Create by Innovus v21.35-s114_1 on Mon Dec  8 13:27:18 2025, version: 4).
+Loading preRoute extraction data from directory '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/mmmc/rc1/gpdk045.tch
+Generating auto layer map file.
+Completed (cpu: 0:00:04.8 real: 0:00:05.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: analysis1
+    RC-Corner Name        : rc1
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/p/ppapadoe/Desktop/vlsi-asic/askhsh8/innovus/picorv32_pads.dat/libs/mmmc/rc1/gpdk045.tch'
+Restored RC grid for preRoute extraction.
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=01/08 17:06:11, mem=2035.6M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=01/08 17:06:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=2042.7M, current mem=2042.7M)
+delay1
+% Begin load AAE data ... (date=01/08 17:06:11, mem=2079.0M)
+AAE DB initialization (MEM=2133.84 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=01/08 17:06:12, total cpu=0:00:00.7, real=0:00:01.0, peak res=2086.5M, current mem=2086.5M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 2400 sinks and 0 clock gates.
+  Extracting original clock gating for clk done.
+  The skew group clk/constraint1 was created. It contains 2400 sinks and 1 sources.
+  The skew group clk/constraint1 was created. It contains 2400 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 327
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=01/08 17:06:12, total cpu=0:00:12.5, real=0:00:17.0, peak res=2116.8M, current mem=2095.4M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           21  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201            6  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+WARNING   IMPVL-159           16  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPDB-2078          37  Output pin %s of instance %s is connecte...
+WARNING   IMPOPT-3602          5  The specified path group name %s is not ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+*** Message Summary: 105 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> report_net wbm_stb_o
+
+Usage: report_net [-help] [-hier] [-max_fanout <int>] [-min_fanout <int>]
+                  [-output <filename>] [-tcl_list] [> <filename[.gz]>]
+                  [>> <filename[.gz]>] [-net <list_of_net_names> | -pin <list_of_pin_names>]
+
+
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+<CMD> report_net -net wbm_stb_o
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: picorv32_pads
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'picorv32_pads' of instances=11396 and nets=12721 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design picorv32_pads.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:02.7  Real Time: 0:00:02.0  MEM: 2180.164M)
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=2228.97)
+siFlow : Timing analysis mode is single, using late cdB files
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_stb_o has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_stb_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[0] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[1] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[2] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_sel_o[3] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_sel_o[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net wbm_we_o has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net wbm_we_o. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[0] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[1] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[2] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[2]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[3] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[3]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[4] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[5] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[5]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[6] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[6]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[7] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[7]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[8] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[8]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[9] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[9]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[10] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[10]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[11] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[11]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[12] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[12]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3017):	 Multi-driver net eoi[13] has different voltages 1.320000 and 0.900000 driving it. Analysis results will be inaccurate..
+**WARN: (IMPESI-3014):	The RC network is incomplete for net eoi[13]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (EMS-27):	Message (IMPESI-3017) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (IMPESI-3014) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 12178
+End delay calculation. (MEM=2376.1 CPU=0:00:01.8 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=2376.1 CPU=0:00:02.3 REAL=0:00:02.0)
+Net Name                 : wbm_stb_o
+Number of Sources        : 2
+Number of Sinks          : 3
+Number of Bidis          : 0
+Source of parasitics     : Detailed Spef
+Net Capacitance          :   0.022
+Total Capacitance        :   0.323
+     +-------------------------------------------------------------------------------------------------------------------+ 
+     |                                                      Source                                                       | 
+     |-------------------------------------------------------------------------------------------------------------------| 
+     |                      Pin                      | Reduced |   Driver Load   |     Slew      |                       | 
+     |-----------------------------------------------+---------+-----------------+---------------+-----------------------| 
+     |         Name         |  Dir  |  Cell  |  Cap  |  Model  |  Model | Ctotal |  Rise |  Fall |         Phase         | 
+     |----------------------+-------+--------+-------+---------+--------+--------+-------+-------+-----------------------| 
+     | core/wbm_cyc_o_reg/Q |  OUT  | DFFQX4 | 0.000 | Unknown | CTOTAL |  1.000 | 0.135 | 0.141 | clk(D)(P)(analysis1)* | 
+     +-------------------------------------------------------------------------------------------------------------------+ 
+     +------------------------------------------------------------------------------------------------------------------------+ 
+     |                                           Sinks for pin core/wbm_cyc_o_reg/Q                                           | 
+     |------------------------------------------------------------------------------------------------------------------------| 
+     |                        Pin                        | Reduced Ne |     Delay     |     Slew      |                       | 
+     |---------------------------------------------------+------------+---------------+---------------+-----------------------| 
+     |       Name        |  Dir  |     Cell      |  Cap  | Parameters |  Rise |  Fall |  Rise |  Fall |         Phase         | 
+     |-------------------+-------+---------------+-------+------------+-------+-------+-------+-------+-----------------------| 
+     |     wbm_stb_o     |  OUT  | picorv32_pads | 0.300 |     -      | 0.001 | 0.001 | 0.135 | 0.141 | clk(D)(P)(analysis1)* | 
+     | core/g801__7482/A |  IN   |    MXI2XL     | 0.000 |     -      | 0.001 | 0.001 | 0.135 | 0.141 | clk(D)(P)(analysis1)* | 
+     |    core/g489/A    |  IN   |     BUFX8     | 0.001 |     -      | 0.001 | 0.001 | 0.135 | 0.141 | clk(D)(P)(analysis1)* | 
+     +------------------------------------------------------------------------------------------------------------------------+ 
+     +-------------------------------------------------------------------------------------------------------------+ 
+     |                                                   Source                                                    | 
+     |-------------------------------------------------------------------------------------------------------------| 
+     |                    Pin                    | Reduced |   Driver Load   |     Slew      |                     | 
+     |-------------------------------------------+---------+-----------------+---------------+---------------------| 
+     |       Name        |  Dir  |  Cell |  Cap  |  Model  |  Model | Ctotal |  Rise |  Fall |        Phase        | 
+     |-------------------+-------+-------+-------+---------+--------+--------+-------+-------+---------------------| 
+     | pad_wbm_stb_o/PAD |  OUT  | PADDO | 0.000 | Unknown | CTOTAL |  1.000 | 0.318 | 0.396 | @(D)(P)(analysis1)* | 
+     +-------------------------------------------------------------------------------------------------------------+ 
+     +-----------------------------------------------------------------------------------------------------------------------+ 
+     |                                            Sinks for pin pad_wbm_stb_o/PAD                                            | 
+     |-----------------------------------------------------------------------------------------------------------------------| 
+     |                        Pin                        | Reduced Ne |     Delay      |     Slew      |                     | 
+     |---------------------------------------------------+------------+----------------+---------------+---------------------| 
+     |       Name        |  Dir  |     Cell      |  Cap  | Parameters |  Rise |  Fall  |  Rise |  Fall |        Phase        | 
+     |-------------------+-------+---------------+-------+------------+-------+--------+-------+-------+---------------------| 
+     |     wbm_stb_o     |  OUT  | picorv32_pads | 0.300 |     -      | 0.128 | -0.134 | 0.135 | 0.141 | @(D)(P)(analysis1)* | 
+     | core/g801__7482/A |  IN   |    MXI2XL     | 0.000 |     -      | 0.128 | -0.134 | 0.135 | 0.141 | @(D)(P)(analysis1)* | 
+     |    core/g489/A    |  IN   |     BUFX8     | 0.001 |     -      | 0.128 | -0.134 | 0.135 | 0.141 | @(D)(P)(analysis1)* | 
+     +-----------------------------------------------------------------------------------------------------------------------+ 
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+
+*** Memory Usage v#1 (Current mem = 2328.102M, initial mem = 483.848M) ***
+*** Message Summary: 382 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:04:38, real=1:06:31, mem=2328.1M) ---

@@ -1,0 +1,28 @@
+
+#================================================
+# Matrix Solver Manager run time performance profile:
+	Stamp Matrix (1): 0.0002 user, 0.0006 system, 0.0007 real seconds
+	Factorize Matrix (1): 0.2467 user, 0.0032 system, 0.3279 real seconds
+	Solve Matrix (1): 0.0286 user, 0.0001 system, 0.0284 real seconds
+		Direct Solve (1): 0.0000 user, 0.0000 system, 0.0000 real seconds
+
+# Matrix Solver Manager memory performance profile:
+	Before DC Factorization: 1366.8200 peak virtual, 1366.8200 current virtual, 612.9200 peak resident, 115.9000 current resident mbytes
+	After DC Factorization: 1368.9960 peak virtual, 1368.9960 current virtual, 612.9200 peak resident, 121.7400 current resident mbytes
+#================================================
+
+#================================================
+# picorv32_wb_VDD:0 performance profile:
+	Stamping Stimulus:       0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping DC:             0.0000 user, 0.0005 system, 0.0005 real seconds
+	Stamping Transient:      0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Transient Step: 0.0000 user, 0.0000 system, 0.0000 real seconds
+	Stamping Matrix Change:  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Resistor             (15274     ,	0.2444    M):  0.0000 user, 0.0003 system, 0.0003 real seconds
+		VSource              (1         ,	0.0000    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+		Node                 (14266     ,	0.1712    M):  0.0000 user, 0.0000 system, 0.0000 real seconds
+	Equation Solver:        tesla
+	Factorization Time:     0.2464 user, 0.0031 system, 0.3276 real seconds
+	Forward Solve Time:     0.0284 user, 0.0001 system, 0.0283 real seconds
+	Backward Solve Time:    0.0001 user, 0.0000 system, 0.0001 real seconds
+#================================================

@@ -1,0 +1,12 @@
+[1] scan info : top_chain_seg1_wb_clk_i_rising  
+  START: scan_in (0.000, 99.465)
+  STOP: scan_out (0.000, 96.805)
+
+
+  scan bits        : 2399
+  float wire length: 17975.270
+  order wire length: 281.550
+  total wire length: 18256.820
+
+
+

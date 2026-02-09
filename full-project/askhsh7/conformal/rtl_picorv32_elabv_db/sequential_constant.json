@@ -1,0 +1,73 @@
+{
+ "filetype": "conformal-table",
+ "data": [
+  {
+   "Object": "/picorv32_core/trace_valid_reg/qi_reg",
+   "Type": "DFF",
+   "Design": "R",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/alu_wait_2_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/trace_valid_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/alu_wait_2_reg/qi_reg",
+   "Type": "DFF",
+   "Design": "R",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/trace_valid_reg",
+   "Type": "DFF",
+   "Design": "R",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/picorv32_core/alu_wait_2_reg",
+   "Type": "DFF",
+   "Design": "R",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  }
+ ],
+ "cols": [
+  {
+   "key": "Object"
+  },
+  {
+   "key": "Type"
+  },
+  {
+   "key": "Design"
+  },
+  {
+   "key": "User Setup constant"
+  },
+  {
+   "key": "LEC constant"
+  }
+ ],
+ "sort": [
+  "-highlite"
+ ]
+}

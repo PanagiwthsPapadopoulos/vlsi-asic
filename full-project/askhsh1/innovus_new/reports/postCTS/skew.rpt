@@ -1,0 +1,133 @@
+Clock tree timing engine global stage delay update for delay1:both.early...
+Clock tree timing engine global stage delay update for delay1:both.early done. (took cpu=0:00:00.1 real=0:00:00.1)
+Clock tree timing engine global stage delay update for delay1:both.late...
+Clock tree timing engine global stage delay update for delay1:both.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+----------------------------------------------------------------------
+Skew Group         Sources    Constrained Sinks    Unconstrained Sinks
+----------------------------------------------------------------------
+clk/constraint1       1             2399                    0
+----------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner        Skew Group         ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+delay1:both.early    clk/constraint1        -        0.039     0.049     0.045        0.002       ignored                  -         0.010              -
+delay1:both.late     clk/constraint1    none         0.040     0.050     0.046        0.002       explicit             1.000         0.011    100% {0.040, 0.050}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+----------------------------------------------------------------------------
+Timing Corner        Skew Group         Min ID    PathID    Max ID    PathID
+----------------------------------------------------------------------------
+delay1:both.early    clk/constraint1    0.039       1       0.049       2
+-    min picorv32_core_cpuregs_reg[33][31]/CK
+-    max picorv32_core_genblk1.pcpi_mul_rs1_reg[17]/CK
+delay1:both.late     clk/constraint1    0.040       3       0.050       4
+-    min picorv32_core_cpuregs_reg[33][31]/CK
+-    max picorv32_core_genblk1.pcpi_mul_rs1_reg[17]/CK
+----------------------------------------------------------------------------
+
+Timing for timing corner delay1:both.early, min clock_path:
+===========================================================
+
+PathID    : 1
+Path type : skew group clk/constraint1 (path 1 of 1)
+Start     : wb_clk_i
+End       : picorv32_core_cpuregs_reg[33][31]/CK
+Delay     : 0.039
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wb_clk_i
+-     -          rise   -       0.000   0.004  0.152  (0.000,114.475)   -           24    
+CTS_ccl_a_buf_00018/A
+-     CLKBUFX16  rise   0.006   0.006   0.016  -      (31.500,183.255)  100.280   -       
+CTS_ccl_a_buf_00018/Y
+-     CLKBUFX16  rise   0.032   0.038   0.035  0.076  (31.025,183.030)    0.700    100    
+picorv32_core_cpuregs_reg[33][31]/CK
+-     EDFFHQX1   rise   0.001   0.039   0.035  -      (32.500,183.255)    1.700   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner delay1:both.early, max clock_path:
+===========================================================
+
+PathID    : 2
+Path type : skew group clk/constraint1 (path 1 of 1)
+Start     : wb_clk_i
+End       : picorv32_core_genblk1.pcpi_mul_rs1_reg[13]/CK
+Delay     : 0.049
+
+-------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace ------------------------------------------------------------------------------
+wb_clk_i
+-     -          rise   -       0.000   0.004  0.152  (0.000,114.475)    -           24    
+CTS_ccl_a_buf_00002/A
+-     CLKBUFX16  rise   0.010   0.010   0.019  -      (197.300,123.405)  206.230   -       
+CTS_ccl_a_buf_00002/Y
+-     CLKBUFX16  rise   0.034   0.044   0.036  0.081  (196.825,123.630)    0.700    100    
+picorv32_core_genblk1.pcpi_mul_rs1_reg[13]/CK
+-     EDFFX2     rise   0.005   0.049   0.037  -      (195.005,164.405)   42.595   -       
+-------------------------------------------------------------------------------------------------
+
+Timing for timing corner delay1:both.late, min clock_path:
+==========================================================
+
+PathID    : 3
+Path type : skew group clk/constraint1 (path 1 of 1)
+Start     : wb_clk_i
+End       : picorv32_core_cpuregs_reg[33][31]/CK
+Delay     : 0.040
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+wb_clk_i
+-     -          rise   -       0.000   0.004  0.152  (0.000,114.475)   -           24    
+CTS_ccl_a_buf_00018/A
+-     CLKBUFX16  rise   0.006   0.006   0.017  -      (31.500,183.255)  100.280   -       
+CTS_ccl_a_buf_00018/Y
+-     CLKBUFX16  rise   0.033   0.039   0.036  0.076  (31.025,183.030)    0.700    100    
+picorv32_core_cpuregs_reg[33][31]/CK
+-     EDFFHQX1   rise   0.001   0.040   0.036  -      (32.500,183.255)    1.700   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner delay1:both.late, max clock_path:
+==========================================================
+
+PathID    : 4
+Path type : skew group clk/constraint1 (path 1 of 1)
+Start     : wb_clk_i
+End       : picorv32_core_genblk1.pcpi_mul_rs1_reg[13]/CK
+Delay     : 0.050
+
+-------------------------------------------------------------------------------------------------
+Name  Lib cell   Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                        (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace ------------------------------------------------------------------------------
+wb_clk_i
+-     -          rise   -       0.000   0.004  0.152  (0.000,114.475)    -           24    
+CTS_ccl_a_buf_00002/A
+-     CLKBUFX16  rise   0.011   0.011   0.020  -      (197.300,123.405)  206.230   -       
+CTS_ccl_a_buf_00002/Y
+-     CLKBUFX16  rise   0.035   0.045   0.037  0.081  (196.825,123.630)    0.700    100    
+picorv32_core_genblk1.pcpi_mul_rs1_reg[13]/CK
+-     EDFFX2     rise   0.005   0.050   0.038  -      (195.005,164.405)   42.595   -       
+-------------------------------------------------------------------------------------------------
+
+
